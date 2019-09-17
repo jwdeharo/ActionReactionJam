@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /**
 * Interface of a state. 
 */
 public interface IState
 {
+
+    void Init(PlayerController aParent);
     /**
      * Function that is called once the state is changed to be the current.
      */
