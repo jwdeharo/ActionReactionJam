@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class IdleState : CState
 {
@@ -8,7 +7,7 @@ public class IdleState : CState
      */
     public override void UpdateState()
     {
-        if (Input.GetAxis("Horizontal") != 0.0f)
+        if (Input.GetAxisRaw("Horizontal") != 0.0f)
         {
             Controller.GetFSM().ChangeState(Controller.GetState("Walk"));
         }
