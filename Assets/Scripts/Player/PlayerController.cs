@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     private FSM MyFSM;                              //!< Finite state machine of the player.
-    public Dictionary<string, IState> PlayerStates; //!< List of states that the player have.
+    public Dictionary<string, CState> PlayerStates; //!< List of states that the player have.
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
     public Animator Animator;                       //!< Animator which handles the animations.
 
@@ -21,7 +19,7 @@ public class PlayerController : MonoBehaviour
         IdleState.Init(this);
         WalkState.Init(this);
 
-        PlayerStates = new Dictionary<string, IState>();
+        PlayerStates = new Dictionary<string, CState>();
 
         PlayerStates.Add("Idle", IdleState);
         PlayerStates.Add("Walk", WalkState);
@@ -34,7 +32,7 @@ public class PlayerController : MonoBehaviour
      * Returns a state from the dictionary of states.
      * @param aStateName: State to return.
      */
-    public IState GetState(string aStateName)
+    public CState GetState(string aStateName)
     {
         return PlayerStates[aStateName];
     }

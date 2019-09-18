@@ -1,26 +1,37 @@
-﻿/**
-* Interface of a state. 
-*/
-public interface IState
+﻿abstract public class CState
 {
+    protected PlayerController Controller; //!< Controller of the parent.
 
     /**
      * Inits the state.
      * @param PlayerController: controller to be used in the state.
      */
-    void Init(PlayerController aParent);
+    virtual public void Init(PlayerController aParent)
+    {
+        Controller = aParent;
+    }
+
     /**
      * Function that is called once the state is changed to be the current.
      */
-    void OnEnterState();
+    virtual public void OnEnterState()
+    {
+
+    }
 
     /**
      * Function that is called while the state is the current.
      */
-    void UpdateState();
+    virtual public void UpdateState()
+    {
+
+    }
 
     /**
      * Function that is called once the current state changes.
      */
-    void OnExitState();
+    virtual public void OnExitState()
+    {
+
+    }
 }

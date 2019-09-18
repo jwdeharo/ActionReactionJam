@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class FSM : MonoBehaviour
 {
-    private List<IState> StatesStack;   //!< Stack of states. The current state is always the one in the top.
-    private IState CurrentState;        //!< The current state of the FSM. The one that is going to be updated.
+    private List<CState> StatesStack;   //!< Stack of states. The current state is always the one in the top.
+    private CState CurrentState;        //!< The current state of the FSM. The one that is going to be updated.
     private bool IsChangingState;       //!< Indicates if the fsm is changing state or not.
 
     /**
@@ -13,7 +13,7 @@ public class FSM : MonoBehaviour
     public void StartFSM()
     {
         CurrentState = null;
-        StatesStack = new List<IState>();
+        StatesStack = new List<CState>();
         IsChangingState = false;
     }
 
@@ -33,7 +33,7 @@ public class FSM : MonoBehaviour
      * @param aState: new state that will be added to the stack.
      * @param aPushStack: true if it has to be pushed, false if it has to replace the state at the top.
      */
-    public void ChangeState(IState aState, bool aPushStack = false)
+    public void ChangeState(CState aState, bool aPushStack = false)
     {
         if (StatesStack != null)
         {
