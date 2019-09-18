@@ -1,10 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class IdleState : IState
 {
-    private PlayerController Parent;
+    private PlayerController Parent; //!< Controller of the parent.
+
+    /**
+     * Inits the state.
+     * @param PlayerController: controller to be used in the state.
+     */
     public void Init(PlayerController aParent)
     {
         Parent = aParent;
@@ -15,7 +19,6 @@ public class IdleState : IState
      */
     public void OnEnterState()
     {
-        Debug.Log("Idle");
     }
 
     /**
@@ -25,7 +28,7 @@ public class IdleState : IState
     {
         if (Input.GetAxis("Horizontal") != 0.0f)
         {
-            Parent.MyFSM.ChangeState(Parent.GetState("Walk"), true);
+            Parent.GetFSM().ChangeState(Parent.GetState("Walk"), true);
         }
     }
 
