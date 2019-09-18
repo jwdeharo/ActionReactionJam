@@ -1,11 +1,13 @@
-﻿using UnityEngine;
-
-/**
+﻿/**
 * Interface of a state. 
 */
 public interface IState
 {
 
+    /**
+     * Inits the state.
+     * @param PlayerController: controller to be used in the state.
+     */
     void Init(PlayerController aParent);
     /**
      * Function that is called once the state is changed to be the current.
