@@ -7,7 +7,7 @@ public class WalkingState : CState
      */
     public override void OnEnterState()
     {
-        Controller.Animator.SetFloat("Speed", 1.0f);
+        ((PlayerController)Controller).Animator.SetFloat("Speed", 1.0f);
     }
 
     /**
@@ -15,7 +15,7 @@ public class WalkingState : CState
      */
     public override void UpdateState()
     {
-        float HorizontalAxis = Input.GetAxis("Horizontal");
+        float HorizontalAxis = Input.GetAxisRaw("Horizontal");
         if (HorizontalAxis == 0.0f)
         {
             Controller.GetFSM().PopState();
@@ -23,8 +23,7 @@ public class WalkingState : CState
         else
         {
             Flip(HorizontalAxis);
-            Vector3 Movement = new Vector3(HorizontalAxis, 0.0f, 0.0f);
-            Controller.transform.position += Movement * Time.deltaTime * Controller.MoveSpeed;
+            ((PlayerController)Controller).transform.position += ((PlayerController)Controller).GetMovement();
         }
     }
 
@@ -33,7 +32,7 @@ public class WalkingState : CState
      */
     public override void OnExitState()
     {
-        Controller.Animator.SetFloat("Speed", -1.0f);
+        ((PlayerController)Controller).Animator.SetFloat("Speed", -1.0f);
     }
 
     /**

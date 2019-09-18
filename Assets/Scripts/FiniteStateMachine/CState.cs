@@ -1,12 +1,12 @@
 ﻿abstract public class CState
 {
-    protected PlayerController Controller; //!< Controller of the parent.
+    protected BaseController Controller; //!< Controller of the parent.
 
     /**
      * Inits the state.
      * @param PlayerController: controller to be used in the state.
      */
-    virtual public void Init(PlayerController aParent)
+    virtual public void Init(BaseController aParent)
     {
         Controller = aParent;
     }
