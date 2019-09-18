@@ -1,12 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class WalkingState : IState
 {
-    private PlayerController Parent;
-    
+    private PlayerController Parent; //!< Controller of the parent.
 
+    /**
+     * Inits the state.
+     * @param PlayerController: controller to be used in the state.
+     */
     public void Init(PlayerController aParent)
     {
         Parent = aParent;
@@ -17,7 +18,7 @@ public class WalkingState : IState
      */
     public void OnEnterState()
     {
-        Debug.Log("Entering Walking state");
+        Parent.Animator.SetFloat("Speed", 1.0f);
     }
 
     /**
@@ -26,10 +27,9 @@ public class WalkingState : IState
     public void UpdateState()
     {
         float HorizontalAxis = Input.GetAxis("Horizontal");
-        Parent.Animator.SetFloat("Speed", Mathf.Abs(HorizontalAxis));
         if (HorizontalAxis == 0.0f)
         {
-            Parent.MyFSM.ChangeState(Parent.GetState("Idle"));
+            Parent.GetFSM().ChangeState(Parent.GetState("Idle"));
         }
         else
         {
@@ -44,8 +44,13 @@ public class WalkingState : IState
      */
     public void OnExitState()
     {
+        Parent.Animator.SetFloat("Speed", -1.0f);
     }
 
+    /**
+     * Flips the direction of the player.
+     * @param aHorizontalAxis: > 0 if right, < 0 if left.
+     */
     void Flip(float aHorizontalAxis)
     {
         Vector3 ParentScale = Parent.transform.localScale;
