@@ -32,6 +32,9 @@ public class FSM : MonoBehaviour
     {
         if (StatesStack != null)
         {
+            CurrentState = aState;
+            CurrentState.OnEnterState();
+
             IsChangingState = true;
 
             if (CurrentState != null)
@@ -44,9 +47,10 @@ public class FSM : MonoBehaviour
                 StatesStack.Remove(CurrentState);
             }
 
-            StatesStack.Add(aState);
-            CurrentState = StatesStack[StatesStack.Count - 1];
-            CurrentState.OnEnterState();
+            if (!StatesStack.Contains(aState))
+            {
+                StatesStack.Add(aState);
+            }
 
             IsChangingState = false;
         }

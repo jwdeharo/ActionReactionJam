@@ -15,7 +15,7 @@ public class IdleState : IState
      */
     public void OnEnterState()
     {
-        Debug.Log("Entering Idle state");
+        Debug.Log("Idle");
     }
 
     /**
@@ -25,8 +25,7 @@ public class IdleState : IState
     {
         if (Input.GetAxis("Horizontal") != 0.0f)
         {
-            WalkingState WalkState = new WalkingState();
-            Parent.MyFSM.ChangeState(WalkState, true);
+            Parent.MyFSM.ChangeState(Parent.GetState("Walk"), true);
         }
     }
 
@@ -35,6 +34,5 @@ public class IdleState : IState
      */
     public void OnExitState()
     {
-        Debug.Log("Exiting Idle state");
     }
 }

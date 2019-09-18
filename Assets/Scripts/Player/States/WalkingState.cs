@@ -5,6 +5,7 @@ using UnityEngine;
 public class WalkingState : IState
 {
     private PlayerController Parent;
+    
 
     public void Init(PlayerController aParent)
     {
@@ -24,11 +25,17 @@ public class WalkingState : IState
      */
     public void UpdateState()
     {
-        Debug.Log("Updating Walking state");
-
-        if (Input.GetAxis("Horizontal") == 0.0f)
+        float HorizontalAxis = Input.GetAxis("Horizontal");
+        Parent.Animator.SetFloat("Speed", Mathf.Abs(HorizontalAxis));
+        if (HorizontalAxis == 0.0f)
         {
-            Debug.Log("ChangingState");
+            Parent.MyFSM.ChangeState(Parent.GetState("Idle"));
+        }
+        else
+        {
+            Flip(HorizontalAxis);
+            Vector3 Movement = new Vector3(HorizontalAxis, 0.0f, 0.0f);
+            Parent.transform.position += Movement * Time.deltaTime * Parent.MoveSpeed;
         }
     }
 
@@ -37,6 +44,16 @@ public class WalkingState : IState
      */
     public void OnExitState()
     {
-        Debug.Log("Exiting Walking state");
+    }
+
+    void Flip(float aHorizontalAxis)
+    {
+        Vector3 ParentScale = Parent.transform.localScale;
+        ParentScale.x = aHorizontalAxis > 0 ? 1.0f : -1.0f;
+
+        if (ParentScale.x != Parent.transform.localScale.x)
+        {
+            Parent.transform.localScale = ParentScale;
+        }
     }
 }
