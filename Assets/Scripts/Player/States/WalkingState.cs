@@ -18,7 +18,7 @@ public class WalkingState : CState
         float HorizontalAxis = Input.GetAxis("Horizontal");
         if (HorizontalAxis == 0.0f)
         {
-            Controller.GetFSM().ChangeState(Controller.GetState("Idle"));
+            Controller.GetFSM().PopState();
         }
         else
         {

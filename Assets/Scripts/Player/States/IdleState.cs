@@ -10,7 +10,7 @@ public class IdleState : CState
     {
         if (Input.GetAxis("Horizontal") != 0.0f)
         {
-            Controller.GetFSM().ChangeState(Controller.GetState("Walk"), true);
+            Controller.GetFSM().ChangeState(Controller.GetState("Walk"));
         }
     }
 }

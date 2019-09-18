@@ -33,31 +33,48 @@ public class FSM : MonoBehaviour
      * @param aState: new state that will be added to the stack.
      * @param aPushStack: true if it has to be pushed, false if it has to replace the state at the top.
      */
-    public void ChangeState(CState aState, bool aPushStack = false)
+    public void ChangeState(CState aState)
     {
-        if (StatesStack != null)
+        IsChangingState = true;
+
+        if (StatesStack != null && CurrentState != aState)
         {
-            if (CurrentState != null)
-            {
-                CurrentState.OnExitState();
-            }
+            ExitState();
 
             CurrentState = aState;
             CurrentState.OnEnterState();
-
-            IsChangingState = true;
-
-            if (!aPushStack && StatesStack.Contains(CurrentState))
-            {
-                StatesStack.Remove(CurrentState);
-            }
 
             if (!StatesStack.Contains(aState))
             {
                 StatesStack.Add(aState);
             }
+        }
 
-            IsChangingState = false;
+        IsChangingState = false;
+    }
+
+    public void PopState()
+    {
+        IsChangingState = true;
+
+        ExitState();
+
+        if (StatesStack.Contains(CurrentState))
+        {
+            StatesStack.Remove(CurrentState);
+        }
+
+        CurrentState = StatesStack[StatesStack.Count - 1];
+        CurrentState.OnEnterState();
+
+        IsChangingState = false;
+    }
+
+    private void ExitState()
+    {
+        if (CurrentState != null)
+        {
+            CurrentState.OnExitState();
         }
     }
 }

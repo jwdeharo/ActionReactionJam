@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         PlayerStates.Add("Walk", WalkState);
         MyFSM = GetComponent<FSM>();
         MyFSM.StartFSM();
-        MyFSM.ChangeState(IdleState, true);
+        MyFSM.ChangeState(IdleState);
     }
 
     /**
