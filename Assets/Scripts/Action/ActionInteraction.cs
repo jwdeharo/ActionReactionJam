@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ActionInteraction : MonoBehaviour
 {
@@ -12,7 +10,6 @@ public class ActionInteraction : MonoBehaviour
 
     private bool canInteract, isFire;
     
-   
     private void Update()
     {
         
