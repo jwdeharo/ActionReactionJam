@@ -8,27 +8,20 @@ public class ActionInteraction : MonoBehaviour
     public AudioClip[] actionSnd;
     public AudioSource audioS;
     public GameObject[] choices;
-    public float speed;
+    public DeployChoices deployChoicesScript;
 
-    private Vector2 initialPosition;
     private bool canInteract, isFire;
-    private float step;
-    private Vector2 newPosition;
-
-    private void Awake()
-    {
-        initialPosition = new Vector2(0, 0.75f);
-    }
-
+    
+   
     private void Update()
     {
-        step= speed * Time.deltaTime;
+        
         if (Input.GetAxisRaw("Fire1") != 0 && canInteract)
         {
             if (!isFire)
             {
                 isFire = true;
-                ShowChoices();
+                deployChoicesScript.ShowChoices(choices);
                 VanishAnimation();
             }
         }
@@ -37,8 +30,6 @@ public class ActionInteraction : MonoBehaviour
             isFire = false;
         }
     }
-
-
 
     /*
      * When player hits interactable object animation pops up 
@@ -65,7 +56,7 @@ public class ActionInteraction : MonoBehaviour
         {
             canInteract = false;
             VanishAnimation();
-            DeactivateChoices();
+            deployChoicesScript.DeactivateChoices(choices);
         }
     }
 
@@ -74,48 +65,5 @@ public class ActionInteraction : MonoBehaviour
         anim.SetBool("canContinue", true);
     }
 
-    private void ShowChoices()
-    {
-        newPosition = new Vector2(initialPosition.x + 0.5f, initialPosition.y);
-
-        for (int i = 0; i < choices.Length; i++)
-        {
-            choices[i].SetActive(true);
-            if (i != 0)
-            {
-                if (i % 2 == 0)
-                    StartCoroutine(SpreadChoicesRight(i));
-                else
-                    StartCoroutine(SpreadChoicesLeft(i));
-            }
-        }
-    }
-
-    private void DeactivateChoices()
-    {
-        for(int i = 0; i < choices.Length; i++)
-        {
-            choices[i].SetActive(false);
-        }
-    }
-
-    IEnumerator SpreadChoicesRight(int index)
-    {
-        while (choices[index].transform.localPosition.x < newPosition.x) {
-            choices[index].transform.localPosition  = new Vector2(choices[index].transform.localPosition.x + step, choices[index].transform.localPosition.y);
-            
-            yield return null;
-        }
-        choices[index].transform.localPosition = newPosition;
-    }
-
-    IEnumerator SpreadChoicesLeft(int index)
-    {
-        while (choices[index].transform.localPosition.x > -newPosition.x){
-            choices[index].transform.localPosition = new Vector2(choices[index].transform.localPosition.x - step, choices[index].transform.localPosition.y);
-           
-            yield return null;
-        }
-        choices[index].transform.localPosition = new Vector2(-newPosition.x, choices[index].transform.localPosition.y);
-    }
+   
 }
