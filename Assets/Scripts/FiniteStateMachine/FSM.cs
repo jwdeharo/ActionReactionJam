@@ -6,6 +6,8 @@ public class FSM : MonoBehaviour
     private List<CState> StatesStack;   //!< Stack of states. The current state is always the one in the top.
     private CState CurrentState;        //!< The current state of the FSM. The one that is going to be updated.
     private bool IsChangingState;       //!< Indicates if the fsm is changing state or not.
+    [SerializeField]
+    private bool IsActive = true;
 
     /**
      * Starts the FSM with all the needed Data.
@@ -22,7 +24,7 @@ public class FSM : MonoBehaviour
      */
     void FixedUpdate()
     {
-        if (!IsChangingState && CurrentState != null)
+        if (IsActive && !IsChangingState && CurrentState != null)
         {
             CurrentState.UpdateState();
         }
@@ -35,46 +37,57 @@ public class FSM : MonoBehaviour
      */
     public void ChangeState(CState aState)
     {
-        IsChangingState = true;
-
-        if (StatesStack != null && CurrentState != aState)
+        if (IsActive)
         {
-            ExitState();
+            IsChangingState = true;
 
-            CurrentState = aState;
-            CurrentState.OnEnterState();
-
-            if (!StatesStack.Contains(aState))
+            if (StatesStack != null && CurrentState != aState)
             {
-                StatesStack.Add(aState);
-            }
-        }
+                ExitState();
 
-        IsChangingState = false;
+                CurrentState = aState;
+                CurrentState.OnEnterState();
+
+                if (!StatesStack.Contains(aState))
+                {
+                    StatesStack.Add(aState);
+                }
+            }
+
+            IsChangingState = false;
+        }
     }
 
     public void PopState()
     {
-        IsChangingState = true;
-
-        ExitState();
-
-        if (StatesStack.Contains(CurrentState))
+        if (IsActive)
         {
-            StatesStack.Remove(CurrentState);
+            IsChangingState = true;
+
+            ExitState();
+
+            if (StatesStack.Contains(CurrentState))
+            {
+                StatesStack.Remove(CurrentState);
+            }
+
+            CurrentState = StatesStack[StatesStack.Count - 1];
+            CurrentState.OnEnterState();
+
+            IsChangingState = false;
         }
-
-        CurrentState = StatesStack[StatesStack.Count - 1];
-        CurrentState.OnEnterState();
-
-        IsChangingState = false;
     }
 
     private void ExitState()
     {
-        if (CurrentState != null)
+        if (IsActive && CurrentState != null)
         {
             CurrentState.OnExitState();
         }
+    }
+
+    public void SetActive(bool aIsActive)
+    {
+        IsActive = aIsActive;
     }
 }
