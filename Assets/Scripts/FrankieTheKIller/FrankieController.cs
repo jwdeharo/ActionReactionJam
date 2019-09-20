@@ -1,0 +1,24 @@
+﻿using UnityEngine;
+
+public class FrankieController : MonoBehaviour
+{
+
+    [SerializeField]
+    private GameObject ViewFinder;
+
+    private void OnTriggerEnter2D(Collider2D aCollision)
+    {
+        if (aCollision.tag == "Player")
+        {
+            ViewFinder.SendMessage("StartChasing");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D aCollision)
+    {
+        if (aCollision.tag == "Player")
+        {
+            ViewFinder.SendMessage("StopChasing");
+        }
+    }
+}
