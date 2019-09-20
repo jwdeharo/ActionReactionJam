@@ -6,7 +6,6 @@ public class PlayerController : BaseController
     public float MovingSpeedFactor = 1.0f;
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
     public Animator Animator;                       //!< Animator which handles the animations.
-    public bool ToOne = false;
 
     /**
      * Start is called before the first frame update
