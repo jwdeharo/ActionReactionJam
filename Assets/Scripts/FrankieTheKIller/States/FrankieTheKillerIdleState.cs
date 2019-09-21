@@ -2,12 +2,22 @@
 
 public class FrankieTheKillerIdleState : CState
 {
-    private ViewFinderController MyFrankieController;
+    private ViewFinderController    MyFrankieController;
+    private PlayerController GamePlayerController;
+    private float Timer;
+
+    private float MaxTime = 3.0f;
 
     public override void Init(BaseController aParent)
     {
         base.Init(aParent);
         MyFrankieController = (ViewFinderController)Controller;
+        GamePlayerController = MyFrankieController.GetTarget().GetComponentInParent<PlayerController>();
+    }
+
+    public override void OnEnterState()
+    {
+        Timer = 0.0f;
     }
 
     /**
@@ -15,6 +25,15 @@ public class FrankieTheKillerIdleState : CState
      */
     public override void UpdateState()
     {
-        MyFrankieController.CircleMovement();
+        Timer += Time.deltaTime;
+
+        if (GamePlayerController != null && !GamePlayerController.IsHiding() && Timer >= MaxTime)
+        {
+            Controller.GetFSM().ChangeState(Controller.GetState("Chase"));
+        }
+        else
+        {
+            MyFrankieController.CircleMovement();
+        }
     }
 }

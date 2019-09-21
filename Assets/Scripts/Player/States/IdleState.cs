@@ -7,9 +7,16 @@ public class IdleState : CState
      */
     public override void UpdateState()
     {
-        if (Input.GetAxisRaw("Horizontal") != 0.0f)
+        if (((PlayerController)Controller).IsDead())
         {
-            Controller.GetFSM().ChangeState(Controller.GetState("Walk"));
+            Controller.GetFSM().ChangeState(Controller.GetState("Death"));
+        }
+        else
+        {
+            if (Input.GetAxisRaw("Horizontal") != 0.0f)
+            {
+                Controller.GetFSM().ChangeState(Controller.GetState("Walk"));
+            }
         }
     }
 }

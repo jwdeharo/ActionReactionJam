@@ -4,7 +4,7 @@ using UnityEngine;
 public class ViewFinderController : BaseController
 {
     private bool            FirstTimeTrigger;
-    private float Angle = 0.0f;
+    private float           Angle = 0.0f;
 
     private SpriteRenderer  MySpriteRenderer;
     private BoxCollider2D   MyCollider;
@@ -15,15 +15,21 @@ public class ViewFinderController : BaseController
     private float AngularSpeed = 1.0f;
     [SerializeField]
     private float RotationRadius = 1.0f;
+    [SerializeField]
+    private float ChaseSpeed = 0.1f;
 
     // Start is called before the first frame update
     void Start()
     {
         FrankieTheKillerIdleState IdleState = new FrankieTheKillerIdleState();
+        FrankieTheKillerChaseState ChaseState = new FrankieTheKillerChaseState();
+
         IdleState.Init(this);
+        ChaseState.Init(this);
 
         States = new Dictionary<string, CState>();
         States.Add("Idle", IdleState);
+        States.Add("Chase", ChaseState);
 
         MyFSM = GetComponent<FSM>();
         MyFSM.StartFSM();
@@ -60,7 +66,7 @@ public class ViewFinderController : BaseController
     {
         if (aCollision.gameObject == Target)
         {
-            Target.SendMessage("ChangeToDeath");
+            Target.transform.parent.SendMessage("ChangeToDeath");
         }
     }
 
@@ -80,5 +86,15 @@ public class ViewFinderController : BaseController
         {
             Angle = 0.0f;
         }
+    }
+
+    public GameObject GetTarget()
+    {
+        return Target;
+    }
+
+    public float GetChasingSpeed()
+    {
+        return ChaseSpeed;
     }
 }
