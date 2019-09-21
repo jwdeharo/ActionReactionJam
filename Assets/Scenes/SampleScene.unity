@@ -3123,6 +3123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27de07fa69cd6dd478353b86a94c2d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyPlayer: {fileID: 1436684875}
   bigPhone: {fileID: 2070696048}
   audioS: {fileID: 75587044}
   clip: {fileID: 8300000, guid: 9c75c5d13d3a10343a2f26f723b76896, type: 3}
@@ -3710,6 +3711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04852d2c10b3f24a8dc775923f5dd16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyPlayer: {fileID: 1436684875}
   phoneBig: {fileID: 2070696048}
   phoneSmall: {fileID: 1436107580}
   audioS: {fileID: 75587044}

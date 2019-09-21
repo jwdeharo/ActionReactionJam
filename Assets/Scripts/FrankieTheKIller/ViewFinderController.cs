@@ -68,7 +68,10 @@ public class ViewFinderController : BaseController
     {
         if (aCollision.gameObject == Target)
         {
-            Target.SendMessage("ChangeToDeath");
+            if (!Target.GetComponent<PlayerController>().IsHiding())
+            {
+                Target.SendMessage("ChangeToDeath");
+            }
         }
     }
 
