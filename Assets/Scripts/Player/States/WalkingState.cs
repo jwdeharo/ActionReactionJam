@@ -38,8 +38,8 @@ public class WalkingState : CState
             }
             else
             {
-                Flip(HorizontalAxis);
                 ((PlayerController)Controller).transform.position += ((PlayerController)Controller).GetMovement();
+                Flip(HorizontalAxis);
             }
         }
     }
@@ -58,11 +58,24 @@ public class WalkingState : CState
      */
     void Flip(float aHorizontalAxis)
     {
+
         Vector3 ParentScale = Controller.transform.localScale;
-        ParentScale.x = aHorizontalAxis > 0 ? 1.0f : -1.0f;
+
+        if (aHorizontalAxis > 0.0f)
+        {
+            ParentScale.x = Mathf.Abs(ParentScale.x);
+        }
+        else
+        {
+            if (ParentScale.x > 0.0f)
+            {
+                ParentScale.x *= -1.0f;
+            }
+        }
 
         if (ParentScale.x != Controller.transform.localScale.x)
         {
+            Debug.Log(ParentScale.x);
             Controller.transform.localScale = ParentScale;
         }
     }
