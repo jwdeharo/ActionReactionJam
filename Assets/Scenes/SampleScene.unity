@@ -1649,6 +1649,21 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1091711816411896246, guid: e450611d198092b41a2c2b2e1e2dc8d7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091711816411896246, guid: e450611d198092b41a2c2b2e1e2dc8d7,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0008711368
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091711816411896246, guid: e450611d198092b41a2c2b2e1e2dc8d7,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.31825772
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e450611d198092b41a2c2b2e1e2dc8d7, type: 3}
 --- !u!1 &1057264563
