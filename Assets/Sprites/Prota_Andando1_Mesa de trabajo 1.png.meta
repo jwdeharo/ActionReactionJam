@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: -5576513440305542866
     second: Prota_Andando1_Mesa de trabajo 1_6
+  - first:
+      213: -4913647881144022620
+    second: Prota_Andando1_Mesa de trabajo 1_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,7 +99,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,16 +127,16 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 844
+        width: 843
         height: 1248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3264779b785e0954fa155c0330041a79
+      spriteID: 8dd5d2f0241a01640afdba6887b9a747
       internalID: -1207694703241917372
       vertices: []
       indices: 
@@ -131,18 +146,18 @@ TextureImporter:
       name: Prota_Andando1_Mesa de trabajo 1_1
       rect:
         serializedVersion: 2
-        x: 844
+        x: 843
         y: 0
-        width: 844
+        width: 843
         height: 1248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ac027a285998cb4aa3e86e011abfcda
+      spriteID: 70ce5283cc0454748b005d7761748c19
       internalID: -2438018554233519963
       vertices: []
       indices: 
@@ -152,18 +167,18 @@ TextureImporter:
       name: Prota_Andando1_Mesa de trabajo 1_2
       rect:
         serializedVersion: 2
-        x: 1688
+        x: 1686
         y: 0
-        width: 844
+        width: 843
         height: 1248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87c1c9a3603f44b4fbd470fd7b4964e4
+      spriteID: 8cbdea4d3143ae54a95286f933e05cff
       internalID: 6038125601041888518
       vertices: []
       indices: 
@@ -173,18 +188,18 @@ TextureImporter:
       name: Prota_Andando1_Mesa de trabajo 1_3
       rect:
         serializedVersion: 2
-        x: 2532
+        x: 2529
         y: 0
-        width: 844
+        width: 843
         height: 1248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba777a39dd15a1843a828a01d6b5e533
+      spriteID: fc5b505b08b9800438b7dc1e50cf4b78
       internalID: -1181605849002237050
       vertices: []
       indices: 
@@ -194,18 +209,18 @@ TextureImporter:
       name: Prota_Andando1_Mesa de trabajo 1_4
       rect:
         serializedVersion: 2
-        x: 3376
+        x: 3372
         y: 0
-        width: 844
+        width: 843
         height: 1248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41b8409c0daa73b4491fe61e6e5a30db
+      spriteID: d065eef59701d4a4f9dd72593849bed3
       internalID: 2157535887805371007
       vertices: []
       indices: 
@@ -215,18 +230,18 @@ TextureImporter:
       name: Prota_Andando1_Mesa de trabajo 1_5
       rect:
         serializedVersion: 2
-        x: 4220
+        x: 4215
         y: 0
-        width: 844
+        width: 843
         height: 1248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 069bb4c304437264883972fe0aa2d2b8
+      spriteID: 84b7a729ba84b4546a8b324132750bd1
       internalID: 2006639937592053004
       vertices: []
       indices: 
@@ -236,19 +251,40 @@ TextureImporter:
       name: Prota_Andando1_Mesa de trabajo 1_6
       rect:
         serializedVersion: 2
-        x: 5064
+        x: 5058
         y: 0
-        width: 844
+        width: 843
         height: 1248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff1eccbfa7dc46142b53294b13bb6db3
+      spriteID: 510c94fe5bced17498df907ad7b68a34
       internalID: -5576513440305542866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Andando1_Mesa de trabajo 1_7
+      rect:
+        serializedVersion: 2
+        x: 5901
+        y: 0
+        width: 843
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4226abb43bbca444fbc8ae313da38691
+      internalID: -4913647881144022620
       vertices: []
       indices: 
       edges: []
