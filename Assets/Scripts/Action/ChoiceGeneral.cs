@@ -4,8 +4,24 @@ using UnityEngine;
 
 public abstract class ChoiceGeneral : MonoBehaviour
 {
-    string[] AxisName = { "Fire1", "Fire2", "Fire3"};
+    public string axisName;
+    private bool isFire;
+    private void Update()
+    {
+        if (Input.GetAxisRaw(axisName) != 0 && GetComponent<SpriteRenderer>().color.a == 1)
+        {
+            if (!isFire)
+            {
+                isFire = true;
+                PerformAction();
+            }
+        }
+        else
+        {
+            isFire = false;
+        }
+    }
 
-
+    protected abstract void PerformAction();
 
 }
