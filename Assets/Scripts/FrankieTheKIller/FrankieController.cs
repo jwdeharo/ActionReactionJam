@@ -35,6 +35,8 @@ public class FrankieController : MonoBehaviour
                     MyPlayerController.Animator.SetBool("TurningBox", false);
                     MyPlayerController.Animator.SetBool("AlreadyTurned", false);
                     MyPlayerController.Animator.SetFloat("SpeedBox", -1.0f);
+                    MyPlayerController.SetBoxToPlayer(true);
+
                     Active = false;
                 }
             }

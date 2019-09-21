@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 6f9f41ac4e869984fb72aba437db6842
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8105908137931457495
+    second: Prota_Caja_0
+  - first:
+      213: 422404051202777515
+    second: Prota_Caja_1
+  - first:
+      213: 5754609638342993335
+    second: Prota_Caja_2
+  - first:
+      213: 759524269432000038
+    second: Prota_Caja_3
+  - first:
+      213: 6830933697086451586
+    second: Prota_Caja_4
+  - first:
+      213: -7783727608904593673
+    second: Prota_Caja_5
+  - first:
+      213: -279695618100912784
+    second: Prota_Caja_6
+  - first:
+      213: -2267897861523442805
+    second: Prota_Caja_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +94,189 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Prota_Caja_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 843
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1452c0267743c645a9e9547bb870823
+      internalID: -8105908137931457495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Caja_1
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 0
+        width: 843
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54ed5b4a2964cd489dbd6fbca9dd457
+      internalID: 422404051202777515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Caja_2
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 0
+        width: 843
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574e660ae7c2bae43b6e39d9491b2f11
+      internalID: 5754609638342993335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Caja_3
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 0
+        width: 843
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea8d25d8815a904d849a1a7753fcd3b
+      internalID: 759524269432000038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Caja_4
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 0
+        width: 843
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd1b3754d8e75e43a4594ca63ce6b4a
+      internalID: 6830933697086451586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Caja_5
+      rect:
+        serializedVersion: 2
+        x: 4216
+        y: 0
+        width: 843
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cc9baf7ffee6f46a386a7c6f2383da
+      internalID: -7783727608904593673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Caja_6
+      rect:
+        serializedVersion: 2
+        x: 5059
+        y: 0
+        width: 843
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97036eaa043ee349867e875a37054e9
+      internalID: -279695618100912784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Caja_7
+      rect:
+        serializedVersion: 2
+        x: 5902
+        y: 0
+        width: 843
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e7ffe3a7b7bd24885240c294c546ce
+      internalID: -2267897861523442805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
