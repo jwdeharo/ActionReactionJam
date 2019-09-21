@@ -15,6 +15,7 @@ public class PlayerController : BaseController
     [SerializeField]
     private bool Hide;
     private bool Wait;
+    private float OriginalScale;
 
     private bool Dead = false;
 
@@ -69,13 +70,13 @@ public class PlayerController : BaseController
      *  @param aCollision: collision detected.
      *  @return bool if the object is of type T.
      */
-    public bool IsTypeObject<T>(Collision2D aCollision)
+    public bool IsTypeObject<T>(GameObject aGameObject)
     {
         bool ReturnValue = false;
 
-        if (aCollision.gameObject != null)
+        if (aGameObject != null)
         {
-            T TypeObject = aCollision.gameObject.GetComponent<T>();
+            T TypeObject = aGameObject.GetComponent<T>();
 
             if (TypeObject != null)
             {
@@ -86,16 +87,25 @@ public class PlayerController : BaseController
         return ReturnValue;
     }
 
+    private void OnCollisionEnter2D(Collision2D aCollision)
+    {
+        if (IsTypeObject<MovableObjectsController>(aCollision.gameObject))
+        {
+            OriginalScale = transform.localScale.x;
+        }
+    }
+
     /**
      * Event called when the object enters a 2d collision.
      * @param aCollision: collision detected.
      */
-    private void OnCollisionEnter2D(Collision2D aCollision)
+
+    private void OnCollisionStay2D(Collision2D aCollision)
     {
-        if (IsTypeObject<MovableObjectsController>(aCollision) && GetMovement().x != 0.0f)
+        if (IsTypeObject<MovableObjectsController>(aCollision.gameObject) && GetMovement().x != 0.0f)
         {
-            MovingSpeedFactor = 0.1f;
-            aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
+            MovingSpeedFactor = transform.localScale.x != OriginalScale ? 1.0f : 0.1f;
+            aCollision.gameObject.SendMessage("ApplyMovement", transform.localScale.x != OriginalScale ? Vector3.zero : GetMovement());
         }
     }
 
@@ -105,9 +115,9 @@ public class PlayerController : BaseController
      */
     private void OnCollisionExit2D(Collision2D aCollision)
     {
-        if (IsTypeObject<MovableObjectsController>(aCollision))
+        if (IsTypeObject<MovableObjectsController>(aCollision.gameObject))
         {
-            aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
+            aCollision.gameObject.SendMessage("ApplyMovement", Vector3.zero);
             MovingSpeedFactor = 1.0f;
         }
     }

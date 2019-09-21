@@ -14,9 +14,13 @@ public class FrankieTheKillerChaseState : CState
 
     public override void UpdateState()
     {
-        if (GamePlayerController != null && GamePlayerController.IsHiding())
+        if (GamePlayerController != null && (GamePlayerController.IsHiding() || GamePlayerController.IsDead()))
         {
             Controller.GetFSM().PopState();
+            if (GamePlayerController.IsDead())
+            {
+                MyFrankieController.PlayShot();
+            }
         }
         else
         {

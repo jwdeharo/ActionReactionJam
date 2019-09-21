@@ -56,8 +56,6 @@ public class FSM : MonoBehaviour
 
             IsChangingState = false;
         }
-
-        Debug.Log(StatesStack.Count);
     }
 
     public void PopState()

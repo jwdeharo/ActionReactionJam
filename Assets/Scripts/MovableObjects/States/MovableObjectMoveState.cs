@@ -1,4 +1,6 @@
-﻿public class MovableObjectsMoveState : CState
+﻿using UnityEngine;
+
+public class MovableObjectsMoveState : CState
 {
     /**
      * Function that is called while the state is the current.
