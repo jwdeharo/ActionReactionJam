@@ -3,16 +3,16 @@
 public class CameraController : MonoBehaviour
 {
     [SerializeField]
-    private GameObject Target; //!< This is the target that the camera will follow.
+    private GameObject Target = null; //!< This is the target that the camera will follow.
 
     [SerializeField]
-    private float MaxX;         //!< Max X for the camera to reach.
+    private float MaxX = 0.0f;         //!< Max X for the camera to reach.
     [SerializeField]
-    private float MaxY;         //!< Max Y for the camera to reach.
+    private float MaxY = 0.0f;         //!< Max Y for the camera to reach.
     [SerializeField]
-    private float MinX;         //!< Min X for the camera to reach.
+    private float MinX = 0.0f;         //!< Min X for the camera to reach.
     [SerializeField]
-    private float MinY;         //!< Min Y for the camera to reach.
+    private float MinY = 0.0f;         //!< Min Y for the camera to reach.
 
     /**
      * Update is called once per frame
