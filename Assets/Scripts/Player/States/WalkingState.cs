@@ -15,15 +15,32 @@ public class WalkingState : CState
      */
     public override void UpdateState()
     {
-        float HorizontalAxis = Input.GetAxisRaw("Horizontal");
-        if (HorizontalAxis == 0.0f)
+        if (((PlayerController)Controller).IsDead())
+        {
+            Controller.GetFSM().ChangeState(Controller.GetState("Death"));
+        }
+        else if (((PlayerController)Controller).IsWaiting())
         {
             Controller.GetFSM().PopState();
+            Controller.GetFSM().ChangeState(Controller.GetState("Wait"));
+        }
+        else if (((PlayerController)Controller).IsHiding() && !((PlayerController)Controller).IsChangedSprite())
+        {
+            Controller.GetFSM().ChangeState(Controller.GetState("Hide"));
         }
         else
         {
-            Flip(HorizontalAxis);
-            ((PlayerController)Controller).transform.position += ((PlayerController)Controller).GetMovement();
+            float HorizontalAxis = Input.GetAxisRaw("Horizontal");
+
+            if (HorizontalAxis == 0.0f)
+            {
+                Controller.GetFSM().PopState();
+            }
+            else
+            {
+                Flip(HorizontalAxis);
+                ((PlayerController)Controller).transform.position += ((PlayerController)Controller).GetMovement();
+            }
         }
     }
 
