@@ -7,12 +7,14 @@ public class PlayerController : BaseController
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
     public Animator Animator;                       //!< Animator which handles the animations.
     private Sprite OriginalSprite;
+    private Transform ToHideTransform;
 
     [SerializeField]
     private GameObject HidingSprite = null;
 
     [SerializeField]
     private bool Hide;
+    private bool Wait;
 
     private bool Dead = false;
 
@@ -24,21 +26,30 @@ public class PlayerController : BaseController
         IdleState MyIdleState = new IdleState();
         WalkingState WalkState = new WalkingState();
         DeathState MyDeathState = new DeathState();
+        HidingState HideState = new HidingState();
+        WaitingState MyWaitState = new WaitingState();
 
         MyIdleState.Init(this);
         WalkState.Init(this);
         MyDeathState.Init(this);
+        HideState.Init(this);
+        MyWaitState.Init(this);
+
 
         States = new Dictionary<string, CState>();
 
         States.Add("Idle", MyIdleState);
         States.Add("Walk", WalkState);
         States.Add("Death", MyDeathState);
+        States.Add("Hide", HideState);
+        States.Add("Wait", MyWaitState);
 
         MyFSM = GetComponent<FSM>();
         MyFSM.StartFSM();
         MyFSM.ChangeState(MyIdleState);
+
         Hide = false;
+        Wait = false;
 
         OriginalSprite = GetComponent<SpriteRenderer>().sprite;
     }
@@ -106,6 +117,11 @@ public class PlayerController : BaseController
         return Hide;
     }
 
+    public bool IsChangedSprite()
+    {
+        return GetComponent<SpriteRenderer>().sprite != OriginalSprite;
+    }
+
     private void ChangeToDeath()
     {
         Dead = true;
@@ -116,18 +132,31 @@ public class PlayerController : BaseController
         return Dead;
     }
 
-    public void TimeToHide(bool aCanHide)
+    public bool IsWaiting()
     {
-        Hide = aCanHide;
-        GetComponent<Animator>().enabled = !aCanHide;
-        GetComponent<SpriteRenderer>().sprite = aCanHide ? HidingSprite.GetComponent<SpriteRenderer>().sprite : OriginalSprite;
+        return Wait;
     }
 
-    private void OnTriggerEnter2D(Collider2D aCollision)
+    public void TimeToHide(GameObject aGameObject)
     {
-        if (aCollision.gameObject.name == "LimitPermisive")
-        {
-            Debug.Log("Limit crossed. you are fucked");
-        }
+        Hide = true;
+        ToHideTransform = aGameObject.transform;
+    }
+
+    public Transform GetToHideTransform()
+    {
+        return ToHideTransform;
+    }
+
+    public void ChangeSprite(bool aToOriginal)
+    {
+        Animator.enabled = aToOriginal;
+        GetComponent<SpriteRenderer>().sprite = aToOriginal ? OriginalSprite : HidingSprite.GetComponent<SpriteRenderer>().sprite;
+        HidingSprite.SetActive(aToOriginal);
+    }
+
+    public void ToWait(bool aToWait)
+    {
+        Wait = aToWait;
     }
 }

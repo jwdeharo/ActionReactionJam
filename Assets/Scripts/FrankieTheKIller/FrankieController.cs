@@ -10,6 +10,7 @@ public class FrankieController : MonoBehaviour
     {
         if (aCollision.tag == "Player")
         {
+            aCollision.gameObject.SendMessage("ToWait", true);
             ViewFinder.SendMessage("StartChasing");
         }
     }

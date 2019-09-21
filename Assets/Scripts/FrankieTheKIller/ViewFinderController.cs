@@ -97,4 +97,9 @@ public class ViewFinderController : BaseController
     {
         return ChaseSpeed;
     }
+
+    public void SetChaseSpeed(float aChaseSpeed)
+    {
+        ChaseSpeed = aChaseSpeed;
+    }
 }

@@ -13,7 +13,15 @@ public class IdleState : CState
         }
         else
         {
-            if (Input.GetAxisRaw("Horizontal") != 0.0f)
+            if (((PlayerController)Controller).IsWaiting())
+            {
+                Controller.GetFSM().ChangeState(Controller.GetState("Wait"));
+            }
+            else if (((PlayerController)Controller).IsHiding() && !((PlayerController)Controller).IsChangedSprite())
+            {
+                Controller.GetFSM().ChangeState(Controller.GetState("Hide"));
+            }
+            else if (Input.GetAxisRaw("Horizontal") != 0.0f)
             {
                 Controller.GetFSM().ChangeState(Controller.GetState("Walk"));
             }

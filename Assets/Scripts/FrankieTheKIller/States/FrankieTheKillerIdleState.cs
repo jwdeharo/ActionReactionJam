@@ -6,7 +6,7 @@ public class FrankieTheKillerIdleState : CState
     private PlayerController GamePlayerController;
     private float Timer;
 
-    private float MaxTime = 3.0f;
+    private float MaxTime = 1.5f;
 
     public override void Init(BaseController aParent)
     {
@@ -29,6 +29,7 @@ public class FrankieTheKillerIdleState : CState
 
         if (GamePlayerController != null && !GamePlayerController.IsHiding() && Timer >= MaxTime)
         {
+            GamePlayerController.ToWait(false);
             Controller.GetFSM().ChangeState(Controller.GetState("Chase"));
         }
         else
