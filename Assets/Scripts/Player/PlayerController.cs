@@ -16,7 +16,7 @@ public class PlayerController : BaseController
     private bool Hide;
     private bool Wait;
     private float OriginalScale;
-
+    private bool BoxTransformation;
     private bool Dead = false;
 
     /**
@@ -51,6 +51,7 @@ public class PlayerController : BaseController
 
         Hide = false;
         Wait = false;
+        BoxTransformation = false;
 
         OriginalSprite = GetComponent<SpriteRenderer>().sprite;
     }
@@ -129,7 +130,7 @@ public class PlayerController : BaseController
 
     public bool IsChangedSprite()
     {
-        return GetComponent<SpriteRenderer>().sprite != OriginalSprite;
+        return BoxTransformation;
     }
 
     private void ChangeToDeath()
@@ -145,6 +146,11 @@ public class PlayerController : BaseController
     public bool IsWaiting()
     {
         return Wait;
+    }
+
+    public void SetBox(bool aBox)
+    {
+        BoxTransformation = aBox;
     }
 
     public void TimeToHide(GameObject aGameObject)
@@ -165,9 +171,7 @@ public class PlayerController : BaseController
 
     public void ChangeSprite(bool aToOriginal)
     {
-        Animator.enabled = aToOriginal;
-        GetComponent<SpriteRenderer>().sprite = aToOriginal ? OriginalSprite : HidingSprite.GetComponent<SpriteRenderer>().sprite;
-        HidingSprite.SetActive(aToOriginal);
+        Destroy(HidingSprite);
     }
 
     public void ToWait(bool aToWait)
