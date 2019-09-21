@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PhoneManager : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject MyPlayer = null;
+
     public GameObject bigPhone;
     public AudioSource audioS;
     public AudioClip clip;
@@ -16,6 +19,11 @@ public class PhoneManager : MonoBehaviour
         {
             if (!isFire)
             {
+                if (MyPlayer != null)
+                {
+                    MyPlayer.GetComponent<PlayerController>().SetWaiting(true);
+                }
+
                 isFire = true;
                 audioS.PlayOneShot(clip);
                 bigPhone.SetActive(true);
