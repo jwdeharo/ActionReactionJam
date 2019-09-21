@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: b6b57f9d373309a49a24b73d1e30e4f2
+guid: 75e1d79508bb2e24187fb5a17b962154
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1207694703241917372
-    second: Prota_Andando1_Mesa de trabajo 1_0
+      213: -5528438347867432038
+    second: Prota_Quieto_Mesa de trabajo 1_0
   - first:
-      213: -2438018554233519963
-    second: Prota_Andando1_Mesa de trabajo 1_1
+      213: -5606820742869473908
+    second: Prota_Quieto_Mesa de trabajo 1_1
   - first:
-      213: 6038125601041888518
-    second: Prota_Andando1_Mesa de trabajo 1_2
+      213: -7041222565921528847
+    second: Prota_Quieto_Mesa de trabajo 1_2
   - first:
-      213: -1181605849002237050
-    second: Prota_Andando1_Mesa de trabajo 1_3
+      213: -2200302043331857562
+    second: Prota_Quieto_Mesa de trabajo 1_3
   - first:
-      213: 2157535887805371007
-    second: Prota_Andando1_Mesa de trabajo 1_4
+      213: -3662186533251037821
+    second: Prota_Quieto_Mesa de trabajo 1_4
   - first:
-      213: 2006639937592053004
-    second: Prota_Andando1_Mesa de trabajo 1_5
+      213: 4310774409740210252
+    second: Prota_Quieto_Mesa de trabajo 1_5
   - first:
-      213: -5576513440305542866
-    second: Prota_Andando1_Mesa de trabajo 1_6
-  - first:
-      213: -4913647881144022620
-    second: Prota_Andando1_Mesa de trabajo 1_7
+      213: -3450723363340220043
+    second: Prota_Quieto_Mesa de trabajo 1_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -122,10 +119,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Prota_Andando1_Mesa de trabajo 1_0
+      name: Prota_Quieto_Mesa de trabajo 1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
         width: 843
         height: 1248
@@ -136,17 +133,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dd5d2f0241a01640afdba6887b9a747
-      internalID: -1207694703241917372
+      spriteID: 619ca474d91a0a84dafc33b0984a54c6
+      internalID: -5528438347867432038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Andando1_Mesa de trabajo 1_1
+      name: Prota_Quieto_Mesa de trabajo 1_1
       rect:
         serializedVersion: 2
-        x: 843
+        x: 844
         y: 0
         width: 843
         height: 1248
@@ -157,17 +154,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70ce5283cc0454748b005d7761748c19
-      internalID: -2438018554233519963
+      spriteID: b6fa14fc7aaefb848ae2d43937623e3a
+      internalID: -5606820742869473908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Andando1_Mesa de trabajo 1_2
+      name: Prota_Quieto_Mesa de trabajo 1_2
       rect:
         serializedVersion: 2
-        x: 1686
+        x: 1687
         y: 0
         width: 843
         height: 1248
@@ -178,17 +175,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cbdea4d3143ae54a95286f933e05cff
-      internalID: 6038125601041888518
+      spriteID: c75cd37fca05dd14ab47f9571695555e
+      internalID: -7041222565921528847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Andando1_Mesa de trabajo 1_3
+      name: Prota_Quieto_Mesa de trabajo 1_3
       rect:
         serializedVersion: 2
-        x: 2529
+        x: 2530
         y: 0
         width: 843
         height: 1248
@@ -199,17 +196,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc5b505b08b9800438b7dc1e50cf4b78
-      internalID: -1181605849002237050
+      spriteID: 8e1d02ba7cc65c746bbb224333f2571b
+      internalID: -2200302043331857562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Andando1_Mesa de trabajo 1_4
+      name: Prota_Quieto_Mesa de trabajo 1_4
       rect:
         serializedVersion: 2
-        x: 3372
+        x: 3373
         y: 0
         width: 843
         height: 1248
@@ -220,17 +217,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d065eef59701d4a4f9dd72593849bed3
-      internalID: 2157535887805371007
+      spriteID: 682109625886ce34ca8381cf606bbbab
+      internalID: -3662186533251037821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Andando1_Mesa de trabajo 1_5
+      name: Prota_Quieto_Mesa de trabajo 1_5
       rect:
         serializedVersion: 2
-        x: 4215
+        x: 4216
         y: 0
         width: 843
         height: 1248
@@ -241,17 +238,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84b7a729ba84b4546a8b324132750bd1
-      internalID: 2006639937592053004
+      spriteID: cf70dbe34fbe404439228ebdd858f25b
+      internalID: 4310774409740210252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prota_Andando1_Mesa de trabajo 1_6
+      name: Prota_Quieto_Mesa de trabajo 1_6
       rect:
         serializedVersion: 2
-        x: 5058
+        x: 5059
         y: 0
         width: 843
         height: 1248
@@ -262,29 +259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 510c94fe5bced17498df907ad7b68a34
-      internalID: -5576513440305542866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prota_Andando1_Mesa de trabajo 1_7
-      rect:
-        serializedVersion: 2
-        x: 5901
-        y: 0
-        width: 843
-        height: 1248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4226abb43bbca444fbc8ae313da38691
-      internalID: -4913647881144022620
+      spriteID: 387350e35c4d3634484a1885fd9e64ee
+      internalID: -3450723363340220043
       vertices: []
       indices: 
       edges: []
