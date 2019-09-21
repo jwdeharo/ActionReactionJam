@@ -143,6 +143,11 @@ public class PlayerController : BaseController
         ToHideTransform = aGameObject.transform;
     }
 
+    public void SetHide(bool aHide)
+    {
+        Hide = aHide;
+    }
+
     public Transform GetToHideTransform()
     {
         return ToHideTransform;
