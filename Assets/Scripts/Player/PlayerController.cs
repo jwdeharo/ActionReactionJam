@@ -15,7 +15,6 @@ public class PlayerController : BaseController
     [SerializeField]
     private bool Hide;
     private bool Wait;
-    private float OriginalScale;
     private bool BoxTransformation;
     private bool Dead = false;
 
@@ -109,7 +108,7 @@ public class PlayerController : BaseController
     {
         if (IsTypeObject<MovableObjectsController>(aCollision))
         {
-            aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
+            aCollision.gameObject.SendMessage("ApplyMovement", Vector3.zero);
             MovingSpeedFactor = 1.0f;
         }
     }
