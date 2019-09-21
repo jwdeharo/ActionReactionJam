@@ -9,7 +9,7 @@ public class PlayerController : BaseController
     private Sprite OriginalSprite;
 
     [SerializeField]
-    private GameObject HidingSprite;
+    private GameObject HidingSprite = null;
 
     [SerializeField]
     private bool Hide;
@@ -121,5 +121,13 @@ public class PlayerController : BaseController
         Hide = aCanHide;
         GetComponent<Animator>().enabled = !aCanHide;
         GetComponent<SpriteRenderer>().sprite = aCanHide ? HidingSprite.GetComponent<SpriteRenderer>().sprite : OriginalSprite;
+    }
+
+    private void OnTriggerEnter2D(Collider2D aCollision)
+    {
+        if (aCollision.gameObject.name == "LimitPermisive")
+        {
+            Debug.Log("Limit crossed. you are fucked");
+        }
     }
 }

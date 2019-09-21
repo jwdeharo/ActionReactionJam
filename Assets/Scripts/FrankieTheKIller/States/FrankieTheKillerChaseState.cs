@@ -20,7 +20,6 @@ public class FrankieTheKillerChaseState : CState
         }
         else
         {
-            MyFrankieController.CircleMovement();
             Controller.transform.position = Vector2.MoveTowards(Controller.transform.position, MyFrankieController.GetTarget().transform.position, MyFrankieController.GetChasingSpeed() * Time.deltaTime);
         }
     }

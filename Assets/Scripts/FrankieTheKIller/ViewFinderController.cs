@@ -10,7 +10,7 @@ public class ViewFinderController : BaseController
     private BoxCollider2D   MyCollider;
 
     [SerializeField]
-    private GameObject      Target;
+    private GameObject      Target = null;
     [SerializeField]
     private float AngularSpeed = 1.0f;
     [SerializeField]

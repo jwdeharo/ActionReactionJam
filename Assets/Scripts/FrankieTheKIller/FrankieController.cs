@@ -4,7 +4,7 @@ public class FrankieController : MonoBehaviour
 {
 
     [SerializeField]
-    private GameObject ViewFinder;
+    private GameObject ViewFinder = null;
 
     private void OnTriggerEnter2D(Collider2D aCollision)
     {
