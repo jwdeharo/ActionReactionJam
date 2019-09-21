@@ -117,7 +117,7 @@ public class PlayerController : BaseController
     {
         if (IsTypeObject<MovableObjectsController>(aCollision.gameObject))
         {
-            aCollision.gameObject.SendMessage("ApplyMovement", transform.localScale.x != OriginalScale ? Vector3.zero : GetMovement());
+            aCollision.gameObject.SendMessage("ApplyMovement", Vector3.zero);
             MovingSpeedFactor = 1.0f;
         }
     }
