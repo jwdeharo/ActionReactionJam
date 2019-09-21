@@ -75,7 +75,6 @@ public class WalkingState : CState
 
         if (ParentScale.x != Controller.transform.localScale.x)
         {
-            Debug.Log(ParentScale.x);
             Controller.transform.localScale = ParentScale;
         }
     }

@@ -8,6 +8,8 @@ public class ViewFinderController : BaseController
 
     private SpriteRenderer  MySpriteRenderer;
     private BoxCollider2D   MyCollider;
+    public AudioSource audioS;
+    public AudioClip clip;
 
     [SerializeField]
     private GameObject      Target = null;
@@ -66,7 +68,7 @@ public class ViewFinderController : BaseController
     {
         if (aCollision.gameObject == Target)
         {
-            Target.transform.parent.SendMessage("ChangeToDeath");
+            Target.SendMessage("ChangeToDeath");
         }
     }
 
@@ -101,5 +103,10 @@ public class ViewFinderController : BaseController
     public void SetChaseSpeed(float aChaseSpeed)
     {
         ChaseSpeed = aChaseSpeed;
+    }
+
+    public void PlayShot()
+    {
+        audioS.PlayOneShot(clip);
     }
 }

@@ -5,7 +5,6 @@ public class FrankieTheKillerIdleState : CState
     private ViewFinderController    MyFrankieController;
     private PlayerController GamePlayerController;
     private float Timer;
-
     private float MaxTime = 1.5f;
 
     public override void Init(BaseController aParent)
@@ -27,7 +26,7 @@ public class FrankieTheKillerIdleState : CState
     {
         Timer += Time.deltaTime;
 
-        if (GamePlayerController != null && !GamePlayerController.IsHiding() && Timer >= MaxTime)
+        if (GamePlayerController != null && (!GamePlayerController.IsHiding() && !GamePlayerController.IsDead() && Timer >= MaxTime))
         {
             GamePlayerController.ToWait(false);
             Controller.GetFSM().ChangeState(Controller.GetState("Chase"));
