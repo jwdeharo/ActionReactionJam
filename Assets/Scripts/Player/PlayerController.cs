@@ -71,13 +71,13 @@ public class PlayerController : BaseController
      *  @param aCollision: collision detected.
      *  @return bool if the object is of type T.
      */
-    public bool IsTypeObject<T>(GameObject aGameObject)
+    public bool IsTypeObject<T>(Collision2D aCollision)
     {
         bool ReturnValue = false;
 
-        if (aGameObject != null)
+        if (aCollision.gameObject != null)
         {
-            T TypeObject = aGameObject.GetComponent<T>();
+            T TypeObject = aCollision.gameObject.GetComponent<T>();
 
             if (TypeObject != null)
             {
@@ -88,25 +88,16 @@ public class PlayerController : BaseController
         return ReturnValue;
     }
 
-    private void OnCollisionEnter2D(Collision2D aCollision)
-    {
-        if (IsTypeObject<MovableObjectsController>(aCollision.gameObject))
-        {
-            OriginalScale = transform.localScale.x;
-        }
-    }
-
     /**
      * Event called when the object enters a 2d collision.
      * @param aCollision: collision detected.
      */
-
-    private void OnCollisionStay2D(Collision2D aCollision)
+    private void OnCollisionEnter2D(Collision2D aCollision)
     {
-        if (IsTypeObject<MovableObjectsController>(aCollision.gameObject) && GetMovement().x != 0.0f)
+        if (IsTypeObject<MovableObjectsController>(aCollision) && GetMovement().x != 0.0f)
         {
-            MovingSpeedFactor = transform.localScale.x != OriginalScale ? 1.0f : 0.1f;
-            aCollision.gameObject.SendMessage("ApplyMovement", transform.localScale.x != OriginalScale ? Vector3.zero : GetMovement());
+            MovingSpeedFactor = 0.1f;
+            aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
         }
     }
 
@@ -116,9 +107,9 @@ public class PlayerController : BaseController
      */
     private void OnCollisionExit2D(Collision2D aCollision)
     {
-        if (IsTypeObject<MovableObjectsController>(aCollision.gameObject))
+        if (IsTypeObject<MovableObjectsController>(aCollision))
         {
-            aCollision.gameObject.SendMessage("ApplyMovement", Vector3.zero);
+            aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
             MovingSpeedFactor = 1.0f;
         }
     }

@@ -59,7 +59,7 @@ public class ActionInteraction : MonoBehaviour
                         {
                             DoAction<bool>(ActionParams.BoolP, ActionParams.SendParam);
                         }
-                        else if (ActionParams.SendGameObject)
+                        else 
                         {
                             DoAction<GameObject>(ActionParams.ObjectP, ActionParams.SendParam);
                         }
@@ -118,11 +118,13 @@ public class ActionInteraction : MonoBehaviour
         if (aSendParam)
         {
             OnlyChoice.SendMessage(ActionToDo, aToSend);
+            
         }
         else
         {
             OnlyChoice.SendMessage(ActionToDo);
         }
+        Destroy(gameObject);
     }
 
    
