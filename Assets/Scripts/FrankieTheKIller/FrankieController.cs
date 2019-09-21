@@ -20,6 +20,13 @@ public class FrankieController : MonoBehaviour
         if (aCollision.tag == "Player")
         {
             ViewFinder.SendMessage("StopChasing");
+
+            PlayerController MyPlayerController = aCollision.gameObject.GetComponent<PlayerController>();
+            if (MyPlayerController != null && MyPlayerController.IsHiding())
+            {
+                aCollision.gameObject.SendMessage("ChangeSprite", true);
+                aCollision.gameObject.SendMessage("SetHide", false);
+            }
         }
     }
 }
