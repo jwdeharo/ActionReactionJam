@@ -2217,7 +2217,7 @@ PrefabInstance:
     - target: {fileID: 6564357546349768874, guid: a18043b1d5814a2419ea5c327e70604d,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6564357546349768868, guid: a18043b1d5814a2419ea5c327e70604d,
         type: 3}
@@ -2248,6 +2248,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.347
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564357546349768870, guid: a18043b1d5814a2419ea5c327e70604d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0029293895
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564357546349768870, guid: a18043b1d5814a2419ea5c327e70604d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.026302695
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564357546349768870, guid: a18043b1d5814a2419ea5c327e70604d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0161255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564357546349768870, guid: a18043b1d5814a2419ea5c327e70604d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.022111058
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a18043b1d5814a2419ea5c327e70604d, type: 3}
@@ -2626,6 +2646,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ff4a5640d023e9d48b0d23597406f965, type: 3}
   - {fileID: 8300000, guid: fe8a69b8ba2350a47b47176b4ccf2cb3, type: 3}
   - {fileID: 8300000, guid: 7722759770f1c8f428450fb2bd1da5c5, type: 3}
+  reactionSnd:
+  - {fileID: 8300000, guid: f2d5fd8d368114546aca47f4611fba72, type: 3}
   audioS: {fileID: 75587044}
   choices:
   - {fileID: 0}
@@ -3631,6 +3653,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ff4a5640d023e9d48b0d23597406f965, type: 3}
   - {fileID: 8300000, guid: fe8a69b8ba2350a47b47176b4ccf2cb3, type: 3}
   - {fileID: 8300000, guid: 7722759770f1c8f428450fb2bd1da5c5, type: 3}
+  reactionSnd: []
   audioS: {fileID: 75587044}
   choices:
   - {fileID: 1875396098}
@@ -3865,6 +3888,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ff4a5640d023e9d48b0d23597406f965, type: 3}
   - {fileID: 8300000, guid: fe8a69b8ba2350a47b47176b4ccf2cb3, type: 3}
   - {fileID: 8300000, guid: 7722759770f1c8f428450fb2bd1da5c5, type: 3}
+  reactionSnd: []
   audioS: {fileID: 75587044}
   choices:
   - {fileID: 512795641}
@@ -4269,6 +4293,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ff4a5640d023e9d48b0d23597406f965, type: 3}
   - {fileID: 8300000, guid: 4db90ed20a2372945b747015ab800cd3, type: 3}
   - {fileID: 8300000, guid: 7722759770f1c8f428450fb2bd1da5c5, type: 3}
+  reactionSnd:
+  - {fileID: 8300000, guid: f2d5fd8d368114546aca47f4611fba72, type: 3}
   audioS: {fileID: 75587044}
   choices: []
   deployChoicesScript: {fileID: 0}

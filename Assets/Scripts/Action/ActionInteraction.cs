@@ -20,6 +20,7 @@ public class ActionInteraction : MonoBehaviour
 
     public Animator anim;
     public AudioClip[] actionSnd;
+    public AudioClip[] reactionSnd;
     public AudioSource audioS;
     public GameObject[] choices;
     public DeployChoices deployChoicesScript;
@@ -115,6 +116,8 @@ public class ActionInteraction : MonoBehaviour
 
     private void DoAction<T>(T aToSend, bool aSendParam)
     {
+        audioS.PlayOneShot(reactionSnd[Random.Range(0, reactionSnd.Length)]);
+
         if (aSendParam)
         {
             OnlyChoice.SendMessage(ActionToDo, aToSend);
