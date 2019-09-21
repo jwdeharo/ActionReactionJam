@@ -1,7 +1,23 @@
 ﻿using UnityEngine;
 
+
+
 public class ActionInteraction : MonoBehaviour
 {
+    [System.Serializable]
+    public class ActionParameters
+    {
+        public bool BoolP;
+        public float FloatP;
+        public GameObject ObjectP;
+
+        public bool SendFloat;
+        public bool SendGameObject;
+        public bool SendBool;
+
+        public bool SendParam;
+    }
+
     public Animator anim;
     public AudioClip[] actionSnd;
     public AudioSource audioS;
@@ -9,16 +25,47 @@ public class ActionInteraction : MonoBehaviour
     public DeployChoices deployChoicesScript;
 
     private bool canInteract, isFire;
-   
+
+    [SerializeField]
+    private bool HasOptions = true;
+    [SerializeField]
+    private GameObject OnlyChoice = null;
+    [SerializeField]
+    private string ActionToDo = "";
+    
+    public ActionParameters ActionParams;
+
     private void Update()
     {
-        
         if (Input.GetAxisRaw("Fire1") != 0 && canInteract)
         {
             if (!isFire)
             {
                 isFire = true;
-                deployChoicesScript.ShowChoices(choices);
+
+                if (HasOptions)
+                {
+                    deployChoicesScript.ShowChoices(choices);
+                }
+                else
+                {
+                    if (OnlyChoice != null)
+                    {
+                        if (ActionParams.SendFloat)
+                        {
+                            DoAction<float>(ActionParams.FloatP, ActionParams.SendParam);
+                        }
+                        else if (ActionParams.SendBool)
+                        {
+                            DoAction<bool>(ActionParams.BoolP, ActionParams.SendParam);
+                        }
+                        else if (ActionParams.SendGameObject)
+                        {
+                            DoAction<GameObject>(ActionParams.ObjectP, ActionParams.SendParam);
+                        }
+                    }
+                }
+
                 VanishAnimation();
             }
         }
@@ -53,13 +100,29 @@ public class ActionInteraction : MonoBehaviour
         {
             canInteract = false;
             VanishAnimation();
-            deployChoicesScript.DeactivateChoices(choices);
+
+            if (HasOptions)
+            {
+                deployChoicesScript.DeactivateChoices(choices);
+            }
         }
     }
 
     private void VanishAnimation()
     {
         anim.SetBool("canContinue", true);
+    }
+
+    private void DoAction<T>(T aToSend, bool aSendParam)
+    {
+        if (aSendParam)
+        {
+            OnlyChoice.SendMessage(ActionToDo, aToSend);
+        }
+        else
+        {
+            OnlyChoice.SendMessage(ActionToDo);
+        }
     }
 
    

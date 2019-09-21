@@ -5,7 +5,7 @@ using UnityEngine;
 public class HideController : MonoBehaviour
 {
     [SerializeField]
-    private GameObject Target;
+    private GameObject Target = null;
 
 
     private void OnTriggerStay2D(Collider2D aCollision)

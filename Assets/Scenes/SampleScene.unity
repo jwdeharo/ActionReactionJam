@@ -558,7 +558,7 @@ SpriteRenderer:
   m_Size: {x: 181.27725, y: 46.47}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &189433068
@@ -638,7 +638,7 @@ SpriteRenderer:
   m_Size: {x: 181.27725, y: 46.47}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &204290746
@@ -1100,7 +1100,7 @@ SpriteRenderer:
   m_Size: {x: 181.27725, y: 46.47}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &356487983
@@ -1647,7 +1647,7 @@ SpriteRenderer:
   m_Size: {x: 181.27725, y: 46.47}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &744125450
@@ -1881,7 +1881,7 @@ SpriteRenderer:
   m_Size: {x: 181.27725, y: 46.47}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &820956302
@@ -1913,7 +1913,7 @@ PrefabInstance:
     - target: {fileID: 1411320453343215249, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.925
+      value: -0.62
       objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215249, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
@@ -1968,24 +1968,61 @@ PrefabInstance:
     - target: {fileID: 1411320453343215249, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215249, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215250, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1411320453343215250, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 54d2a2f6c6b17b14abbfeaaff246d87c,
+        type: 3}
     - target: {fileID: 1411320453343215255, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: Target
       value: 
       objectReference: {fileID: 1436684875}
-    m_RemovedComponents: []
+    - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -2.181837
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 8.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 12.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 4.683674
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.03346944
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.567516
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1411320453343215255, guid: 6395ccb8bbd48be49af16c73221a57e6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6395ccb8bbd48be49af16c73221a57e6, type: 3}
 --- !u!1001 &982618922
 PrefabInstance:
@@ -3549,7 +3586,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702545654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.679, y: -0.641, z: -2.1198857}
+  m_LocalPosition: {x: -0.98, y: -0.641, z: -2.1198857}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 1152294574}
@@ -3584,6 +3621,17 @@ MonoBehaviour:
   - {fileID: 1875396098}
   - {fileID: 349919643}
   deployChoicesScript: {fileID: 1702545659}
+  HasOptions: 0
+  OnlyChoice: {fileID: 0}
+  ActionToDo: 
+  ActionParams:
+    BoolP: 0
+    FloatP: 0
+    ObjectP: {fileID: 0}
+    SendFloat: 0
+    SendGameObject: 0
+    SendBool: 0
+    SendParam: 0
 --- !u!114 &1702545659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3957,7 +4005,7 @@ SpriteRenderer:
   m_Size: {x: 181.27725, y: 46.47}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1875396098
@@ -4173,6 +4221,41 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 934777072}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2012626873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012626872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83196476ee452d64cba0363b511742b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1152294575}
+  actionSnd:
+  - {fileID: 8300000, guid: a3ec90b44845ac4479b54004a7ead995, type: 3}
+  - {fileID: 8300000, guid: cf67b5efc63359244a9a4f3dccc16907, type: 3}
+  - {fileID: 8300000, guid: 4ff0cbe1b64c56144a7b24318a264ab4, type: 3}
+  - {fileID: 8300000, guid: fe8a69b8ba2350a47b47176b4ccf2cb3, type: 3}
+  - {fileID: 8300000, guid: ff4a5640d023e9d48b0d23597406f965, type: 3}
+  - {fileID: 8300000, guid: 4db90ed20a2372945b747015ab800cd3, type: 3}
+  - {fileID: 8300000, guid: 7722759770f1c8f428450fb2bd1da5c5, type: 3}
+  audioS: {fileID: 75587044}
+  choices: []
+  deployChoicesScript: {fileID: 0}
+  HasOptions: 0
+  OnlyChoice: {fileID: 1436684875}
+  ActionToDo: TimeToHide
+  ActionParams:
+    BoolP: 0
+    FloatP: 0
+    ObjectP: {fileID: 2012626872}
+    SendFloat: 0
+    SendGameObject: 1
+    SendBool: 0
+    SendParam: 1
 --- !u!1 &2024099374
 GameObject:
   m_ObjectHideFlags: 0
