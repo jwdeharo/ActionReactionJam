@@ -9,7 +9,7 @@ public class ActionInteraction : MonoBehaviour
     public DeployChoices deployChoicesScript;
 
     private bool canInteract, isFire;
-    
+   
     private void Update()
     {
         
