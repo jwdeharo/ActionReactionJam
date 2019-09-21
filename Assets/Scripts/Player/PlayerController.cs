@@ -6,26 +6,52 @@ public class PlayerController : BaseController
     public float MovingSpeedFactor = 1.0f;
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
     public Animator Animator;                       //!< Animator which handles the animations.
-    public bool ToOne = false;
+    private Sprite OriginalSprite;
+    private Transform ToHideTransform;
+
+    [SerializeField]
+    private GameObject HidingSprite = null;
+
+    [SerializeField]
+    private bool Hide;
+    private bool Wait;
+
+    private bool Dead = false;
 
     /**
      * Start is called before the first frame update
      */
     void Start()
     {
-        IdleState IdleState = new IdleState();
+        IdleState MyIdleState = new IdleState();
         WalkingState WalkState = new WalkingState();
+        DeathState MyDeathState = new DeathState();
+        HidingState HideState = new HidingState();
+        WaitingState MyWaitState = new WaitingState();
 
-        IdleState.Init(this);
+        MyIdleState.Init(this);
         WalkState.Init(this);
+        MyDeathState.Init(this);
+        HideState.Init(this);
+        MyWaitState.Init(this);
+
 
         States = new Dictionary<string, CState>();
 
-        States.Add("Idle", IdleState);
+        States.Add("Idle", MyIdleState);
         States.Add("Walk", WalkState);
+        States.Add("Death", MyDeathState);
+        States.Add("Hide", HideState);
+        States.Add("Wait", MyWaitState);
+
         MyFSM = GetComponent<FSM>();
         MyFSM.StartFSM();
-        MyFSM.ChangeState(IdleState);
+        MyFSM.ChangeState(MyIdleState);
+
+        Hide = false;
+        Wait = false;
+
+        OriginalSprite = GetComponent<SpriteRenderer>().sprite;
     }
 
     /**
@@ -84,5 +110,53 @@ public class PlayerController : BaseController
             aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
             MovingSpeedFactor = 1.0f;
         }
+    }
+
+    public bool IsHiding()
+    {
+        return Hide;
+    }
+
+    public bool IsChangedSprite()
+    {
+        return GetComponent<SpriteRenderer>().sprite != OriginalSprite;
+    }
+
+    private void ChangeToDeath()
+    {
+        Dead = true;
+    }
+
+    public bool IsDead()
+    {
+        return Dead;
+    }
+
+    public bool IsWaiting()
+    {
+        return Wait;
+    }
+
+    public void TimeToHide(GameObject aGameObject)
+    {
+        Hide = true;
+        ToHideTransform = aGameObject.transform;
+    }
+
+    public Transform GetToHideTransform()
+    {
+        return ToHideTransform;
+    }
+
+    public void ChangeSprite(bool aToOriginal)
+    {
+        Animator.enabled = aToOriginal;
+        GetComponent<SpriteRenderer>().sprite = aToOriginal ? OriginalSprite : HidingSprite.GetComponent<SpriteRenderer>().sprite;
+        HidingSprite.SetActive(aToOriginal);
+    }
+
+    public void ToWait(bool aToWait)
+    {
+        Wait = aToWait;
     }
 }
