@@ -61,7 +61,6 @@ public class ViewFinderController : BaseController
 
         FirstTimeTrigger = true;
         MyFSM.SetActive(false);
-        
     }
 
     private void OnTriggerEnter2D(Collider2D aCollision)
