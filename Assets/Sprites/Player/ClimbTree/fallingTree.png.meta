@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 5a93e8ceb6f8e8c4bab10b01ce11836b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7606313188745041663
+    second: fallingTree_0
+  - first:
+      213: 6582670915522169455
+    second: fallingTree_1
+  - first:
+      213: -1800987251698884480
+    second: fallingTree_2
+  - first:
+      213: 5303927740135848187
+    second: fallingTree_3
+  - first:
+      213: -5361418683852894116
+    second: fallingTree_4
+  - first:
+      213: -5730458732638123116
+    second: fallingTree_5
+  - first:
+      213: -6319571653881398161
+    second: fallingTree_6
+  - first:
+      213: -4422474383737625299
+    second: fallingTree_7
+  - first:
+      213: -7615578498258076701
+    second: fallingTree_8
+  - first:
+      213: 4605111953892231203
+    second: fallingTree_9
+  - first:
+      213: 5317698019344404809
+    second: fallingTree_10
+  - first:
+      213: -6054381068852379135
+    second: fallingTree_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +76,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +106,285 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: fallingTree_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8965508b23f38b42a8803982d8281dc
+      internalID: -7606313188745041663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_1
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76a195b72d197543b561b99a76220f6
+      internalID: 6582670915522169455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_2
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e81d8c79f30c04aba75171160cfcd4
+      internalID: -1800987251698884480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_3
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdbe9567c1b9024ea843ca86e53369c
+      internalID: 5303927740135848187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_4
+      rect:
+        serializedVersion: 2
+        x: 4992
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a04306fba0266f438b6d350b3a792e7
+      internalID: -5361418683852894116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_5
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4165f0d851e6574d98d0df4c1eaa7ed
+      internalID: -5730458732638123116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_6
+      rect:
+        serializedVersion: 2
+        x: 7488
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcb004d80b38994091b061765e69aeb
+      internalID: -6319571653881398161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_7
+      rect:
+        serializedVersion: 2
+        x: 8736
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138edb0d063974844a3f2ed06422f643
+      internalID: -4422474383737625299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_8
+      rect:
+        serializedVersion: 2
+        x: 9984
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dee9898848ce44f90cd2b33dff3f5b
+      internalID: -7615578498258076701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_9
+      rect:
+        serializedVersion: 2
+        x: 11232
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b66cca032165a4299fb4e478c451d8
+      internalID: 4605111953892231203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_10
+      rect:
+        serializedVersion: 2
+        x: 12480
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed331d73d55a2542a69995d85d0db5f
+      internalID: 5317698019344404809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallingTree_11
+      rect:
+        serializedVersion: 2
+        x: 13728
+        y: 0
+        width: 1248
+        height: 1248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984af8ed004b0854b890d49aa94f45ab
+      internalID: -6054381068852379135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

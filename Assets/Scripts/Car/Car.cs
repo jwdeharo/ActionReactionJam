@@ -7,7 +7,7 @@ public class Car : MonoBehaviour
     private bool CanCheck = false;
     private GameObject ThePlayer;
     public AudioSource audioS;
-    public AudioClip clip;
+    public AudioClip clip, clipKey;
 
     private void FixedUpdate()
     {
@@ -31,6 +31,7 @@ public class Car : MonoBehaviour
         }
         else
         {
+            audioS.PlayOneShot(clipKey);
             StartCoroutine(flickeringKeys.Flick());
         }
     }
