@@ -1850,6 +1850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  twoChoices: 0
 --- !u!114 &603809370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3333,6 +3334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  twoChoices: 0
 --- !u!114 &1158729483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4473,6 +4475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  twoChoices: 1
 --- !u!1 &1718869032
 GameObject:
   m_ObjectHideFlags: 0
@@ -4656,6 +4659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  twoChoices: 0
 --- !u!114 &1781447945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5056,7 +5060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954d52fd322214b4481b55f3aafd30de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Submit
+  axisName: Action1
 --- !u!1 &1958270819
 GameObject:
   m_ObjectHideFlags: 0
