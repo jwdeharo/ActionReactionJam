@@ -3432,6 +3432,12 @@ Rigidbody2D:
     type: 3}
   m_PrefabInstance: {fileID: 6116956693251887304}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1436684881 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6116956693962687111, guid: 6d23edf57753e7f43829391ef65c3a7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6116956693251887304}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1504001102
 GameObject:
   m_ObjectHideFlags: 0
@@ -5651,22 +5657,22 @@ PrefabInstance:
         type: 3}
       propertyPath: HidingSprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2012626872}
     - target: {fileID: 6116956693962687128, guid: 6d23edf57753e7f43829391ef65c3a7f,
         type: 3}
       propertyPath: YouShallNotPass
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 396604838}
     - target: {fileID: 6116956693962687128, guid: 6d23edf57753e7f43829391ef65c3a7f,
         type: 3}
       propertyPath: MoveSpeed
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6116956693962687128, guid: 6d23edf57753e7f43829391ef65c3a7f,
         type: 3}
       propertyPath: Animator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1436684881}
     - target: {fileID: 6116956693962687128, guid: 6d23edf57753e7f43829391ef65c3a7f,
         type: 3}
       propertyPath: BoxToClimb
