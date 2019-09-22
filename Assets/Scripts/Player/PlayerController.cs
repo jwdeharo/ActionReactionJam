@@ -20,11 +20,13 @@ public class PlayerController : BaseController
     private bool BoxToPlayer;
     private bool firekeepersSeen = false;
     private bool takeBalloon = false;
-    private bool hasKey;
+    private bool hasKey = false;
+    private bool hasWallet = false;
 
     public bool FirekeepersSeen { get => firekeepersSeen; set => firekeepersSeen = value; }
     public bool TakeBalloon { get => takeBalloon; set => takeBalloon = value; }
     public bool HasKey { get => hasKey; set => hasKey = value; }
+    public bool HasWallet { get => hasWallet; set => hasWallet = value; }
 
     /**
      * Start is called before the first frame update

@@ -14,7 +14,7 @@ public class Car : MonoBehaviour
         }
         else
         {
-            print("NO TIENEs LAS LLAVES");
+            print("NO TIENES LAS LLAVES");
         }
     }
 }
