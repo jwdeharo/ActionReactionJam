@@ -11,6 +11,8 @@ public class PlayerController : BaseController
 
     [SerializeField]
     private GameObject HidingSprite = null;
+    [SerializeField]
+    private GameObject YouShallNotPass = null;
 
     [SerializeField]
     private bool Hide;
@@ -18,16 +20,15 @@ public class PlayerController : BaseController
     private bool BoxTransformation;
     private bool Dead = false;
     private bool BoxToPlayer;
+
     private bool firekeepersSeen = false;
     private bool takeBalloon = false;
     private bool hasKey = false;
     private bool hasWallet = false;
-
     public bool FirekeepersSeen { get => firekeepersSeen; set => firekeepersSeen = value; }
     public bool TakeBalloon { get => takeBalloon; set => takeBalloon = value; }
     public bool HasKey { get => hasKey; set => hasKey = value; }
     public bool HasWallet { get => hasWallet; set => hasWallet = value; }
-
     /**
      * Start is called before the first frame update
      */
@@ -165,6 +166,7 @@ public class PlayerController : BaseController
     {
         Hide = true;
         ToHideTransform = aGameObject.transform;
+        YouShallNotPass.SendMessage("ActiveYouShallNotPass", true);
     }
 
     public void SetHide(bool aHide)

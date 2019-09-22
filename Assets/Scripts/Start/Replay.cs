@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Replay : MonoBehaviour
@@ -11,8 +9,7 @@ public class Replay : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            print("Has pulsado enter");
-            SceneManager.LoadScene("Juego");
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }

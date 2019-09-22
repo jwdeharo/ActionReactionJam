@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 5089c867e25a2ab4c95e39183c8dfd7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9042040067803599911
+    second: Evento_Suegra_0
+  - first:
+      213: -835423644956946466
+    second: Evento_Suegra_1
+  - first:
+      213: 4456613476851939049
+    second: Evento_Suegra_2
+  - first:
+      213: -645339973757080734
+    second: Evento_Suegra_3
+  - first:
+      213: -7263711834472216901
+    second: Evento_Suegra_4
+  - first:
+      213: 2757464354303658310
+    second: Evento_Suegra_5
+  - first:
+      213: -6460472070745363783
+    second: Evento_Suegra_6
+  - first:
+      213: -1094273130159535204
+    second: Evento_Suegra_7
+  - first:
+      213: -5042670590435154186
+    second: Evento_Suegra_8
+  - first:
+      213: 5847372457263175506
+    second: Evento_Suegra_9
+  - first:
+      213: 8732866650374749432
+    second: Evento_Suegra_10
+  - first:
+      213: -2014729221658692919
+    second: Evento_Suegra_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Evento_Suegra_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e73c4b65a0a8c4c8ec01e98e6ebb0a
+      internalID: 9042040067803599911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_1
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0ce82adfc79f342a62264c43ab9ff8
+      internalID: -835423644956946466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_2
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bd58e526e615945af28be3d702faad
+      internalID: 4456613476851939049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_3
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616aa5150a4c73f47bda9d8414b1b76b
+      internalID: -645339973757080734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_4
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8aae8f9036643468289d2ca9336928
+      internalID: -7263711834472216901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_5
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91c9343f9a2f3d40a7ad2e552b8d379
+      internalID: 2757464354303658310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_6
+      rect:
+        serializedVersion: 2
+        x: 5058
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37a2877c27bd6b488e8a76b0323ec2f
+      internalID: -6460472070745363783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_7
+      rect:
+        serializedVersion: 2
+        x: 5901
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2376c3ae78c1b4b47a27c594969bfe5d
+      internalID: -1094273130159535204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_8
+      rect:
+        serializedVersion: 2
+        x: 6744
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a767a7da0f37c469d9f6768188617f
+      internalID: -5042670590435154186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_9
+      rect:
+        serializedVersion: 2
+        x: 7587
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be048aaee6856e94c9e2b56f5fa5133a
+      internalID: 5847372457263175506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_10
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0f5cf2d759d664d8073dc96c34c695
+      internalID: 8732866650374749432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegra_11
+      rect:
+        serializedVersion: 2
+        x: 9273
+        y: 0
+        width: 843
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6737c090d60cac14290b96b2c43f5907
+      internalID: -2014729221658692919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
