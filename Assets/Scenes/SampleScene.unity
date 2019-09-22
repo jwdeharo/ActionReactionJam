@@ -1298,7 +1298,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396604838}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1445,7 +1445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3238a5ccf84454dbda42ea7e6d128e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxSwitchScript: {fileID: 0}
+  playerBody: {fileID: 0}
 --- !u!114 &512795644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2001,21 +2001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3238a5ccf84454dbda42ea7e6d128e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxSwitchScript: {fileID: 658540269}
---- !u!114 &658540269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658540262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efd19652ca9f5fc4b98e05be31ceea0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1436684882}
-  boxInteract: {fileID: 1781447942}
+  playerBody: {fileID: 1436684877}
 --- !u!1 &691312827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,12 +2741,12 @@ PrefabInstance:
     - target: {fileID: 1091711816411896240, guid: e450611d198092b41a2c2b2e1e2dc8d7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.986
+      value: 2.871
       objectReference: {fileID: 0}
     - target: {fileID: 1091711816411896240, guid: e450611d198092b41a2c2b2e1e2dc8d7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.439
+      value: -0.39
       objectReference: {fileID: 0}
     - target: {fileID: 1091711816411896240, guid: e450611d198092b41a2c2b2e1e2dc8d7,
         type: 3}
@@ -2944,12 +2930,12 @@ PrefabInstance:
     - target: {fileID: 6564357545827046547, guid: a18043b1d5814a2419ea5c327e70604d,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.3275634
+      value: 0.18227631
       objectReference: {fileID: 0}
     - target: {fileID: 6564357545827046547, guid: a18043b1d5814a2419ea5c327e70604d,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.6551266
+      value: 1.3645524
       objectReference: {fileID: 0}
     - target: {fileID: 6564357546473424978, guid: a18043b1d5814a2419ea5c327e70604d,
         type: 3}
@@ -3453,7 +3439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158729481}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.211, y: -0.589, z: -2.1198857}
+  m_LocalPosition: {x: 2.628, y: -0.587, z: -2.1198857}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 2124278436}
@@ -3923,9 +3909,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7712867241477618651}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1436684882 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7712867240766810505, guid: b5c336f2fb3c75646a2de12349913e08,
+--- !u!50 &1436684877 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7712867240766810518, guid: b5c336f2fb3c75646a2de12349913e08,
     type: 3}
   m_PrefabInstance: {fileID: 7712867241477618651}
   m_PrefabAsset: {fileID: 0}
@@ -3941,8 +3927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2903b812447f9e242a36af9370a38eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxSwitchScript: {fileID: 658540269}
   box: {fileID: 658540262}
+  boxInteract: {fileID: 1781447942}
   speed: 2
   targetY: -0.32
 --- !u!1 &1504001102
@@ -4626,7 +4612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1781447943
 Transform:
   m_ObjectHideFlags: 0
@@ -4706,7 +4692,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019861132, y: -0.0015680194}
+  m_Offset: {x: -0.10732919, y: -0.0015680194}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4717,7 +4703,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17445904, y: 0.15668827}
+  m_Size: {x: 0.34939516, y: 0.15668827}
   m_EdgeRadius: 0
 --- !u!212 &1781447947
 SpriteRenderer:
@@ -5710,7 +5696,7 @@ PrefabInstance:
     - target: {fileID: 7712867240766810505, guid: b5c336f2fb3c75646a2de12349913e08,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.216
+      value: 0.306
       objectReference: {fileID: 0}
     - target: {fileID: 7712867240766810505, guid: b5c336f2fb3c75646a2de12349913e08,
         type: 3}
@@ -5775,7 +5761,7 @@ PrefabInstance:
     - target: {fileID: 7712867240766810518, guid: b5c336f2fb3c75646a2de12349913e08,
         type: 3}
       propertyPath: m_Constraints
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c336f2fb3c75646a2de12349913e08, type: 3}
