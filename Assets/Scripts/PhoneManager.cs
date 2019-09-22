@@ -2,18 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class ChoiceGeneral : MonoBehaviour
+public class PhoneManager : MonoBehaviour
 {
-    public string axisName;
+    public GameObject bigPhone;
+    public AudioSource audioS;
+    public AudioClip clip;
+
     private bool isFire;
+
     private void Update()
     {
-        if (Input.GetAxisRaw(axisName) != 0 && GetComponent<SpriteRenderer>().color.a == 1)
+        if (Input.GetAxisRaw("Jump") != 0)
         {
             if (!isFire)
             {
                 isFire = true;
-                PerformAction();
+                audioS.PlayOneShot(clip);
+                bigPhone.SetActive(true);
+                gameObject.SetActive(false);
             }
         }
         else
@@ -21,7 +27,5 @@ public abstract class ChoiceGeneral : MonoBehaviour
             isFire = false;
         }
     }
-
-    protected abstract void PerformAction();
-
+   
 }

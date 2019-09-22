@@ -7,7 +7,8 @@ public class WalkingState : CState
      */
     public override void OnEnterState()
     {
-        ((PlayerController)Controller).Animator.SetFloat("Speed", 1.0f);
+        string SpeedString = ((PlayerController)Controller).IsHiding() ? "SpeedBox" : "Speed";
+        ((PlayerController)Controller).Animator.SetFloat(SpeedString, 1.0f);
     }
 
     /**
@@ -15,15 +16,39 @@ public class WalkingState : CState
      */
     public override void UpdateState()
     {
-        float HorizontalAxis = Input.GetAxisRaw("Horizontal");
-        if (HorizontalAxis == 0.0f)
+        if (((PlayerController)Controller).IsDead())
         {
             Controller.GetFSM().PopState();
+            Controller.GetFSM().ChangeState(Controller.GetState("Death"));
+        }
+        else if (((PlayerController)Controller).IsWaiting())
+        {
+            Controller.GetFSM().PopState();
+            Controller.GetFSM().ChangeState(Controller.GetState("Wait"));
+        }
+        else if (((PlayerController)Controller).IsHiding() && !((PlayerController)Controller).IsChangedSprite())
+        {
+            Controller.GetFSM().PopState();
+            Controller.GetFSM().ChangeState(Controller.GetState("Hide"));
+        }
+        else if (((PlayerController)Controller).IsBoxToPlayer())
+        {
+            Controller.GetFSM().PopState();
+            Controller.GetFSM().ChangeState(Controller.GetState("BoxToPlayer"));
         }
         else
         {
-            Flip(HorizontalAxis);
-            ((PlayerController)Controller).transform.position += ((PlayerController)Controller).GetMovement();
+            float HorizontalAxis = Input.GetAxisRaw("Horizontal");
+
+            if (HorizontalAxis == 0.0f)
+            {
+                Controller.GetFSM().PopState();
+            }
+            else
+            {
+                ((PlayerController)Controller).transform.position += ((PlayerController)Controller).GetMovement();
+                Flip(HorizontalAxis);
+            }
         }
     }
 
@@ -32,7 +57,8 @@ public class WalkingState : CState
      */
     public override void OnExitState()
     {
-        ((PlayerController)Controller).Animator.SetFloat("Speed", -1.0f);
+        string SpeedString = ((PlayerController)Controller).IsHiding() ? "SpeedBox" : "Speed";
+        ((PlayerController)Controller).Animator.SetFloat(SpeedString, -1.0f);
     }
 
     /**
@@ -41,8 +67,20 @@ public class WalkingState : CState
      */
     void Flip(float aHorizontalAxis)
     {
+
         Vector3 ParentScale = Controller.transform.localScale;
-        ParentScale.x = aHorizontalAxis > 0 ? 1.0f : -1.0f;
+
+        if (aHorizontalAxis > 0.0f)
+        {
+            ParentScale.x = Mathf.Abs(ParentScale.x);
+        }
+        else
+        {
+            if (ParentScale.x > 0.0f)
+            {
+                ParentScale.x *= -1.0f;
+            }
+        }
 
         if (ParentScale.x != Controller.transform.localScale.x)
         {

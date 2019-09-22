@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MovableObjectsMoveState : CState
 {
-
     /**
      * Function that is called while the state is the current.
      */

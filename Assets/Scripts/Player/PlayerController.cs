@@ -6,26 +6,64 @@ public class PlayerController : BaseController
     public float MovingSpeedFactor = 1.0f;
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
     public Animator Animator;                       //!< Animator which handles the animations.
-    public bool ToOne = false;
+    private Sprite OriginalSprite;
+    private Transform ToHideTransform;
+
+    [SerializeField]
+    private GameObject HidingSprite = null;
+
+    [SerializeField]
+    private bool Hide;
+    private bool Wait;
+    private bool BoxTransformation;
+    private bool Dead = false;
+    private bool BoxToPlayer;
+    private bool firekeepersSeen = false;
+    private bool takeBalloon = false;
+    private bool hasKey;
+
+    public bool FirekeepersSeen { get => firekeepersSeen; set => firekeepersSeen = value; }
+    public bool TakeBalloon { get => takeBalloon; set => takeBalloon = value; }
+    public bool HasKey { get => hasKey; set => hasKey = value; }
 
     /**
      * Start is called before the first frame update
      */
     void Start()
     {
-        IdleState IdleState = new IdleState();
+        IdleState MyIdleState = new IdleState();
         WalkingState WalkState = new WalkingState();
+        DeathState MyDeathState = new DeathState();
+        HidingState HideState = new HidingState();
+        WaitingState MyWaitState = new WaitingState();
+        BoxToPlayerState MyBoxToPlayerState = new BoxToPlayerState();
 
-        IdleState.Init(this);
+        MyIdleState.Init(this);
         WalkState.Init(this);
+        MyDeathState.Init(this);
+        HideState.Init(this);
+        MyWaitState.Init(this);
+        MyBoxToPlayerState.Init(this);
 
         States = new Dictionary<string, CState>();
 
-        States.Add("Idle", IdleState);
+        States.Add("Idle", MyIdleState);
         States.Add("Walk", WalkState);
+        States.Add("Death", MyDeathState);
+        States.Add("Hide", HideState);
+        States.Add("Wait", MyWaitState);
+        States.Add("BoxToPlayer", MyBoxToPlayerState);
+
         MyFSM = GetComponent<FSM>();
         MyFSM.StartFSM();
-        MyFSM.ChangeState(IdleState);
+        MyFSM.ChangeState(MyIdleState);
+
+        Hide = false;
+        Wait = false;
+        BoxTransformation = false;
+        BoxToPlayer = false;
+
+        OriginalSprite = GetComponent<SpriteRenderer>().sprite;
     }
 
     /**
@@ -81,8 +119,74 @@ public class PlayerController : BaseController
     {
         if (IsTypeObject<MovableObjectsController>(aCollision))
         {
-            aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
+            aCollision.gameObject.SendMessage("ApplyMovement", Vector3.zero);
             MovingSpeedFactor = 1.0f;
         }
+    }
+
+    public bool IsHiding()
+    {
+        return Hide;
+    }
+
+    public bool IsChangedSprite()
+    {
+        return BoxTransformation;
+    }
+
+    public bool IsBoxToPlayer()
+    {
+        return BoxToPlayer;
+    }
+
+    private void ChangeToDeath()
+    {
+        Dead = true;
+    }
+
+    public bool IsDead()
+    {
+        return Dead;
+    }
+
+    public bool IsWaiting()
+    {
+        return Wait;
+    }
+
+    public void SetBox(bool aBox)
+    {
+        BoxTransformation = aBox;
+    }
+
+    public void TimeToHide(GameObject aGameObject)
+    {
+        Hide = true;
+        ToHideTransform = aGameObject.transform;
+    }
+
+    public void SetHide(bool aHide)
+    {
+        Hide = aHide;
+    }
+
+    public void SetBoxToPlayer(bool aBoxToPlayer)
+    {
+        BoxToPlayer = aBoxToPlayer;
+    }
+
+    public Transform GetToHideTransform()
+    {
+        return ToHideTransform;
+    }
+
+    public void ChangeSprite(bool aToOriginal)
+    {
+        Destroy(HidingSprite);
+    }
+
+    public void ToWait(bool aToWait)
+    {
+        Wait = aToWait;
     }
 }

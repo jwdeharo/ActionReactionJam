@@ -1,32 +1,38 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class BalloonMovement : MonoBehaviour
+
+    public class BalloonMovement : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject Respawn = null;
+    [SerializeField]
+    private Vector3 target = new Vector3();
+
     private float speed = 0.12f;
-    private Vector2 target;
-    private Vector2 position;
-    private Camera cam;
-    private bool aux = false;
+    private Vector3 position;
+    private float step;
+    private bool CanMove = false;
 
-    void Start()
+    public void Update()
     {
-        position = gameObject.transform.position;
-    }
-
-    void Update()
-    {
-        target = new Vector2(0.236f, 0.696f);
-        float step = speed * Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.L)) {
-            aux = true;
-        }
-        if (aux)
+        if (CanMove)
         {
-            // move sprite towards the target location
+            position = Respawn.transform.position;
+            step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, target, step);
+
+            if (Vector3.Distance(transform.position, target) == 0.0f)
+            {
+                CanMove = false;
+            }
+            GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeBalloon = true;
+            print(GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeBalloon);
         }
     }
 
+    public void MoveBalloon(bool aCanMove)
+    {
+        CanMove = aCanMove;
+        GetComponent<ActionInteraction>().enabled = !aCanMove;
+    }
 }
