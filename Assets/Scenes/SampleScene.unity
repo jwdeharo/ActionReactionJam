@@ -6422,6 +6422,16 @@ PrefabInstance:
       propertyPath: playerBody
       value: 
       objectReference: {fileID: 1436684877}
+    - target: {fileID: 4720939475985345294, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720939475985345294, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77b7d2ced73d6f04eb39f64a7f34ddee, type: 3}
 --- !u!1001 &6116956693251887304
