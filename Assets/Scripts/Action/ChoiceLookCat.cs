@@ -6,6 +6,8 @@ public class ChoiceLookCat : ChoiceGeneral
 {
     protected override void PerformAction()
     {
-        print("Hacer que aqui rescate al gato y tal");
+        print("Mueres por el gato");
+        GameObject.FindWithTag("Player").SendMessage("ChangeToDeath");
+        
     }
 }

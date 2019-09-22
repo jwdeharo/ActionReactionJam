@@ -29,12 +29,13 @@ public class BalloonMovement : MonoBehaviour
                 interactCat.SetActive(true);
             }
             GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeBalloon = true;
-           // print(GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeBalloon);
+            //print(GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeBalloon);
         }
     }
 
     public void MoveBalloon(bool aCanMove)
     {
+        interactCat.SetActive(true);
         CanMove = aCanMove;
         GetComponent<Animator>().SetBool("isMoving", true);
         GetComponent<ActionInteraction>().enabled = !aCanMove;

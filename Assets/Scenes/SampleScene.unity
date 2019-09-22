@@ -4171,7 +4171,7 @@ MonoBehaviour:
   bigPhone: {fileID: 2070696048}
   audioS: {fileID: 75587044}
   clip: {fileID: 8300000, guid: 9c75c5d13d3a10343a2f26f723b76896, type: 3}
---- !u!1 &1436684875 stripped
+--- !u!1 &1436520015
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6116956693962687107, guid: 6d23edf57753e7f43829391ef65c3a7f,
     type: 3}
@@ -5000,7 +5000,7 @@ Transform:
   m_Children:
   - {fileID: 1152294574}
   - {fileID: 1875396100}
-  - {fileID: 349919646}
+  - {fileID: 1405167109}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5028,7 +5028,7 @@ MonoBehaviour:
   audioS: {fileID: 75587044}
   choices:
   - {fileID: 1875396098}
-  - {fileID: 349919643}
+  - {fileID: 1405167104}
   deployChoicesScript: {fileID: 1702545659}
   HasOptions: 1
   OnlyChoice: {fileID: 0}
@@ -5391,7 +5391,7 @@ GameObject:
   - component: {fileID: 1875396102}
   - component: {fileID: 1875396103}
   m_Layer: 0
-  m_Name: Choice
+  m_Name: Save Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
