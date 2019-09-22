@@ -1384,8 +1384,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519427917}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.12099993, y: 0.9325, z: 0.49927253}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 1}
+  m_LocalPosition: {x: -0.12099993, y: 0.9248, z: 0.49927253}
+  m_LocalScale: {x: 0.025, y: 0.025, z: 1}
   m_Children: []
   m_Father: {fileID: 1017847985}
   m_RootOrder: 3
@@ -2481,6 +2481,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.347
       objectReference: {fileID: 0}
+    - target: {fileID: 6564357545827046637, guid: a18043b1d5814a2419ea5c327e70604d,
+        type: 3}
+      propertyPath: FrankieTheMan
+      value: 
+      objectReference: {fileID: 519427917}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a18043b1d5814a2419ea5c327e70604d, type: 3}
 --- !u!4 &1017847985 stripped
