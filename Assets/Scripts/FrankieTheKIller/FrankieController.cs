@@ -46,7 +46,7 @@ public class FrankieController : MonoBehaviour
             if (aCollision.tag == "Player")
             {
                 ViewFinder.SendMessage("StopChasing");
-
+                FranchyWatching = false;
                 PlayerController MyPlayerController = aCollision.gameObject.GetComponent<PlayerController>();
                 if (MyPlayerController != null && MyPlayerController.IsHiding())
                 {
@@ -57,8 +57,8 @@ public class FrankieController : MonoBehaviour
                     MyPlayerController.Animator.SetBool("AlreadyTurned", false);
                     MyPlayerController.Animator.SetFloat("SpeedBox", -1.0f);
                     MyPlayerController.SetBoxToPlayer(true);
-
                     Active = false;
+
                 }
             }
         }

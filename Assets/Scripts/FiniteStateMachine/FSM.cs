@@ -7,7 +7,7 @@ public class FSM : MonoBehaviour
     private CState CurrentState;        //!< The current state of the FSM. The one that is going to be updated.
     private bool IsChangingState;       //!< Indicates if the fsm is changing state or not.
     [SerializeField]
-    private bool IsActive = true;
+    private bool IsActive = false;
 
     /**
      * Starts the FSM with all the needed Data.
