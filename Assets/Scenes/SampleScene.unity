@@ -1243,7 +1243,7 @@ GameObject:
   - component: {fileID: 396604839}
   - component: {fileID: 396604841}
   - component: {fileID: 396604840}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: youshallnotpass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1284,7 +1284,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396604838}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1864,6 +1864,7 @@ MonoBehaviour:
   HasOptions: 0
   OnlyChoice: {fileID: 64449352}
   ActionToDo: ExplosingEntrance
+  mustDestroy: 0
   ActionParams:
     BoolP: 0
     FloatP: 0
@@ -2682,6 +2683,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 54d2a2f6c6b17b14abbfeaaff246d87c,
         type: 3}
+    - target: {fileID: 1411320453343215255, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1436684875}
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_Offset.y
@@ -2712,11 +2718,6 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 5.567516
       objectReference: {fileID: 0}
-    - target: {fileID: 1411320453343215255, guid: 6395ccb8bbd48be49af16c73221a57e6,
-        type: 3}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 1436684875}
     m_RemovedComponents:
     - {fileID: 1411320453343215255, guid: 6395ccb8bbd48be49af16c73221a57e6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6395ccb8bbd48be49af16c73221a57e6, type: 3}
@@ -2844,7 +2845,7 @@ PrefabInstance:
     - target: {fileID: 6564357547553963172, guid: a18043b1d5814a2419ea5c327e70604d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.525
+      value: 1.706
       objectReference: {fileID: 0}
     - target: {fileID: 6564357547553963172, guid: a18043b1d5814a2419ea5c327e70604d,
         type: 3}
@@ -3712,6 +3713,7 @@ MonoBehaviour:
   HasOptions: 0
   OnlyChoice: {fileID: 1411729520}
   ActionToDo: MoveBalloon
+  mustDestroy: 0
   ActionParams:
     BoolP: 1
     FloatP: 0
@@ -5188,13 +5190,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 934777072}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012626872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c3238a5ccf84454dbda42ea7e6d128e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxSwitchScript: {fileID: 0}
 --- !u!1 &2024099374
 GameObject:
   m_ObjectHideFlags: 0
@@ -5598,6 +5593,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 125222083277657747, guid: dfc7e3991793457459708af6af220ef5,
+        type: 3}
+      propertyPath: orthographic size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 125222083277657708, guid: dfc7e3991793457459708af6af220ef5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5678,11 +5678,6 @@ PrefabInstance:
       propertyPath: MinY
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 125222083277657747, guid: dfc7e3991793457459708af6af220ef5,
-        type: 3}
-      propertyPath: orthographic size
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfc7e3991793457459708af6af220ef5, type: 3}
 --- !u!1001 &7712867241477618651
@@ -5757,6 +5752,11 @@ PrefabInstance:
       propertyPath: HidingSprite
       value: 
       objectReference: {fileID: 2012626872}
+    - target: {fileID: 7712867240766810507, guid: b5c336f2fb3c75646a2de12349913e08,
+        type: 3}
+      propertyPath: YouShallNotPass
+      value: 
+      objectReference: {fileID: 396604838}
     - target: {fileID: 7712867240766810518, guid: b5c336f2fb3c75646a2de12349913e08,
         type: 3}
       propertyPath: m_Constraints
