@@ -155,6 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flickeringKeys: {fileID: 253846070}
+  audioS: {fileID: 75587044}
+  clip: {fileID: 8300000, guid: 27ee83991bec0c14d9edaf7d25fa6123, type: 3}
 --- !u!114 &61620033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6182,6 +6184,16 @@ PrefabInstance:
       propertyPath: MyPlayer
       value: 
       objectReference: {fileID: 1436520015}
+    - target: {fileID: 2260380659757113199, guid: 5775ff030652d3e4eba21877e48b529e,
+        type: 3}
+      propertyPath: audioS
+      value: 
+      objectReference: {fileID: 75587044}
+    - target: {fileID: 2260380659757113199, guid: 5775ff030652d3e4eba21877e48b529e,
+        type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e1e24aa706da61447b3548a593444154, type: 3}
     - target: {fileID: 2260380658275345520, guid: 5775ff030652d3e4eba21877e48b529e,
         type: 3}
       propertyPath: audioS
