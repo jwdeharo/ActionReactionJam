@@ -5,6 +5,7 @@ public class PlayerController : BaseController
 {
     public float MovingSpeedFactor = 1.0f;
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
+    public bool FirekeepersSeen;
     public Animator Animator;                       //!< Animator which handles the animations.
     private Sprite OriginalSprite;
     private Transform ToHideTransform;
