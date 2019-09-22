@@ -10,7 +10,7 @@ public class ChoiceControllerClimbBox : MonoBehaviour
 
     private void Update()
     {
-        if (box != null)
+        if (box != null && boxInteract != null)
         {
             if (canClimb)
             {
@@ -35,21 +35,22 @@ public class ChoiceControllerClimbBox : MonoBehaviour
                 GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
                 boxInteract.SetActive(true);
             }
+
+            if (transform.position.y > -0.4)
+            {
+                print("El player esta encima de la caja");
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+                boxInteract.SetActive(false);
+            }
+            else
+            {
+                //print("El player esta debajo de la caja");
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                boxInteract.SetActive(true);
+            }
         }
 
-        if (transform.position.y > -0.4)
-        {
-            print("El player esta encima de la caja");
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-            boxInteract.SetActive(false);
-        }
-        else
-        {
-            //print("El player esta debajo de la caja");
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-            boxInteract.SetActive(true);
-        }
     }
 
     public void PerformAction()
