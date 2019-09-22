@@ -3,6 +3,9 @@
 
 public class BalloonMovement : MonoBehaviour
 {
+    public AudioSource audioS;
+    public AudioClip clip;
+
     [SerializeField]
     private GameObject Respawn = null;
     [SerializeField]
@@ -10,7 +13,7 @@ public class BalloonMovement : MonoBehaviour
     [SerializeField]
     private GameObject interactCat;
 
-    private float speed = 0.12f;
+    private float speed = 0.52f;
     private Vector3 position;
     private float step;
     private bool CanMove = false;
@@ -35,7 +38,7 @@ public class BalloonMovement : MonoBehaviour
 
     public void MoveBalloon(bool aCanMove)
     {
-        interactCat.SetActive(true);
+        audioS.PlayOneShot(clip);
         CanMove = aCanMove;
         GetComponent<Animator>().SetBool("isMoving", true);
         GetComponent<ActionInteraction>().enabled = !aCanMove;
