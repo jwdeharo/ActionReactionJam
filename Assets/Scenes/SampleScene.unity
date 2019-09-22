@@ -170,7 +170,7 @@ MonoBehaviour:
   ActionParams:
     BoolP: 0
     FloatP: 0
-    ObjectP: {fileID: 1436684875}
+    ObjectP: {fileID: 0}
     SendFloat: 0
     SendGameObject: 1
     SendBool: 0
@@ -1075,7 +1075,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222078254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.151, y: -0.971, z: 0}
+  m_LocalPosition: {x: 0.606, y: -0.975, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1261,7 +1261,7 @@ GameObject:
   - component: {fileID: 349919647}
   - component: {fileID: 349919648}
   m_Layer: 0
-  m_Name: Choice (1)
+  m_Name: Call Firefighter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1358,6 +1358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axisName: Fire1
   MustDestroy: 0
+  fire: {fileID: 1229053684}
 --- !u!95 &349919648
 Animator:
   serializedVersion: 3
@@ -1578,7 +1579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ba1f1dd032ffc48ab984d03e118fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThePlayer: {fileID: 1436684875}
+  ThePlayer: {fileID: 1436520015}
 --- !u!61 &396604841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1973,7 +1974,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1436684875}
+      objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_Offset.y
@@ -2361,7 +2362,7 @@ MonoBehaviour:
   ActionParams:
     BoolP: 0
     FloatP: 0
-    ObjectP: {fileID: 1436684875}
+    ObjectP: {fileID: 0}
     SendFloat: 0
     SendGameObject: 1
     SendBool: 0
@@ -2657,7 +2658,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1436684875}
+      objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_Offset.y
@@ -2777,7 +2778,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1436684875}
+      objectReference: {fileID: 1436520015}
     - target: {fileID: 6564357546349768868, guid: a18043b1d5814a2419ea5c327e70604d,
         type: 3}
       propertyPath: clip
@@ -3499,9 +3500,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1229053682}
   - component: {fileID: 1229053681}
+  - component: {fileID: 1229053684}
+  - component: {fileID: 1229053683}
   m_Layer: 0
   m_Name: Bombero_Quieto
-  m_TagString: Untagged
+  m_TagString: Firefighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3563,12 +3566,53 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229053680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.384, y: -0.828, z: 0}
+  m_LocalPosition: {x: 0.391, y: -0.843, z: 0}
   m_LocalScale: {x: 0.03, y: 0.03, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1229053683
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229053680}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -15.619465, y: 1.6309595}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.45, y: 12.48}
+    newSize: {x: 8.45, y: 12.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 39.688927, y: 15.741919}
+  m_EdgeRadius: 0
+--- !u!114 &1229053684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229053680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403ebad2aa7b1cc48b1ce1fbc70ddb9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 1436520015}
+  deployChoicesScript: {fileID: 1702545659}
+  target: {x: -0.926, y: -0.723, z: 0}
 --- !u!1 &1255547654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,7 +4215,7 @@ MonoBehaviour:
   bigPhone: {fileID: 2070696048}
   audioS: {fileID: 75587044}
   clip: {fileID: 8300000, guid: 9c75c5d13d3a10343a2f26f723b76896, type: 3}
---- !u!1 &1436684875 stripped
+--- !u!1 &1436520015 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6116956693962687107, guid: 6d23edf57753e7f43829391ef65c3a7f,
     type: 3}
@@ -4517,7 +4561,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1436684875}
+      objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_Offset.y
@@ -5391,7 +5435,7 @@ GameObject:
   - component: {fileID: 1875396102}
   - component: {fileID: 1875396103}
   m_Layer: 0
-  m_Name: Choice
+  m_Name: Save Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5719,7 +5763,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1436684875}
+      objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_Offset.y
@@ -5789,7 +5833,7 @@ MonoBehaviour:
   choices: []
   deployChoicesScript: {fileID: 0}
   HasOptions: 0
-  OnlyChoice: {fileID: 1436684875}
+  OnlyChoice: {fileID: 1436520015}
   ActionToDo: TimeToHide
   mustDestroy: 0
   ActionParams:
@@ -6374,7 +6418,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1436684875}
+      objectReference: {fileID: 1436520015}
     - target: {fileID: 125222083277657746, guid: dfc7e3991793457459708af6af220ef5,
         type: 3}
       propertyPath: MaxX
@@ -6555,7 +6599,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MyPlayer
       value: 
-      objectReference: {fileID: 1436684875}
+      objectReference: {fileID: 1436520015}
     - target: {fileID: 2260380658275345520, guid: 5775ff030652d3e4eba21877e48b529e,
         type: 3}
       propertyPath: audioS
@@ -6644,7 +6688,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnlyChoice
       value: 
-      objectReference: {fileID: 1436684875}
+      objectReference: {fileID: 1436520015}
     - target: {fileID: 5666284161436310683, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
         type: 3}
       propertyPath: mustDestroy
@@ -6675,6 +6719,11 @@ PrefabInstance:
       propertyPath: FatherInLaw
       value: 
       objectReference: {fileID: 658730193}
+    - target: {fileID: 5666284160020071017, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: playerBody
+      value: 
+      objectReference: {fileID: 1436684877}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77b7d2ced73d6f04eb39f64a7f34ddee, type: 3}
 --- !u!1001 &6116956693251887304
@@ -6852,6 +6901,6 @@ PrefabInstance:
         type: 3}
       propertyPath: ThePlayer
       value: 
-      objectReference: {fileID: 1436684875}
+      objectReference: {fileID: 1436520015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c41872a5cf89e14a87d49216692a25c, type: 3}

@@ -13,7 +13,7 @@ public class FatherInLawController : MonoBehaviour
     {
         if (Killing)
         {
-            if (Utils.AnimationIsFinished(GetComponent<Animator>()))
+            if (Utils.AnimationIsFinished(gameObject.GetComponent<Animator>()))
             {
                 Killing = false;
                 ThePlayer.SendMessage("ChangeToDeath");
