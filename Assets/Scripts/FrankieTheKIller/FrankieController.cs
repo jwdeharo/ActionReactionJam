@@ -5,7 +5,23 @@ public class FrankieController : MonoBehaviour
 
     [SerializeField]
     private GameObject ViewFinder = null;
+    [SerializeField]
+    private GameObject FrankieTheMan = null;
+
+    private GameObject ThePlayer;
     private bool Active = true;
+    private bool FranchyWatching = false;
+
+    private void Update()
+    {
+        if (Active && FranchyWatching)
+        {
+            if (Utils.AnimationIsFinished(FrankieTheMan.GetComponent<Animator>()))
+            {
+                ViewFinder.SendMessage("StartChasing");
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D aCollision)
     {
@@ -13,8 +29,10 @@ public class FrankieController : MonoBehaviour
         {
             if (aCollision.tag == "Player")
             {
+                ThePlayer = aCollision.gameObject;
                 aCollision.gameObject.SendMessage("ToWait", true);
-                ViewFinder.SendMessage("StartChasing");
+                FrankieTheMan.GetComponent<Animator>().SetBool("IsWatching", true);
+                FranchyWatching = true;
             }
         }
     }

@@ -5,7 +5,7 @@ public class FrankieTheKillerIdleState : CState
     private ViewFinderController    MyFrankieController;
     private PlayerController GamePlayerController;
     private float Timer;
-    private float MaxTime = 1.5f;
+    private float MaxTime = 1.0f;
 
     public override void Init(BaseController aParent)
     {
