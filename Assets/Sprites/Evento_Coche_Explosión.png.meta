@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: e99f98f2d597a444a95ef53f8bdfc806
+guid: 1dab6a78d0a539f4fa7281f04769c0bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2009489092129681367
-    second: Evento_Llaves_0
+      213: -8865348935139787998
+    second: "Evento_Coche_Explosi\xF3n_0"
   - first:
-      213: -3155875043297058284
-    second: Evento_Llaves_1
+      213: 8339570803861527868
+    second: "Evento_Coche_Explosi\xF3n_1"
   - first:
-      213: -338278758128826095
-    second: Evento_Llaves_2
+      213: 6325053904044242812
+    second: "Evento_Coche_Explosi\xF3n_2"
   - first:
-      213: 5596086771956781372
-    second: Evento_Llaves_3
+      213: -194580415373718826
+    second: "Evento_Coche_Explosi\xF3n_3"
   - first:
-      213: -5370807238157256270
-    second: Evento_Llaves_4
+      213: 7569487608169059924
+    second: "Evento_Coche_Explosi\xF3n_4"
   - first:
-      213: 1489366529717086113
-    second: Evento_Llaves_5
+      213: -6295713502591322262
+    second: "Evento_Coche_Explosi\xF3n_5"
   - first:
-      213: -2878752441242478290
-    second: Evento_Llaves_6
+      213: 6124449930575898254
+    second: "Evento_Coche_Explosi\xF3n_6"
   - first:
-      213: 6848258500565450235
-    second: Evento_Llaves_7
+      213: 9049891321307882585
+    second: "Evento_Coche_Explosi\xF3n_7"
+  - first:
+      213: -9171880518348077030
+    second: "Evento_Coche_Explosi\xF3n_8"
+  - first:
+      213: 4941503224029303990
+    second: "Evento_Coche_Explosi\xF3n_9"
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -110,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Evento_Llaves_0
+      name: "Evento_Coche_Explosi\xF3n_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 875
-        height: 1238
+        width: 1295
+        height: 1113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 761b69bd652e48a42b2fb59caf29ab9e
-      internalID: -2009489092129681367
+      spriteID: 1bc602b4eb7cd6040b142475648a623f
+      internalID: -8865348935139787998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Llaves_1
+      name: "Evento_Coche_Explosi\xF3n_1"
       rect:
         serializedVersion: 2
-        x: 875
+        x: 1295
         y: 0
-        width: 875
-        height: 1238
+        width: 1295
+        height: 1113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc3779c63b771a54e992a0261bf4a1e7
-      internalID: -3155875043297058284
+      spriteID: cef5624e1700fd8419f20f6a578a10c4
+      internalID: 8339570803861527868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Llaves_2
+      name: "Evento_Coche_Explosi\xF3n_2"
       rect:
         serializedVersion: 2
-        x: 1750
+        x: 2590
         y: 0
-        width: 875
-        height: 1238
+        width: 1295
+        height: 1113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffb4d579b180bb84f8dfadce4b8840de
-      internalID: -338278758128826095
+      spriteID: 49217ee1e3a8e324386f138b56e072a6
+      internalID: 6325053904044242812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Llaves_3
+      name: "Evento_Coche_Explosi\xF3n_3"
       rect:
         serializedVersion: 2
-        x: 2625
+        x: 3885
         y: 0
-        width: 875
-        height: 1238
+        width: 1295
+        height: 1113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5a93ea01b69a1d439681651787d4106
-      internalID: 5596086771956781372
+      spriteID: 95ee03b75792d4444a0fbbce535db404
+      internalID: -194580415373718826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Llaves_4
+      name: "Evento_Coche_Explosi\xF3n_4"
       rect:
         serializedVersion: 2
-        x: 3500
+        x: 5180
         y: 0
-        width: 875
-        height: 1238
+        width: 1295
+        height: 1113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d6805b863a905742ad31082d393fcf4
-      internalID: -5370807238157256270
+      spriteID: 1ae45d80d51181f44a0b43a68ea2151d
+      internalID: 7569487608169059924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Llaves_5
+      name: "Evento_Coche_Explosi\xF3n_5"
       rect:
         serializedVersion: 2
-        x: 4375
+        x: 6475
         y: 0
-        width: 875
-        height: 1238
+        width: 1295
+        height: 1113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b9d41d2674d81242a3d1f91e84a7fba
-      internalID: 1489366529717086113
+      spriteID: 50d9f17d4a0dbe549a1be45bcfdb0873
+      internalID: -6295713502591322262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Llaves_6
+      name: "Evento_Coche_Explosi\xF3n_6"
       rect:
         serializedVersion: 2
-        x: 5250
+        x: 7770
         y: 0
-        width: 875
-        height: 1238
+        width: 1295
+        height: 1113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b0cc6dc71cf44b488670972f4cd8a1e
-      internalID: -2878752441242478290
+      spriteID: 0609845e8d023104ab79943a6ecc52f2
+      internalID: 6124449930575898254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Llaves_7
+      name: "Evento_Coche_Explosi\xF3n_7"
       rect:
         serializedVersion: 2
-        x: 6125
+        x: 9065
         y: 0
-        width: 875
-        height: 1238
+        width: 1295
+        height: 1113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +277,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e90c848a015f0243958c4ebbe516791
-      internalID: 6848258500565450235
+      spriteID: 493008a5ff305204ea2ed904f7661c1e
+      internalID: 9049891321307882585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Evento_Coche_Explosi\xF3n_8"
+      rect:
+        serializedVersion: 2
+        x: 10360
+        y: 0
+        width: 1295
+        height: 1113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3fc1481c1ae53b46a9daebb6235ff32
+      internalID: -9171880518348077030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Evento_Coche_Explosi\xF3n_9"
+      rect:
+        serializedVersion: 2
+        x: 11655
+        y: 0
+        width: 1295
+        height: 1113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb98a97ca7bae804ca39fbfb95a52376
+      internalID: 4941503224029303990
       vertices: []
       indices: 
       edges: []

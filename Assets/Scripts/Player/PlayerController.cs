@@ -84,6 +84,13 @@ public class PlayerController : BaseController
         return Movement * Time.deltaTime * MoveSpeed * MovingSpeedFactor;
     }
 
+    public void GetKeys(GameObject aGameObject)
+    {
+        aGameObject.GetComponent<Animator>().SetBool("GiveKeys", true);
+        aGameObject.GetComponent<GirlfriendController>().CanCheck = true;
+        HasKey = true;
+    }
+
     /**
      *  Indicates if the object with which we have collided is T or not.
      *  @param aCollision: collision detected.

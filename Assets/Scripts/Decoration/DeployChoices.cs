@@ -15,6 +15,7 @@ public class DeployChoices : MonoBehaviour
     {
         twoChoices = false;
     }
+
     private void Update()
     {
         step = speed * Time.deltaTime;

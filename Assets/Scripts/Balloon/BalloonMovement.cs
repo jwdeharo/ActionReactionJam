@@ -4,7 +4,7 @@
 public class BalloonMovement : MonoBehaviour
 {
     public AudioSource audioS;
-    public AudioClip clip, clipCat;
+    public AudioClip clip;
     public GameObject gato;
 
     [SerializeField]
@@ -35,7 +35,6 @@ public class BalloonMovement : MonoBehaviour
                 interactCat.SetActive(true);
             }
             GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeBalloon = true;
-            //print(GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeBalloon);
         }
     }
 
