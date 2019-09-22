@@ -12,6 +12,8 @@ public class ChoiceControllerThrowBox : ChoiceGeneral
     protected override void PerformAction()
     {
         TheBoxMovableController.SetThrowing(true);
+        ThePlayerController.ToWait(true);
+
         if (MustDestroy)
         {
             Destroy(gameObject.transform.parent.gameObject);

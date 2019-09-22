@@ -7,10 +7,14 @@ public class MovableObjectsController : BaseController
     private Transform ThrowPosition;
     [SerializeField]
     private float ThrowSpeed;
+    [SerializeField]
+    private GameObject FatherInLaw;
 
     private Vector3 Movement; //!< Movement of the movable object.
     private bool PlayerUp;
     private bool Throwing;
+    public AudioSource audioS;
+    public AudioClip clip;
 
     /**
      * Start is called before the first frame update
@@ -40,14 +44,35 @@ public class MovableObjectsController : BaseController
         Throwing = false;
     }
 
+    public void DestroyMovableObject()
+    {
+        Destroy(this.gameObject);
+    }
+
     public bool IsThrowing()
     {
         return Throwing;
     }
 
+    public void PlayDestroy()
+    {
+        audioS.PlayOneShot(clip);
+    }
+
+    public bool IsPlayingSound()
+    {
+        return audioS.isPlaying;
+    }
+
     public void SetThrowing(bool aThrowing)
     {
         Throwing = aThrowing;
+    }
+
+    public void TimeToKillAnim(bool aToKill)
+    {
+        FatherInLaw.SendMessage("SetKilling", aToKill);
+        FatherInLaw.GetComponent<Animator>().SetBool("TimeToKill", aToKill);
     }
 
     public void SetPlayerUp(bool aPlayerUp)

@@ -1,7 +1,70 @@
 fileFormatVersion: 2
 guid: b1e7f5d85ccd1e749a78ffb97f5abbe2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6420790343642224078
+    second: Evento_Suegro_0
+  - first:
+      213: -7156587450238184906
+    second: Evento_Suegro_1
+  - first:
+      213: 7030673189223155021
+    second: Evento_Suegro_2
+  - first:
+      213: -1139710864875683380
+    second: Evento_Suegro_3
+  - first:
+      213: -3792670508979497707
+    second: Evento_Suegro_4
+  - first:
+      213: 8763313330312879939
+    second: Evento_Suegro_5
+  - first:
+      213: 8516031378598009790
+    second: Evento_Suegro_6
+  - first:
+      213: -446937870618040591
+    second: Evento_Suegro_7
+  - first:
+      213: 7167483322254415905
+    second: Evento_Suegro_8
+  - first:
+      213: 8779350063130934098
+    second: Evento_Suegro_9
+  - first:
+      213: -8690404366341522669
+    second: Evento_Suegro_10
+  - first:
+      213: 1598021690992176865
+    second: Evento_Suegro_11
+  - first:
+      213: -6334940447616492282
+    second: Evento_Suegro_12
+  - first:
+      213: 4987403286826430569
+    second: Evento_Suegro_13
+  - first:
+      213: -2390940989485201285
+    second: Evento_Suegro_14
+  - first:
+      213: -5301768403661066762
+    second: Evento_Suegro_15
+  - first:
+      213: -8716467870437532031
+    second: Evento_Suegro_16
+  - first:
+      213: 1414354144111387886
+    second: Evento_Suegro_17
+  - first:
+      213: -8720548572171621580
+    second: Evento_Suegro_18
+  - first:
+      213: -3695344077150461952
+    second: Evento_Suegro_19
+  - first:
+      213: -588993843666095858
+    second: Evento_Suegro_20
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +103,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -63,7 +126,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +147,448 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Evento_Suegro_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b70b42ea3dab548a1ccbbe72bab994
+      internalID: 6420790343642224078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_1
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2ebed930549f64e9fda41559a339a9
+      internalID: -7156587450238184906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_2
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e9baa64757d0f4db3ce20c097ffa51
+      internalID: 7030673189223155021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_3
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a8c46a86c850f4aaec066cc69f2d9d
+      internalID: -1139710864875683380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_4
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f239b8041da664cb0e2c6b902b574c
+      internalID: -3792670508979497707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_5
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832037c0de9bcb142afd30657ed76673
+      internalID: 8763313330312879939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_6
+      rect:
+        serializedVersion: 2
+        x: 3588
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc7b681926b98f458e237eb4d4f3351
+      internalID: 8516031378598009790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_7
+      rect:
+        serializedVersion: 2
+        x: 4186
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5079881df0e25f94a85370391105fd65
+      internalID: -446937870618040591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_8
+      rect:
+        serializedVersion: 2
+        x: 4784
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11ea495ae9859842bedc33f1253e43f
+      internalID: 7167483322254415905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_9
+      rect:
+        serializedVersion: 2
+        x: 5382
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dc165581ba6c44ab9d0decd3f45218
+      internalID: 8779350063130934098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_10
+      rect:
+        serializedVersion: 2
+        x: 5980
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cff77b8344b2f47ab158a561d76870
+      internalID: -8690404366341522669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_11
+      rect:
+        serializedVersion: 2
+        x: 6578
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88275a0a99aae114ca7ab9234f2df35e
+      internalID: 1598021690992176865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_12
+      rect:
+        serializedVersion: 2
+        x: 7176
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b189a0f7f627fd42be312e12e24b74e
+      internalID: -6334940447616492282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_13
+      rect:
+        serializedVersion: 2
+        x: 7774
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f23215064b72d4593269600e75a64f
+      internalID: 4987403286826430569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_14
+      rect:
+        serializedVersion: 2
+        x: 8372
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24dd85dc22060d46b6b60b2b74c3fa7
+      internalID: -2390940989485201285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_15
+      rect:
+        serializedVersion: 2
+        x: 8970
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5efa48edfc1b69c4980127d19a93ad90
+      internalID: -5301768403661066762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_16
+      rect:
+        serializedVersion: 2
+        x: 9568
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0145f5a017a0044cad0fe19d4b64d07
+      internalID: -8716467870437532031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_17
+      rect:
+        serializedVersion: 2
+        x: 10166
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725428ff5128f7147b658402e08e35f5
+      internalID: 1414354144111387886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_18
+      rect:
+        serializedVersion: 2
+        x: 10764
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea83af3e114479b42ad1a83a0b9d452d
+      internalID: -8720548572171621580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_19
+      rect:
+        serializedVersion: 2
+        x: 11362
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b23f23522668e44fbd9f6382500bde0
+      internalID: -3695344077150461952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Suegro_20
+      rect:
+        serializedVersion: 2
+        x: 11960
+        y: 0
+        width: 598
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5df05ce87a5804bb0e66c7f517829f
+      internalID: -588993843666095858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

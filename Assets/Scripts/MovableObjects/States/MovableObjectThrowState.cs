@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class MovableObjectThrowState : CState
 {
     private MovableObjectsController TheMovableObjectsController;
-
+    bool IsPlayingDestroy = false;
     public override void Init(BaseController aParent)
     {
         base.Init(aParent);
@@ -19,8 +18,11 @@ public class MovableObjectThrowState : CState
 
         if (Vector2.Distance(TheMovableObjectsController.transform.position, TheMovableObjectsController.GetThrowingPosition()) == 0.0f)
         {
+            TheMovableObjectsController.PlayDestroy();
             TheMovableObjectsController.SetThrowing(false);
             Controller.GetFSM().PopState();
+            TheMovableObjectsController.TimeToKillAnim(true);
+            TheMovableObjectsController.DestroyMovableObject();
         }
     }
 }
