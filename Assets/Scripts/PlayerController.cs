@@ -5,18 +5,12 @@ public class PlayerController : BaseController
 {
     public float MovingSpeedFactor = 1.0f;
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
-    public bool FirekeepersSeen;
     public Animator Animator;                       //!< Animator which handles the animations.
-    public bool FirekeepersSeen;
-
     private Sprite OriginalSprite;
     private Transform ToHideTransform;
 
-
     [SerializeField]
     private GameObject HidingSprite = null;
-    [SerializeField]
-    private GameObject YouShallNotPass = null;
 
     [SerializeField]
     private bool Hide;
@@ -24,6 +18,11 @@ public class PlayerController : BaseController
     private bool BoxTransformation;
     private bool Dead = false;
     private bool BoxToPlayer;
+    private bool firekeepersSeen = false;
+    private bool takeBalloon = false;
+
+    public bool FirekeepersSeen { get => firekeepersSeen; set => firekeepersSeen = value; }
+    public bool TakeBalloon { get => takeBalloon; set => takeBalloon = value; }
 
     /**
      * Start is called before the first frame update
@@ -63,7 +62,6 @@ public class PlayerController : BaseController
         BoxToPlayer = false;
 
         OriginalSprite = GetComponent<SpriteRenderer>().sprite;
-        Animator = GetComponent<Animator>();
     }
 
     /**
@@ -106,8 +104,6 @@ public class PlayerController : BaseController
     {
         if (IsTypeObject<MovableObjectsController>(aCollision) && GetMovement().x != 0.0f)
         {
-            print("empujar");
-            Animator.SetBool("isPushing", true);
             MovingSpeedFactor = 0.1f;
             aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
         }
@@ -121,7 +117,6 @@ public class PlayerController : BaseController
     {
         if (IsTypeObject<MovableObjectsController>(aCollision))
         {
-            Animator.SetBool("isPushing", false);
             aCollision.gameObject.SendMessage("ApplyMovement", Vector3.zero);
             MovingSpeedFactor = 1.0f;
         }
@@ -166,7 +161,6 @@ public class PlayerController : BaseController
     {
         Hide = true;
         ToHideTransform = aGameObject.transform;
-        YouShallNotPass.SendMessage("ActiveYouShallNotPass", true);
     }
 
     public void SetHide(bool aHide)
