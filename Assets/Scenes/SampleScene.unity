@@ -431,6 +431,7 @@ GameObject:
   - component: {fileID: 113416154}
   - component: {fileID: 113416153}
   - component: {fileID: 113416152}
+  - component: {fileID: 113416155}
   m_Layer: 0
   m_Name: Choice
   m_TagString: Untagged
@@ -447,7 +448,7 @@ Transform:
   m_GameObject: {fileID: 113416150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.6420001, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1158729486}
   m_RootOrder: 2
@@ -464,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a75aa59041b19d489fd9a8a5b38f796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Action1
+  axisName: Submit
   MustDestroy: 1
   BoxDown: {fileID: 1091711816251361949}
 --- !u!114 &113416153
@@ -529,6 +530,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &113416155
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113416150}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1c2a9941924e1d34ca03553556eae849, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &166706622
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +864,7 @@ GameObject:
   - component: {fileID: 207149342}
   - component: {fileID: 207149341}
   - component: {fileID: 207149340}
+  - component: {fileID: 207149343}
   m_Layer: 0
   m_Name: Choice (1)
   m_TagString: Untagged
@@ -860,7 +881,7 @@ Transform:
   m_GameObject: {fileID: 207149338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.6420001, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1158729486}
   m_RootOrder: 1
@@ -877,7 +898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cde592fb1f50ea409e4a3405685f509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Action2
+  axisName: Fire1
   MustDestroy: 1
   Target: {fileID: 185420678}
   ThePlayerController: {fileID: 1436520020}
@@ -944,6 +965,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &207149343
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207149338}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b367d8d947481814297ff7d936577c1b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &211934270
 GameObject:
   m_ObjectHideFlags: 0
