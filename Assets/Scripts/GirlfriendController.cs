@@ -11,7 +11,7 @@ public class GirlfriendController : MonoBehaviour
     [SerializeField]
     GameObject MyKeys = null;
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (CanCheck && Utils.AnimationIsFinished(GetComponent<Animator>()))
         {
