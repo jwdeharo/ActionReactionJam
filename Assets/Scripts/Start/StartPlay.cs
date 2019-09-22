@@ -5,17 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class StartPlay : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private bool isFire;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)) {
-            print("Has pulsado escape");
-            SceneManager.LoadScene("Juego");
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
+
+        if (Input.GetAxisRaw("Submit") != 0)
         {
-            Debug.Log("Has pulsado escape");
-            Application.Quit();
+            if (!isFire)
+            {
+                isFire = true;
+                SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+            }
         }
+        else
+        {
+            isFire = false;
+        }
+
     }
 }
