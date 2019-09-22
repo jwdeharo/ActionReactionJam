@@ -4,7 +4,7 @@
 public class BalloonMovement : MonoBehaviour
 {
     public AudioSource audioS;
-    public AudioClip clip;
+    public AudioClip clip,clipCat;
     public GameObject gato;
 
     [SerializeField]
