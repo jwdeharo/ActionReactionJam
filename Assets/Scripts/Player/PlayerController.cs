@@ -5,7 +5,6 @@ public class PlayerController : BaseController
 {
     public float MovingSpeedFactor = 1.0f;
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
-    public bool FirekeepersSeen;
     public Animator Animator;                       //!< Animator which handles the animations.
     private Sprite OriginalSprite;
     private Transform ToHideTransform;
@@ -22,6 +21,14 @@ public class PlayerController : BaseController
     private bool Dead = false;
     private bool BoxToPlayer;
 
+    private bool firekeepersSeen = false;
+    private bool takeBalloon = false;
+    private bool hasKey = false;
+    private bool hasWallet = false;
+    public bool FirekeepersSeen { get => firekeepersSeen; set => firekeepersSeen = value; }
+    public bool TakeBalloon { get => takeBalloon; set => takeBalloon = value; }
+    public bool HasKey { get => hasKey; set => hasKey = value; }
+    public bool HasWallet { get => hasWallet; set => hasWallet = value; }
     /**
      * Start is called before the first frame update
      */
