@@ -7,6 +7,8 @@ public class MotherInLawController : MonoBehaviour
     [SerializeField]
     private GameObject MyPlayer = null;
     private bool IsExploding = false;
+    public AudioSource audioS;
+    public AudioClip clip;
 
     private void FixedUpdate()
     {
@@ -23,6 +25,7 @@ public class MotherInLawController : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<Animator>().SetBool("IsExploding", true);
+        audioS.PlayOneShot(clip);
         IsExploding = true;
     }
 
