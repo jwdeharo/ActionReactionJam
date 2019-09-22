@@ -8,7 +8,7 @@ public class MotherInLawController : MonoBehaviour
     private GameObject MyPlayer = null;
     private bool IsExploding = false;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (IsExploding)
         {
