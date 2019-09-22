@@ -39,6 +39,7 @@ public class ViewFinderController : BaseController
         FirstTimeTrigger = true;
         MySpriteRenderer = GetComponent<SpriteRenderer>();
         MyCollider = GetComponent<BoxCollider2D>();
+        MySpriteRenderer.enabled = false;
     }
 
     private void StartChasing()
