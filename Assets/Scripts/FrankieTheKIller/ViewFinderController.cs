@@ -66,7 +66,7 @@ public class ViewFinderController : BaseController
 
     private void OnTriggerEnter2D(Collider2D aCollision)
     {
-        if (aCollision.gameObject == Target)
+        if (!Target.GetComponent<PlayerController>().IsHiding() && aCollision.gameObject == Target)
         {
             Target.SendMessage("ChangeToDeath");
         }
