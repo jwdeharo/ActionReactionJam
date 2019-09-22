@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ChoiceCallFireFight : ChoiceGeneral
 {
+    public Firefighters fire;
     protected override void PerformAction()
     {
-        print("Hacer que aqui llame al bombero");
+        fire.MoveFirefighter(true);
     }
 
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Car : MonoBehaviour
 {
 
+    public Flickering flickeringKeys;
 
     private void OnCar(GameObject aGameObject)
     {
@@ -14,7 +15,7 @@ public class Car : MonoBehaviour
         }
         else
         {
-            print("NO TIENES LAS LLAVES");
+            StartCoroutine(flickeringKeys.Flick());
         }
     }
 }
