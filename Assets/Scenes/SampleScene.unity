@@ -4239,7 +4239,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 54d2a2f6c6b17b14abbfeaaff246d87c,
+      objectReference: {fileID: 21300000, guid: a65e7d5af1aa6e74a863d7707be033eb,
         type: 3}
     - target: {fileID: 1411320453343215255, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
@@ -4254,12 +4254,12 @@ PrefabInstance:
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 8.45
+      value: 12.97
       objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 12.48
+      value: 8.1
       objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
@@ -5431,8 +5431,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 54d2a2f6c6b17b14abbfeaaff246d87c,
+      objectReference: {fileID: -8530075839275227340, guid: d231450a8a4329548bf8c6d782c40303,
         type: 3}
+    - target: {fileID: 1411320453343215250, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215255, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: Target
@@ -5446,12 +5451,12 @@ PrefabInstance:
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 8.45
+      value: 37.47
       objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 12.48
+      value: 15.426187
       objectReference: {fileID: 0}
     - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
         type: 3}
@@ -5467,6 +5472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 5.567516
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411320453343215248, guid: 6395ccb8bbd48be49af16c73221a57e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1411320453343215255, guid: 6395ccb8bbd48be49af16c73221a57e6, type: 3}
