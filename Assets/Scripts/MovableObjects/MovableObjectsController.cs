@@ -4,6 +4,7 @@ using UnityEngine;
 public class MovableObjectsController : BaseController
 {
     private Vector3 Movement; //!< Movement of the movable object.
+    private bool PlayerUp;
 
     /**
      * Start is called before the first frame update
@@ -25,6 +26,19 @@ public class MovableObjectsController : BaseController
         MyFSM = GetComponent<FSM>();
         MyFSM.StartFSM();
         MyFSM.ChangeState(IdleState);
+
+        PlayerUp = false;
+    }
+
+
+    public void SetPlayerUp(bool aPlayerUp)
+    {
+        PlayerUp = aPlayerUp;
+    }
+
+    public bool IsPlayerUp()
+    {
+        return PlayerUp;
     }
 
     /**

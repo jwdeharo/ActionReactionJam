@@ -11,7 +11,7 @@ public class LimitController : MonoBehaviour
     {
         if (ViewFinder != null && aCollision.tag == "Player")
         {
-            ViewFinder.GetComponent<ViewFinderController>().SetChaseSpeed(1.3f);
+            ViewFinder.GetComponent<ViewFinderController>().SetChaseSpeed(1.4f);
         }
     }
 }

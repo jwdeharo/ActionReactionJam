@@ -6,19 +6,20 @@ public class PlayerController : BaseController
     public float MovingSpeedFactor = 1.0f;
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
     public Animator Animator;                       //!< Animator which handles the animations.
-    private Sprite OriginalSprite;
     private Transform ToHideTransform;
 
     [SerializeField]
-    private GameObject HidingSprite = null;
+    private GameObject HidingSprite     = null;
     [SerializeField]
-    private GameObject YouShallNotPass = null;
+    private GameObject YouShallNotPass  = null;
+    [SerializeField]
+    private GameObject BoxToClimb       = null;
 
-    [SerializeField]
     private bool Hide;
     private bool Wait;
     private bool BoxTransformation;
-    private bool Dead = false;
+    private bool Dead;
+    private bool Climb;
     private bool BoxToPlayer;
 
     private bool firekeepersSeen = false;
@@ -29,6 +30,7 @@ public class PlayerController : BaseController
     public bool TakeBalloon { get => takeBalloon; set => takeBalloon = value; }
     public bool HasKey { get => hasKey; set => hasKey = value; }
     public bool HasWallet { get => hasWallet; set => hasWallet = value; }
+    
     /**
      * Start is called before the first frame update
      */
@@ -40,6 +42,7 @@ public class PlayerController : BaseController
         HidingState HideState = new HidingState();
         WaitingState MyWaitState = new WaitingState();
         BoxToPlayerState MyBoxToPlayerState = new BoxToPlayerState();
+        ClimbingBoxState ClimbState = new ClimbingBoxState();
 
         MyIdleState.Init(this);
         WalkState.Init(this);
@@ -47,6 +50,7 @@ public class PlayerController : BaseController
         HideState.Init(this);
         MyWaitState.Init(this);
         MyBoxToPlayerState.Init(this);
+        ClimbState.Init(this);
 
         States = new Dictionary<string, CState>();
 
@@ -56,17 +60,18 @@ public class PlayerController : BaseController
         States.Add("Hide", HideState);
         States.Add("Wait", MyWaitState);
         States.Add("BoxToPlayer", MyBoxToPlayerState);
+        States.Add("Climb", ClimbState);
 
         MyFSM = GetComponent<FSM>();
         MyFSM.StartFSM();
         MyFSM.ChangeState(MyIdleState);
 
-        Hide = false;
-        Wait = false;
-        BoxTransformation = false;
-        BoxToPlayer = false;
-
-        OriginalSprite = GetComponent<SpriteRenderer>().sprite;
+        Dead                = false;
+        Hide                = false;
+        Climb               = false;
+        Wait                = false;
+        BoxTransformation   = false;
+        BoxToPlayer         = false;
     }
 
     /**
@@ -109,8 +114,8 @@ public class PlayerController : BaseController
     {
         if (IsTypeObject<MovableObjectsController>(aCollision) && GetMovement().x != 0.0f)
         {
-            MovingSpeedFactor = 0.1f;
-            aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
+            MovingSpeedFactor = aCollision.gameObject.GetComponent<MovableObjectsController>().IsPlayerUp() ? 1.0f : 0.1f;
+            aCollision.gameObject.SendMessage("ApplyMovement", aCollision.gameObject.GetComponent<MovableObjectsController>().IsPlayerUp() ? Vector3.zero : GetMovement());
         }
     }
 
@@ -127,41 +132,95 @@ public class PlayerController : BaseController
         }
     }
 
+    /**
+     * Returns if the player is hiding.
+     * @return true if hiding, false if not.
+     */
     public bool IsHiding()
     {
         return Hide;
     }
 
+    /**
+     * Returns the box to climb.
+     * @return box to climb.
+     */
+    public GameObject GetClimbingBox()
+    {
+        return BoxToClimb;
+    }
+
+    /**
+     * Returns if the player is using another sprite.
+     * @return true if using another sprite, false if not.
+     */
     public bool IsChangedSprite()
     {
         return BoxTransformation;
     }
 
+    /**
+     * Returns if the player is changing from box to player.
+     * @return true if changing from box to player, false if not.
+     */
     public bool IsBoxToPlayer()
     {
         return BoxToPlayer;
     }
 
+    /**
+     * Change the var Dead to true.
+     */
     private void ChangeToDeath()
     {
         Dead = true;
     }
 
+    /**
+     * Sets the var climb to a new value.
+     * @param aClimb new value.
+     */
+    private void ChangeToClimb(bool aClimb)
+    {
+        Climb = aClimb;
+    }
+
+    /**
+     * Returns if the player is dead.
+     * @return true if dead, false if not.
+     */
     public bool IsDead()
     {
         return Dead;
     }
 
+    public bool IsClimbing()
+    {
+        return Climb;
+    }
+
+    /**
+     * Returns if the player is waiting or not.
+     * @param true if waiting, false if not.
+     */
     public bool IsWaiting()
     {
         return Wait;
     }
 
+    /**
+     * Sets the var Boxtransformation.
+     * @param aBox new value.
+     */
     public void SetBox(bool aBox)
     {
         BoxTransformation = aBox;
     }
 
+    /**
+     * Sets the var hide to true.
+     * @param Game object to set.
+     */
     public void TimeToHide(GameObject aGameObject)
     {
         Hide = true;
@@ -169,26 +228,36 @@ public class PlayerController : BaseController
         YouShallNotPass.SendMessage("ActiveYouShallNotPass", true);
     }
 
+    /**
+     * Sets the var hide to a new value.
+     * @param aHide new value.
+     */
     public void SetHide(bool aHide)
     {
         Hide = aHide;
     }
 
+    /**
+     * Sets the var BoxToPlayer to a new value.
+     * @param aBoxToPlayer new value.
+     */
     public void SetBoxToPlayer(bool aBoxToPlayer)
     {
         BoxToPlayer = aBoxToPlayer;
     }
 
-    public Transform GetToHideTransform()
-    {
-        return ToHideTransform;
-    }
-
-    public void ChangeSprite(bool aToOriginal)
+    /**
+     * Destroys the previous sprite.
+     */
+    public void ChangeSprite()
     {
         Destroy(HidingSprite);
     }
 
+    /**
+     * Sets the var Wait to a new value.
+     * @param aToWait new value.
+     */
     public void ToWait(bool aToWait)
     {
         Wait = aToWait;

@@ -10,7 +10,7 @@ public class HidingState : CState
 
     public override void UpdateState()
     {
-        ((PlayerController)Controller).ChangeSprite(false);
+        ((PlayerController)Controller).ChangeSprite();
 
         if (Utils.AnimationIsFinished(((PlayerController)Controller).Animator))
         {
