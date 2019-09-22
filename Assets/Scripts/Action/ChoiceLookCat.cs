@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class ChoiceLookCat : ChoiceGeneral
 {
+    public PlayerClimbTree playerClimbScript;
+    public GameObject action;
+
     protected override void PerformAction()
     {
-        print("Mueres por el gato");
-        GameObject.FindWithTag("Player").SendMessage("ChangeToDeath");
-        
+        playerClimbScript.StartAction();
+        if (MustDestroy)
+        {
+            Destroy(action);
+        }
+
     }
 }

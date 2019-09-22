@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: a269691822ab0274392a6d8a6df68ba1
+guid: 53e17a50a5d63b94e9cc9bb5afe6987c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3515661323819626807
-    second: climbTree_0
+      213: 3275280275730309828
+    second: Bombero_Quieto-sheet_0
   - first:
-      213: -8130542270480137153
-    second: climbTree_1
-  - first:
-      213: -2751562860119775694
-    second: climbTree_2
-  - first:
-      213: -7247398661169398121
-    second: climbTree_3
-  - first:
-      213: -8420960581653337486
-    second: climbTree_4
-  - first:
-      213: 5790902230171903087
-    second: climbTree_5
+      213: 1583431288278982390
+    second: Bombero_Quieto-sheet_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -92,7 +80,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -116,12 +104,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: climbTree_0
+      name: Bombero_Quieto-sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 843
+        width: 845
         height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -130,19 +118,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dec9b6b6b72e96e44b8c7c8e82fb1fb4
-      internalID: -3515661323819626807
+      spriteID: 473008d38e2182a4484e69f99ea67932
+      internalID: 3275280275730309828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climbTree_1
+      name: Bombero_Quieto-sheet_1
       rect:
         serializedVersion: 2
-        x: 843
+        x: 845
         y: 0
-        width: 843
+        width: 845
         height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -151,92 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24d835927d235bf48ae5a09a3bdf5f75
-      internalID: -8130542270480137153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: climbTree_2
-      rect:
-        serializedVersion: 2
-        x: 1686
-        y: 0
-        width: 843
-        height: 1248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07fb834f65cf8854aa3f1eded88cf699
-      internalID: -2751562860119775694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: climbTree_3
-      rect:
-        serializedVersion: 2
-        x: 2529
-        y: 0
-        width: 843
-        height: 1248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd8d8f1d602be424e8248e041163188e
-      internalID: -7247398661169398121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: climbTree_4
-      rect:
-        serializedVersion: 2
-        x: 3372
-        y: 0
-        width: 843
-        height: 1248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf46849dd1bc2e047b581f7289e87db6
-      internalID: -8420960581653337486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: climbTree_5
-      rect:
-        serializedVersion: 2
-        x: 4215
-        y: 0
-        width: 843
-        height: 1248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c8f695ae91840f4394256807e269317
-      internalID: 5790902230171903087
+      spriteID: fd4f3e1d4b729554eb20e65e8eba5e52
+      internalID: 1583431288278982390
       vertices: []
       indices: 
       edges: []

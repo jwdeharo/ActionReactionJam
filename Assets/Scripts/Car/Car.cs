@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
-
+    public AudioSource audioS;
+    public AudioClip clip;
     public Flickering flickeringKeys;
 
     private void OnCar(GameObject aGameObject)
@@ -15,7 +16,7 @@ public class Car : MonoBehaviour
         }
         else
         {
-            print("no hay llaves");
+            audioS.PlayOneShot(clip);
             StartCoroutine(flickeringKeys.Flick());
         }
     }
