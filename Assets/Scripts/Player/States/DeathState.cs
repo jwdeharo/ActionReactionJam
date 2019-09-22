@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathState : CState
 {
     public override void OnEnterState()
     {
-        Debug.Log("You died");
-        //((PlayerController)Controller).Animator.SetBool("IsDead", true);
+        ((PlayerController)Controller).Animator.SetBool("IsDead", true);
+    }
+
+    public override void UpdateState()
+    {
+        if (Utils.AnimationIsFinished(((PlayerController)Controller).Animator))
+        {
+            SceneManager.LoadScene("Muerte");
+        }
     }
 }

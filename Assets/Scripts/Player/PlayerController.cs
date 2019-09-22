@@ -6,8 +6,11 @@ public class PlayerController : BaseController
     public float MovingSpeedFactor = 1.0f;
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
     public Animator Animator;                       //!< Animator which handles the animations.
+    public bool FirekeepersSeen;
+
     private Sprite OriginalSprite;
     private Transform ToHideTransform;
+
 
     [SerializeField]
     private GameObject HidingSprite = null;
@@ -17,6 +20,7 @@ public class PlayerController : BaseController
     private bool Wait;
     private bool BoxTransformation;
     private bool Dead = false;
+    private bool BoxToPlayer;
 
     /**
      * Start is called before the first frame update
@@ -28,13 +32,14 @@ public class PlayerController : BaseController
         DeathState MyDeathState = new DeathState();
         HidingState HideState = new HidingState();
         WaitingState MyWaitState = new WaitingState();
+        BoxToPlayerState MyBoxToPlayerState = new BoxToPlayerState();
 
         MyIdleState.Init(this);
         WalkState.Init(this);
         MyDeathState.Init(this);
         HideState.Init(this);
         MyWaitState.Init(this);
-
+        MyBoxToPlayerState.Init(this);
 
         States = new Dictionary<string, CState>();
 
@@ -43,6 +48,7 @@ public class PlayerController : BaseController
         States.Add("Death", MyDeathState);
         States.Add("Hide", HideState);
         States.Add("Wait", MyWaitState);
+        States.Add("BoxToPlayer", MyBoxToPlayerState);
 
         MyFSM = GetComponent<FSM>();
         MyFSM.StartFSM();
@@ -51,6 +57,7 @@ public class PlayerController : BaseController
         Hide = false;
         Wait = false;
         BoxTransformation = false;
+        BoxToPlayer = false;
 
         OriginalSprite = GetComponent<SpriteRenderer>().sprite;
         Animator = GetComponent<Animator>();
@@ -127,6 +134,11 @@ public class PlayerController : BaseController
         return BoxTransformation;
     }
 
+    public bool IsBoxToPlayer()
+    {
+        return BoxToPlayer;
+    }
+
     private void ChangeToDeath()
     {
         Dead = true;
@@ -156,6 +168,11 @@ public class PlayerController : BaseController
     public void SetHide(bool aHide)
     {
         Hide = aHide;
+    }
+
+    public void SetBoxToPlayer(bool aBoxToPlayer)
+    {
+        BoxToPlayer = aBoxToPlayer;
     }
 
     public Transform GetToHideTransform()

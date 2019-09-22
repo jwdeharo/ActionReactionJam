@@ -18,6 +18,7 @@ public class WalkingState : CState
     {
         if (((PlayerController)Controller).IsDead())
         {
+            Controller.GetFSM().PopState();
             Controller.GetFSM().ChangeState(Controller.GetState("Death"));
         }
         else if (((PlayerController)Controller).IsWaiting())
@@ -27,8 +28,13 @@ public class WalkingState : CState
         }
         else if (((PlayerController)Controller).IsHiding() && !((PlayerController)Controller).IsChangedSprite())
         {
-            Debug.Log("Update state");
+            Controller.GetFSM().PopState();
             Controller.GetFSM().ChangeState(Controller.GetState("Hide"));
+        }
+        else if (((PlayerController)Controller).IsBoxToPlayer())
+        {
+            Controller.GetFSM().PopState();
+            Controller.GetFSM().ChangeState(Controller.GetState("BoxToPlayer"));
         }
         else
         {
@@ -51,7 +57,6 @@ public class WalkingState : CState
      */
     public override void OnExitState()
     {
-        Debug.Log("Exit state");
         string SpeedString = ((PlayerController)Controller).IsHiding() ? "SpeedBox" : "Speed";
         ((PlayerController)Controller).Animator.SetFloat(SpeedString, -1.0f);
     }
