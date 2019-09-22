@@ -3155,6 +3155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d80a17772f2f87408a9484f46710482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Respawn: {fileID: 1411729520}
+  target: {x: -0.925, y: -0.638, z: 0}
 --- !u!1 &1436107580
 GameObject:
   m_ObjectHideFlags: 0
@@ -5153,6 +5155,16 @@ PrefabInstance:
     - target: {fileID: 7712867240766810517, guid: b5c336f2fb3c75646a2de12349913e08,
         type: 3}
       propertyPath: m_Size.y
+      value: 12.493305
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712867240766810519, guid: b5c336f2fb3c75646a2de12349913e08,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 8.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712867240766810519, guid: b5c336f2fb3c75646a2de12349913e08,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
       value: 12.493305
       objectReference: {fileID: 0}
     m_RemovedComponents: []

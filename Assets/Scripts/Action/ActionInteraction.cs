@@ -37,7 +37,7 @@ public class ActionInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetAxisRaw("Fire1") != 0 && canInteract)
+        if (enabled && Input.GetAxisRaw("Fire1") != 0 && canInteract)
         {
             if (!isFire)
             {
@@ -82,7 +82,7 @@ public class ActionInteraction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (enabled && collision.tag == "Player")
         {
             canInteract = true;
             anim.gameObject.SetActive(false);
@@ -96,7 +96,7 @@ public class ActionInteraction : MonoBehaviour
      */
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (enabled && collision.tag == "Player")
         {
             canInteract = false;
             VanishAnimation();
@@ -124,7 +124,6 @@ public class ActionInteraction : MonoBehaviour
         {
             OnlyChoice.SendMessage(ActionToDo);
         }
-        Destroy(gameObject);
     }
 
    

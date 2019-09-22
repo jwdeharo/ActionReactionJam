@@ -1,26 +1,36 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
     public class BalloonMovement : MonoBehaviour
 {
-    private float speed = 0.12f;
-    private Vector2 target;
-    private Vector2 position;
-    private float step;
+    [SerializeField]
+    private GameObject Respawn = null;
+    [SerializeField]
+    private Vector3 target = new Vector3();
 
-    public void MoveBalloon(bool CanMove)
+    private float speed = 0.12f;
+    private Vector3 position;
+    private float step;
+    private bool CanMove = false;
+
+    public void Update()
     {
-        if (CanMove && Input.GetKeyDown(KeyCode.E))
+        if (CanMove)
         {
-            Debug.Log("Se mueve");
-            var respawn = GameObject.FindWithTag("Balloon");
-            position = respawn.transform.position;
-            Debug.Log("Se mueve");
-            target = new Vector2(0.236f, 0.696f);
+            position = Respawn.transform.position;
             step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, target, step);
+
+            if (Vector3.Distance(transform.position, target) == 0.0f)
+            {
+                CanMove = false;
+            }
         }
+    }
+
+    public void MoveBalloon(bool aCanMove)
+    {
+        CanMove = aCanMove;
+        GetComponent<ActionInteraction>().enabled = !aCanMove;
     }
 }
