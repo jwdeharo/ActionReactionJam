@@ -3156,7 +3156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Respawn: {fileID: 1411729520}
-  target: {x: -0.925, y: -0.638, z: 0}
+  target: {x: -0.925, y: 0, z: 0}
 --- !u!1 &1436107580
 GameObject:
   m_ObjectHideFlags: 0
