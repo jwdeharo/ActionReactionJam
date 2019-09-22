@@ -53,6 +53,7 @@ public class PlayerController : BaseController
         BoxTransformation = false;
 
         OriginalSprite = GetComponent<SpriteRenderer>().sprite;
+        Animator = GetComponent<Animator>();
     }
 
     /**
@@ -95,6 +96,8 @@ public class PlayerController : BaseController
     {
         if (IsTypeObject<MovableObjectsController>(aCollision) && GetMovement().x != 0.0f)
         {
+            print("empujar");
+            Animator.SetBool("isPushing", true);
             MovingSpeedFactor = 0.1f;
             aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
         }
@@ -108,6 +111,7 @@ public class PlayerController : BaseController
     {
         if (IsTypeObject<MovableObjectsController>(aCollision))
         {
+            Animator.SetBool("isPushing", false);
             aCollision.gameObject.SendMessage("ApplyMovement", Vector3.zero);
             MovingSpeedFactor = 1.0f;
         }
