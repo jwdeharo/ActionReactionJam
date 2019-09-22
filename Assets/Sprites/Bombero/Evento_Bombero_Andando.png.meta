@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: cb4c6229c29a8cf4dac9957800499eee
+guid: f288317e7d79c5042aa317c0c7ed6469
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6032550269641859780
-    second: Evento_Gato_0
+      213: 6691947108056472526
+    second: Evento_Bombero_Andando_0
   - first:
-      213: -8811781634928389210
-    second: Evento_Gato_1
+      213: 8235072093481245363
+    second: Evento_Bombero_Andando_1
   - first:
-      213: 7604452462083266158
-    second: Evento_Gato_2
+      213: -3285134911183635321
+    second: Evento_Bombero_Andando_2
   - first:
-      213: -8538338978591358406
-    second: Evento_Gato_3
+      213: 6425378693405878362
+    second: Evento_Bombero_Andando_3
   - first:
-      213: -6371747315081977050
-    second: Evento_Gato_4
+      213: 8769076182710124819
+    second: Evento_Bombero_Andando_4
   - first:
-      213: 5873659876922662818
-    second: Evento_Gato_5
+      213: -9139602905752715119
+    second: Evento_Bombero_Andando_5
   - first:
-      213: -8395428044193860095
-    second: Evento_Gato_6
+      213: -1880715794545645550
+    second: Evento_Bombero_Andando_6
   - first:
-      213: -2711728346710756780
-    second: Evento_Gato_7
-  - first:
-      213: -3315040182059919368
-    second: Evento_Gato_8
-  - first:
-      213: -4319556581845265950
-    second: Evento_Gato_9
+      213: -5309660085219432076
+    second: Evento_Bombero_Andando_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,7 +98,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -128,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Evento_Gato_0
+      name: Evento_Bombero_Andando_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 346
-        height: 417
+        width: 843
+        height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08725f9650d620f4d9c1aa9d427f3483
-      internalID: 6032550269641859780
+      spriteID: fee388462b88320468f9c995d87beb15
+      internalID: 6691947108056472526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_1
+      name: Evento_Bombero_Andando_1
       rect:
         serializedVersion: 2
-        x: 346
+        x: 843
         y: 0
-        width: 346
-        height: 417
+        width: 843
+        height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8468a4ad9a0098245b7807f0ea1b0871
-      internalID: -8811781634928389210
+      spriteID: 59728cd884253a14e8c2c9ff1ef9205f
+      internalID: 8235072093481245363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_2
+      name: Evento_Bombero_Andando_2
       rect:
         serializedVersion: 2
-        x: 692
+        x: 1686
         y: 0
-        width: 346
-        height: 417
+        width: 843
+        height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea165b5edbd8d9e42943c832fd0d61ec
-      internalID: 7604452462083266158
+      spriteID: 97899483ff059f940b9d5f622b80e294
+      internalID: -3285134911183635321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_3
+      name: Evento_Bombero_Andando_3
       rect:
         serializedVersion: 2
-        x: 1038
+        x: 2529
         y: 0
-        width: 346
-        height: 417
+        width: 843
+        height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b0ee9396079ec438d6fb62d141f88b
-      internalID: -8538338978591358406
+      spriteID: f0c9686e15a87ad4a9940b55d836921c
+      internalID: 6425378693405878362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_4
+      name: Evento_Bombero_Andando_4
       rect:
         serializedVersion: 2
-        x: 1384
+        x: 3372
         y: 0
-        width: 346
-        height: 417
+        width: 843
+        height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03afcdf7fe56e8e46a3da0ff6c26e501
-      internalID: -6371747315081977050
+      spriteID: d9286da3619ec8c41bab6d0102ef4fb9
+      internalID: 8769076182710124819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_5
+      name: Evento_Bombero_Andando_5
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 4215
         y: 0
-        width: 346
-        height: 417
+        width: 843
+        height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7d14f08f15655a49a68c92b70b7cb3e
-      internalID: 5873659876922662818
+      spriteID: e5b46a401c485f449b5190275a7aedd6
+      internalID: -9139602905752715119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_6
+      name: Evento_Bombero_Andando_6
       rect:
         serializedVersion: 2
-        x: 2076
+        x: 5058
         y: 0
-        width: 346
-        height: 417
+        width: 843
+        height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a64e2af7bfe75ff45883ad3360872ed1
-      internalID: -8395428044193860095
+      spriteID: 01d8eaa9f1f88e64dbaa52f86fc637ba
+      internalID: -1880715794545645550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_7
+      name: Evento_Bombero_Andando_7
       rect:
         serializedVersion: 2
-        x: 2422
+        x: 5901
         y: 0
-        width: 346
-        height: 417
+        width: 843
+        height: 1248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,50 +283,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a0a55a36ed11e04bb6413b1ab1a5ac6
-      internalID: -2711728346710756780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evento_Gato_8
-      rect:
-        serializedVersion: 2
-        x: 2768
-        y: 0
-        width: 346
-        height: 417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2807269ce484b74eb8e52d3bdcd6efd
-      internalID: -3315040182059919368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evento_Gato_9
-      rect:
-        serializedVersion: 2
-        x: 3114
-        y: 0
-        width: 346
-        height: 417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ac1a2871d4377b40b62306f74ab003f
-      internalID: -4319556581845265950
+      spriteID: aa59c8a0f17bfdc45a9622e060515d76
+      internalID: -5309660085219432076
       vertices: []
       indices: 
       edges: []

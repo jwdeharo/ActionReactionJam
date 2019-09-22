@@ -1,37 +1,25 @@
 fileFormatVersion: 2
-guid: cb4c6229c29a8cf4dac9957800499eee
+guid: 611c02c656185fb41bfdfd3463ba8647
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6032550269641859780
-    second: Evento_Gato_0
+      213: 1554182085684997840
+    second: Evento_Alcantarilla_0
   - first:
-      213: -8811781634928389210
-    second: Evento_Gato_1
+      213: 4308401344311657593
+    second: Evento_Alcantarilla_1
   - first:
-      213: 7604452462083266158
-    second: Evento_Gato_2
+      213: -5348405538200765972
+    second: Evento_Alcantarilla_2
   - first:
-      213: -8538338978591358406
-    second: Evento_Gato_3
+      213: -7260860341734527756
+    second: Evento_Alcantarilla_3
   - first:
-      213: -6371747315081977050
-    second: Evento_Gato_4
+      213: -3169802581791712520
+    second: Evento_Alcantarilla_4
   - first:
-      213: 5873659876922662818
-    second: Evento_Gato_5
-  - first:
-      213: -8395428044193860095
-    second: Evento_Gato_6
-  - first:
-      213: -2711728346710756780
-    second: Evento_Gato_7
-  - first:
-      213: -3315040182059919368
-    second: Evento_Gato_8
-  - first:
-      213: -4319556581845265950
-    second: Evento_Gato_9
+      213: -4401894180262093448
+    second: Evento_Alcantarilla_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,7 +92,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -128,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Evento_Gato_0
+      name: Evento_Alcantarilla_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 346
-        height: 417
+        width: 1157
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08725f9650d620f4d9c1aa9d427f3483
-      internalID: 6032550269641859780
+      spriteID: 83cd13bb0874dba4a993b0ad18e65dde
+      internalID: 1554182085684997840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_1
+      name: Evento_Alcantarilla_1
       rect:
         serializedVersion: 2
-        x: 346
+        x: 1157
         y: 0
-        width: 346
-        height: 417
+        width: 1157
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8468a4ad9a0098245b7807f0ea1b0871
-      internalID: -8811781634928389210
+      spriteID: a7fd69d81e352c848be408abcd25b79c
+      internalID: 4308401344311657593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_2
+      name: Evento_Alcantarilla_2
       rect:
         serializedVersion: 2
-        x: 692
+        x: 2314
         y: 0
-        width: 346
-        height: 417
+        width: 1157
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea165b5edbd8d9e42943c832fd0d61ec
-      internalID: 7604452462083266158
+      spriteID: 1a2f1432026c24f4b9cea9f776200385
+      internalID: -5348405538200765972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_3
+      name: Evento_Alcantarilla_3
       rect:
         serializedVersion: 2
-        x: 1038
+        x: 3471
         y: 0
-        width: 346
-        height: 417
+        width: 1157
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b0ee9396079ec438d6fb62d141f88b
-      internalID: -8538338978591358406
+      spriteID: 07c9e8ab7f800324fb105d864d4fadc0
+      internalID: -7260860341734527756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_4
+      name: Evento_Alcantarilla_4
       rect:
         serializedVersion: 2
-        x: 1384
+        x: 4628
         y: 0
-        width: 346
-        height: 417
+        width: 1157
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03afcdf7fe56e8e46a3da0ff6c26e501
-      internalID: -6371747315081977050
+      spriteID: ecb069c33e9336245b357911efb6eb43
+      internalID: -3169802581791712520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_5
+      name: Evento_Alcantarilla_5
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 5785
         y: 0
-        width: 346
-        height: 417
+        width: 1157
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,92 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7d14f08f15655a49a68c92b70b7cb3e
-      internalID: 5873659876922662818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evento_Gato_6
-      rect:
-        serializedVersion: 2
-        x: 2076
-        y: 0
-        width: 346
-        height: 417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a64e2af7bfe75ff45883ad3360872ed1
-      internalID: -8395428044193860095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evento_Gato_7
-      rect:
-        serializedVersion: 2
-        x: 2422
-        y: 0
-        width: 346
-        height: 417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a0a55a36ed11e04bb6413b1ab1a5ac6
-      internalID: -2711728346710756780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evento_Gato_8
-      rect:
-        serializedVersion: 2
-        x: 2768
-        y: 0
-        width: 346
-        height: 417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2807269ce484b74eb8e52d3bdcd6efd
-      internalID: -3315040182059919368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Evento_Gato_9
-      rect:
-        serializedVersion: 2
-        x: 3114
-        y: 0
-        width: 346
-        height: 417
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ac1a2871d4377b40b62306f74ab003f
-      internalID: -4319556581845265950
+      spriteID: a452341fdbda5b549bf26ac781be82c3
+      internalID: -4401894180262093448
       vertices: []
       indices: 
       edges: []

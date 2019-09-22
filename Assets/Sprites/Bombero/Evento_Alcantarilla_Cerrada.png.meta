@@ -1,37 +1,43 @@
 fileFormatVersion: 2
-guid: cb4c6229c29a8cf4dac9957800499eee
+guid: eca37094509a5e84ab151439a95ddf92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6032550269641859780
-    second: Evento_Gato_0
+      213: -4869574943359783277
+    second: Evento_Alcantarilla_Cerrada_0
   - first:
-      213: -8811781634928389210
-    second: Evento_Gato_1
+      213: -2548355062818063191
+    second: Evento_Alcantarilla_Cerrada_1
   - first:
-      213: 7604452462083266158
-    second: Evento_Gato_2
+      213: -4690400750720796403
+    second: Evento_Alcantarilla_Cerrada_2
   - first:
-      213: -8538338978591358406
-    second: Evento_Gato_3
+      213: -6971831047263582228
+    second: Evento_Alcantarilla_Cerrada_3
   - first:
-      213: -6371747315081977050
-    second: Evento_Gato_4
+      213: -5590106526004642704
+    second: Evento_Alcantarilla_Cerrada_4
   - first:
-      213: 5873659876922662818
-    second: Evento_Gato_5
+      213: 4822632355744962417
+    second: Evento_Alcantarilla_Cerrada_5
   - first:
-      213: -8395428044193860095
-    second: Evento_Gato_6
+      213: 5127751601836970519
+    second: Evento_Alcantarilla_Cerrada_6
   - first:
-      213: -2711728346710756780
-    second: Evento_Gato_7
+      213: 6683453190662217956
+    second: Evento_Alcantarilla_Cerrada_7
   - first:
-      213: -3315040182059919368
-    second: Evento_Gato_8
+      213: -8956663112995002941
+    second: Evento_Alcantarilla_Cerrada_8
   - first:
-      213: -4319556581845265950
-    second: Evento_Gato_9
+      213: 3218314028197390540
+    second: Evento_Alcantarilla_Cerrada_9
+  - first:
+      213: 9088279300991464588
+    second: Evento_Alcantarilla_Cerrada_10
+  - first:
+      213: -391340130092973762
+    second: Evento_Alcantarilla_Cerrada_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,7 +110,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -128,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Evento_Gato_0
+      name: Evento_Alcantarilla_Cerrada_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08725f9650d620f4d9c1aa9d427f3483
-      internalID: 6032550269641859780
+      spriteID: 5875668a5bd028d4995301ffcb722e3a
+      internalID: -4869574943359783277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_1
+      name: Evento_Alcantarilla_Cerrada_1
       rect:
         serializedVersion: 2
-        x: 346
+        x: 1151
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8468a4ad9a0098245b7807f0ea1b0871
-      internalID: -8811781634928389210
+      spriteID: ce57bbcc9954aa942af933f9cc355e33
+      internalID: -2548355062818063191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_2
+      name: Evento_Alcantarilla_Cerrada_2
       rect:
         serializedVersion: 2
-        x: 692
+        x: 2302
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea165b5edbd8d9e42943c832fd0d61ec
-      internalID: 7604452462083266158
+      spriteID: 2b326b3d684703b4fb22b636286b683d
+      internalID: -4690400750720796403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_3
+      name: Evento_Alcantarilla_Cerrada_3
       rect:
         serializedVersion: 2
-        x: 1038
+        x: 3453
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b0ee9396079ec438d6fb62d141f88b
-      internalID: -8538338978591358406
+      spriteID: 3d8092ef32c9e7e48bc72f87992d80ce
+      internalID: -6971831047263582228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_4
+      name: Evento_Alcantarilla_Cerrada_4
       rect:
         serializedVersion: 2
-        x: 1384
+        x: 4604
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +232,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03afcdf7fe56e8e46a3da0ff6c26e501
-      internalID: -6371747315081977050
+      spriteID: 39ebc39d1067d414d82664757b13139f
+      internalID: -5590106526004642704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_5
+      name: Evento_Alcantarilla_Cerrada_5
       rect:
         serializedVersion: 2
-        x: 1730
+        x: 5755
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +253,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7d14f08f15655a49a68c92b70b7cb3e
-      internalID: 5873659876922662818
+      spriteID: fc8f0be5397dc3e4ba7f5603e401921a
+      internalID: 4822632355744962417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_6
+      name: Evento_Alcantarilla_Cerrada_6
       rect:
         serializedVersion: 2
-        x: 2076
+        x: 6906
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a64e2af7bfe75ff45883ad3360872ed1
-      internalID: -8395428044193860095
+      spriteID: bba1f5ebc489d724bb31d25c249432b3
+      internalID: 5127751601836970519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_7
+      name: Evento_Alcantarilla_Cerrada_7
       rect:
         serializedVersion: 2
-        x: 2422
+        x: 8057
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +295,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a0a55a36ed11e04bb6413b1ab1a5ac6
-      internalID: -2711728346710756780
+      spriteID: 02727110ba5d0b94cb6b6ecd8cb85d34
+      internalID: 6683453190662217956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_8
+      name: Evento_Alcantarilla_Cerrada_8
       rect:
         serializedVersion: 2
-        x: 2768
+        x: 9208
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +316,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2807269ce484b74eb8e52d3bdcd6efd
-      internalID: -3315040182059919368
+      spriteID: 1d22823da14844d438637006204ebdd9
+      internalID: -8956663112995002941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Gato_9
+      name: Evento_Alcantarilla_Cerrada_9
       rect:
         serializedVersion: 2
-        x: 3114
+        x: 10359
         y: 0
-        width: 346
-        height: 417
+        width: 1151
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +337,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ac1a2871d4377b40b62306f74ab003f
-      internalID: -4319556581845265950
+      spriteID: 5b20642cea6a6844cb22de4a22ec00c0
+      internalID: 3218314028197390540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_10
+      rect:
+        serializedVersion: 2
+        x: 11510
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1be0c9ac6e39c1449f8cf5bb16cacae
+      internalID: 9088279300991464588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_11
+      rect:
+        serializedVersion: 2
+        x: 12661
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81be52fecf2e1834f939a53608fbb472
+      internalID: -391340130092973762
       vertices: []
       indices: 
       edges: []
