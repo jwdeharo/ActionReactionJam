@@ -21,7 +21,6 @@ public class ChoiceControllerBox : MonoBehaviour
     {
         if (Interact != null)
         {
-
             Interact.GetComponent<DeployChoices>().TwoChoices = true;
         }
     }
