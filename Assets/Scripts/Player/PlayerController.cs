@@ -12,6 +12,8 @@ public class PlayerController : BaseController
 
     [SerializeField]
     private GameObject HidingSprite = null;
+    [SerializeField]
+    private GameObject YouShallNotPass = null;
 
     [SerializeField]
     private bool Hide;
@@ -157,6 +159,7 @@ public class PlayerController : BaseController
     {
         Hide = true;
         ToHideTransform = aGameObject.transform;
+        YouShallNotPass.SendMessage("ActiveYouShallNotPass", true);
     }
 
     public void SetHide(bool aHide)

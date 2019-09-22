@@ -7,6 +7,8 @@ public class FrankieController : MonoBehaviour
     private GameObject ViewFinder = null;
     [SerializeField]
     private GameObject FrankieTheMan = null;
+    [SerializeField]
+    private GameObject YouShallNotPass= null;
 
     private GameObject ThePlayer;
     private bool Active = true;
@@ -30,7 +32,7 @@ public class FrankieController : MonoBehaviour
             if (aCollision.tag == "Player")
             {
                 ThePlayer = aCollision.gameObject;
-                aCollision.gameObject.SendMessage("ToWait", true);
+                ThePlayer.SendMessage("ToWait", true);
                 FrankieTheMan.GetComponent<Animator>().SetBool("IsWatching", true);
                 FranchyWatching = true;
             }
@@ -48,6 +50,7 @@ public class FrankieController : MonoBehaviour
                 PlayerController MyPlayerController = aCollision.gameObject.GetComponent<PlayerController>();
                 if (MyPlayerController != null && MyPlayerController.IsHiding())
                 {
+                    YouShallNotPass.SendMessage("ActiveYouShallNotPass", false);
                     aCollision.gameObject.SendMessage("ChangeSprite", true);
                     aCollision.gameObject.SendMessage("SetHide", false);
                     MyPlayerController.Animator.SetBool("TurningBox", false);
