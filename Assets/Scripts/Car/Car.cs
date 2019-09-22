@@ -1,21 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Car : MonoBehaviour
 {
 
     public Flickering flickeringKeys;
+    private bool CanCheck = false;
+    private GameObject ThePlayer;
+
+    private void FixedUpdate()
+    {
+        if (CanCheck && Utils.AnimationIsFinished(GetComponent<Animator>()))
+        {
+            ThePlayer.SendMessage("ChangeToDeath");
+            GetComponent<Animator>().SetBool("Exploding", false);
+            Destroy(gameObject);
+        }
+    }
 
     private void OnCar(GameObject aGameObject)
     {
         if (aGameObject.GetComponent<PlayerController>().HasKey)
         {
-            aGameObject.SendMessage("ChangeToDeath");
+            CanCheck = true;
+            GetComponent<Animator>().SetBool("Exploding", true);
+            ThePlayer = aGameObject;
         }
         else
         {
-            print("no hay llaves");
             StartCoroutine(flickeringKeys.Flick());
         }
     }
