@@ -11,8 +11,7 @@ public class Replay : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            print("Has pulsado enter");
-            SceneManager.LoadScene("Juego");
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }
