@@ -7,18 +7,20 @@ public class Firefighters : MonoBehaviour
     [SerializeField]
     private GameObject Target = null;
     public DeployChoices deployChoicesScript;
-    private float speed = 0.12f;
-    private Vector3 position;
+    public float speed = 0.12f;
     private float step;
     private bool CanMove = false;
     [SerializeField]
     private Vector3 target = new Vector3();
+    [SerializeField]
+    private GameObject busInteract;
 
     public void OnTriggerEnter2D(Collider2D aCollision)
     {
         if(aCollision.gameObject == Target)
         {
             deployChoicesScript.TwoChoices = true;
+            //print(deployChoicesScript.TwoChoices);
         }
     }
 
@@ -26,22 +28,23 @@ public class Firefighters : MonoBehaviour
     {
         if (CanMove)
         {
-            position = GameObject.FindWithTag("Firefighter").transform.position;
-            print(position);
             step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target, step);
-            print(transform.position = Vector3.MoveTowards(transform.position, target, step));
 
             if (Vector3.Distance(transform.position, target) == 0.0f)
             {
                 CanMove = false;
+                GetComponent<Animator>().SetBool("canWalk", CanMove);
+                busInteract.SetActive(true);
             }
         }
     }
     public void MoveFirefighter(bool aCanMove)
     {
         CanMove = aCanMove;
-        GetComponent<ActionInteraction>().enabled = !aCanMove;
+        GetComponent<SpriteRenderer>().flipX = true;
+        GetComponent<Animator>().SetBool("canWalk",true);
+        //GetComponent<ActionInteraction>().enabled = !aCanMove;
     }
 
 
