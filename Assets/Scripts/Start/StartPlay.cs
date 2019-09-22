@@ -5,17 +5,39 @@ using UnityEngine.SceneManagement;
 
 public class StartPlay : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public AudioSource audioS;
+    private bool isFire;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)) {
-            print("Has pulsado escape");
-            SceneManager.LoadScene("Juego");
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
+
+        if (Input.GetAxisRaw("Submit") != 0)
         {
-            Debug.Log("Has pulsado escape");
-            Application.Quit();
+            if (!isFire)
+            {
+                isFire = true;
+                StartCoroutine(LowVolume());
+            }
+        }
+        else
+        {
+            isFire = false;
+        }
+
+    }
+
+    public IEnumerator LowVolume()
+    {
+        while (audioS.volume > 0)
+        {
+            audioS.volume -= 0.01f;
+            yield return null;
+        }
+        if (audioS.volume == 0)
+        {
+            audioS.clip = null;
+            audioS.volume = 1;
+            SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
         }
     }
 }

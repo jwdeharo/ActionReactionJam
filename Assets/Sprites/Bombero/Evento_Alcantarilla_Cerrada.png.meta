@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: eca37094509a5e84ab151439a95ddf92
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4869574943359783277
+    second: Evento_Alcantarilla_Cerrada_0
+  - first:
+      213: -2548355062818063191
+    second: Evento_Alcantarilla_Cerrada_1
+  - first:
+      213: -4690400750720796403
+    second: Evento_Alcantarilla_Cerrada_2
+  - first:
+      213: -6971831047263582228
+    second: Evento_Alcantarilla_Cerrada_3
+  - first:
+      213: -5590106526004642704
+    second: Evento_Alcantarilla_Cerrada_4
+  - first:
+      213: 4822632355744962417
+    second: Evento_Alcantarilla_Cerrada_5
+  - first:
+      213: 5127751601836970519
+    second: Evento_Alcantarilla_Cerrada_6
+  - first:
+      213: 6683453190662217956
+    second: Evento_Alcantarilla_Cerrada_7
+  - first:
+      213: -8956663112995002941
+    second: Evento_Alcantarilla_Cerrada_8
+  - first:
+      213: 3218314028197390540
+    second: Evento_Alcantarilla_Cerrada_9
+  - first:
+      213: 9088279300991464588
+    second: Evento_Alcantarilla_Cerrada_10
+  - first:
+      213: -391340130092973762
+    second: Evento_Alcantarilla_Cerrada_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5875668a5bd028d4995301ffcb722e3a
+      internalID: -4869574943359783277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_1
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce57bbcc9954aa942af933f9cc355e33
+      internalID: -2548355062818063191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_2
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b326b3d684703b4fb22b636286b683d
+      internalID: -4690400750720796403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_3
+      rect:
+        serializedVersion: 2
+        x: 3453
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8092ef32c9e7e48bc72f87992d80ce
+      internalID: -6971831047263582228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_4
+      rect:
+        serializedVersion: 2
+        x: 4604
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ebc39d1067d414d82664757b13139f
+      internalID: -5590106526004642704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_5
+      rect:
+        serializedVersion: 2
+        x: 5755
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8f0be5397dc3e4ba7f5603e401921a
+      internalID: 4822632355744962417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_6
+      rect:
+        serializedVersion: 2
+        x: 6906
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba1f5ebc489d724bb31d25c249432b3
+      internalID: 5127751601836970519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_7
+      rect:
+        serializedVersion: 2
+        x: 8057
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02727110ba5d0b94cb6b6ecd8cb85d34
+      internalID: 6683453190662217956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_8
+      rect:
+        serializedVersion: 2
+        x: 9208
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d22823da14844d438637006204ebdd9
+      internalID: -8956663112995002941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_9
+      rect:
+        serializedVersion: 2
+        x: 10359
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b20642cea6a6844cb22de4a22ec00c0
+      internalID: 3218314028197390540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_10
+      rect:
+        serializedVersion: 2
+        x: 11510
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1be0c9ac6e39c1449f8cf5bb16cacae
+      internalID: 9088279300991464588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evento_Alcantarilla_Cerrada_11
+      rect:
+        serializedVersion: 2
+        x: 12661
+        y: 0
+        width: 1151
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81be52fecf2e1834f939a53608fbb472
+      internalID: -391340130092973762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

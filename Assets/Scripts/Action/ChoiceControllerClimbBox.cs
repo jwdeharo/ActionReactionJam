@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ChoiceControllerClimbBox : MonoBehaviour
 {
@@ -12,13 +10,30 @@ public class ChoiceControllerClimbBox : MonoBehaviour
 
     private void Update()
     {
-        if (canClimb)
+        if (box != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(box.transform.position.x, targetY), speed * Time.deltaTime);
-            if(Mathf.Approximately(transform.position.y, targetY)){
-                GetComponent<Animator>().SetBool("climbBox", false);
-                box.GetComponent<BoxCollider2D>().enabled = true;
-                canClimb = false;
+            if (canClimb)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, new Vector2(box.transform.position.x, targetY), speed * Time.deltaTime);
+                if(Mathf.Approximately(transform.position.y, targetY)){
+                    GetComponent<Animator>().SetBool("climbBox", false);
+                    box.GetComponent<BoxCollider2D>().enabled = true;
+                    canClimb = false;
+                }
+            }
+
+            if (transform.position.y > -0.4)
+            {
+                box.SendMessage("SetPlayerUp", true);
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+                boxInteract.SetActive(false);
+            }
+            else
+            {
+                box.SendMessage("SetPlayerUp", false);
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                boxInteract.SetActive(true);
             }
         }
 
@@ -39,10 +54,6 @@ public class ChoiceControllerClimbBox : MonoBehaviour
 
     public void PerformAction()
     {
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-        canClimb = true;
-        GetComponent<Animator>().SetBool("climbBox", true);
-        box.GetComponent<BoxCollider2D>().enabled = false;
+        SendMessage("ChangeToClimb", true);
     }
 }

@@ -8,6 +8,7 @@ public class DeployChoices : MonoBehaviour
     public float speed;
 
     private float step;
+    [SerializeField]
     private bool twoChoices;
 
     private void Update()

@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class Flickering : MonoBehaviour
 {
-    SpriteRenderer spriteR;
+    public int times;
+
     WaitForSeconds wait;
+    
     private void Start()
     {
-        spriteR = GetComponent<SpriteRenderer>();
         wait = new WaitForSeconds(0.5f);
     }
 
     public IEnumerator Flick()
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < times; i++)
         {
-            print("flik");
+            print("flick");
             yield return wait;
-            spriteR.enabled=true;
+            gameObject.SetActive(true);
             yield return wait;
-            spriteR.enabled = false;
-            print("flok");
+            gameObject.SetActive(false);
+            print("flock");
         }
         
     }

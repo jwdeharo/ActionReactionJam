@@ -2,6 +2,14 @@
 
 public class WalkingState : CState
 {
+    private PlayerController MyPlayerController;
+
+    public override void Init(BaseController aParent)
+    {
+        base.Init(aParent);
+        MyPlayerController = (PlayerController)Controller;
+    }
+
     /**
      * Function that is called once the state is changed to be the current.
      */
@@ -35,6 +43,11 @@ public class WalkingState : CState
         {
             Controller.GetFSM().PopState();
             Controller.GetFSM().ChangeState(Controller.GetState("BoxToPlayer"));
+        }
+        else if (MyPlayerController.IsClimbing())
+        {
+            Controller.GetFSM().PopState();
+            Controller.GetFSM().ChangeState(Controller.GetState("Climb"));
         }
         else
         {

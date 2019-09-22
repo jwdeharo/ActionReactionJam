@@ -7,7 +7,7 @@ public class MovableObjectsMoveState : CState
      */
     public override void UpdateState()
     {
-        if (((MovableObjectsController)Controller).CanMove())
+        if (!((MovableObjectsController)Controller).IsPlayerUp() && ((MovableObjectsController)Controller).CanMove())
         {
             ((MovableObjectsController)Controller).transform.position += ((MovableObjectsController)Controller).GetMovement();
         }

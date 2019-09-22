@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: b097834d99714e9438b7dd64c865f579
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3993601143139996282
+    second: "Evento_Globo_Desplaz\xE1ndose_0"
+  - first:
+      213: -5522669874505136614
+    second: "Evento_Globo_Desplaz\xE1ndose_1"
+  - first:
+      213: 2759000480533757011
+    second: "Evento_Globo_Desplaz\xE1ndose_2"
+  - first:
+      213: 3177500324111308479
+    second: "Evento_Globo_Desplaz\xE1ndose_3"
+  - first:
+      213: 6000998985908506127
+    second: "Evento_Globo_Desplaz\xE1ndose_4"
+  - first:
+      213: 5534535655297910129
+    second: "Evento_Globo_Desplaz\xE1ndose_5"
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +88,159 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Evento_Globo_Desplaz\xE1ndose_0"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 406
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4bac59a91bf30408460cb12a3c476e
+      internalID: 3993601143139996282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Evento_Globo_Desplaz\xE1ndose_1"
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 406
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571b3ed0aedb5384a8943bd6ac4b8a0f
+      internalID: -5522669874505136614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Evento_Globo_Desplaz\xE1ndose_2"
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 0
+        width: 406
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46190ea8c8372fd49bbfda1055555032
+      internalID: 2759000480533757011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Evento_Globo_Desplaz\xE1ndose_3"
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 0
+        width: 406
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f0f7adf9cf1504abfba83035000e07
+      internalID: 3177500324111308479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Evento_Globo_Desplaz\xE1ndose_4"
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 0
+        width: 406
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da647f7d274181f49b3f2026c5ac860d
+      internalID: 6000998985908506127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Evento_Globo_Desplaz\xE1ndose_5"
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 0
+        width: 406
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c72404b08b095c4aaad5b50980f816d
+      internalID: 5534535655297910129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
