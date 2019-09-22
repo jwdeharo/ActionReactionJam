@@ -11,6 +11,10 @@ public class DeployChoices : MonoBehaviour
     [SerializeField]
     private bool twoChoices;
 
+    private void Start()
+    {
+        twoChoices = false;
+    }
     private void Update()
     {
         step = speed * Time.deltaTime;
@@ -20,7 +24,7 @@ public class DeployChoices : MonoBehaviour
     public void ShowChoices(GameObject[] choices)
     {
         float xPosition = 0.2f;
-
+        
         if (twoChoices)
         {
             for (int i = 0; i < choices.Length; i++)
