@@ -8,6 +8,8 @@ public class DeployChoices : MonoBehaviour
     public float speed;
 
     private float step;
+    [SerializeField]
+    private bool twoChoices;
 
     private void Update()
     {
@@ -17,13 +19,15 @@ public class DeployChoices : MonoBehaviour
     //Show the different choices by Action and orders them
     public void ShowChoices(GameObject[] choices)
     {
-        float xPosition = 0.5f;
+        float xPosition = 0.2f;
 
-        for (int i = 0; i < choices.Length; i++)
+        if (twoChoices)
         {
-            choices[i].SetActive(true);
-            if (i != 0)
+            for (int i = 0; i < choices.Length; i++)
             {
+
+                choices[i].SetActive(true);
+
                 if (i % 2 == 0)
                 {
                     StartCoroutine(SpreadChoicesRight(choices[i], xPosition));
@@ -32,6 +36,10 @@ public class DeployChoices : MonoBehaviour
                 else
                     StartCoroutine(SpreadChoicesLeft(choices[i], xPosition));
             }
+        }
+        else
+        {
+            choices[0].SetActive(true);
         }
     }
 
@@ -69,4 +77,6 @@ public class DeployChoices : MonoBehaviour
         }
         choice.transform.localPosition = new Vector2(-xPosition, choice.transform.localPosition.y);
     }
+
+    public bool TwoChoices { get => twoChoices; set => twoChoices = value; }
 }

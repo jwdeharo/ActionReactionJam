@@ -51,7 +51,7 @@ public class FrankieController : MonoBehaviour
                 if (MyPlayerController != null && MyPlayerController.IsHiding())
                 {
                     YouShallNotPass.SendMessage("ActiveYouShallNotPass", false);
-                    aCollision.gameObject.SendMessage("ChangeSprite", true);
+                    aCollision.gameObject.SendMessage("ChangeSprite");
                     aCollision.gameObject.SendMessage("SetHide", false);
                     MyPlayerController.Animator.SetBool("TurningBox", false);
                     MyPlayerController.Animator.SetBool("AlreadyTurned", false);
