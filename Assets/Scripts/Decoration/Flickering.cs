@@ -19,9 +19,9 @@ public class Flickering : MonoBehaviour
         {
             print("flick");
             yield return wait;
-            gameObject.SetActive(true);
+            gameObject.GetComponent<SpriteRenderer>().enabled=true;
             yield return wait;
-            gameObject.SetActive(false);
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
             print("flock");
         }
         

@@ -15,6 +15,7 @@ public class Car : MonoBehaviour
         }
         else
         {
+            print("no hay llaves");
             StartCoroutine(flickeringKeys.Flick());
         }
     }

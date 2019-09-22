@@ -5,6 +5,7 @@ public class BalloonMovement : MonoBehaviour
 {
     public AudioSource audioS;
     public AudioClip clip;
+    public GameObject gato;
 
     [SerializeField]
     private GameObject Respawn = null;
@@ -28,6 +29,7 @@ public class BalloonMovement : MonoBehaviour
 
             if (Vector3.Distance(transform.position, target) == 0.0f)
             {
+                gato.SetActive(true);
                 CanMove = false;
                 interactCat.SetActive(true);
             }
