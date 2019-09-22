@@ -992,6 +992,7 @@ GameObject:
   - component: {fileID: 349919646}
   - component: {fileID: 349919645}
   - component: {fileID: 349919644}
+  - component: {fileID: 349919647}
   m_Layer: 0
   m_Name: Choice (1)
   m_TagString: Untagged
@@ -1075,6 +1076,19 @@ Transform:
   m_Father: {fileID: 1702545657}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349919647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349919643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce90d186cef843343aa472b684853f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisName: Fire1
 --- !u!1 &354882357
 GameObject:
   m_ObjectHideFlags: 0
@@ -4310,7 +4324,7 @@ GameObject:
   - component: {fileID: 1702545658}
   - component: {fileID: 1702545659}
   m_Layer: 0
-  m_Name: Interact
+  m_Name: Interact_Gato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4434,7 +4448,7 @@ MonoBehaviour:
   - {fileID: 1875396098}
   - {fileID: 349919643}
   deployChoicesScript: {fileID: 1702545659}
-  HasOptions: 0
+  HasOptions: 1
   OnlyChoice: {fileID: 0}
   ActionToDo: 
   mustDestroy: 0
@@ -5039,9 +5053,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1875396098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9f927cdcabf1434aab359d8c053a6cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 954d52fd322214b4481b55f3aafd30de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  axisName: Submit
 --- !u!1 &1958270819
 GameObject:
   m_ObjectHideFlags: 0

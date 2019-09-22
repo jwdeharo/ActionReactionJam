@@ -25,7 +25,7 @@ public class BoxSwitchManager : MonoBehaviour
 
     public void CheckSwitchOn()
     {
-        print("BOX POS X " + transform.position.x + " BOXPOSI X " + boxPositionX + " PLAYER POS Y " + player.position.y + " PLAYERPOSI Y " + playerPositionY);
+        //print("BOX POS X " + transform.position.x + " BOXPOSI X " + boxPositionX + " PLAYER POS Y " + player.position.y + " PLAYERPOSI Y " + playerPositionY);
         if (transform.position.x!= boxPositionX && player.position.y<= playerPositionY)
         {
             boxInteract.SetActive(true);
