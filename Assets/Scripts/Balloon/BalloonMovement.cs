@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 
 
-    public class BalloonMovement : MonoBehaviour
+public class BalloonMovement : MonoBehaviour
 {
     [SerializeField]
     private GameObject Respawn = null;
     [SerializeField]
     private Vector3 target = new Vector3();
+    [SerializeField]
+    private GameObject interactCat;
 
     private float speed = 0.12f;
     private Vector3 position;
@@ -32,6 +34,7 @@
 
     public void MoveBalloon(bool aCanMove)
     {
+        interactCat.SetActive(true);
         CanMove = aCanMove;
         GetComponent<ActionInteraction>().enabled = !aCanMove;
     }
