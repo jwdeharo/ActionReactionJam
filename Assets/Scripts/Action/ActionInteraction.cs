@@ -16,8 +16,9 @@ public class ActionInteraction : MonoBehaviour
         public bool SendBool;
 
         public bool SendParam;
+       
     }
-
+    
     public Animator anim;
     public AudioClip[] actionSnd;
     public AudioSource audioS;
@@ -32,12 +33,14 @@ public class ActionInteraction : MonoBehaviour
     private GameObject OnlyChoice = null;
     [SerializeField]
     private string ActionToDo = "";
-    
+    [SerializeField]
+    private bool mustDestroy;
+
     public ActionParameters ActionParams;
 
     private void Update()
     {
-        if (Input.GetAxisRaw("Fire1") != 0 && canInteract)
+        if (enabled && Input.GetAxisRaw("Fire1") != 0 && canInteract)
         {
             if (!isFire)
             {
@@ -53,15 +56,15 @@ public class ActionInteraction : MonoBehaviour
                     {
                         if (ActionParams.SendFloat)
                         {
-                            DoAction<float>(ActionParams.FloatP, ActionParams.SendParam);
+                            DoAction<float>(ActionParams.FloatP, ActionParams.SendParam, mustDestroy);
                         }
                         else if (ActionParams.SendBool)
                         {
-                            DoAction<bool>(ActionParams.BoolP, ActionParams.SendParam);
+                            DoAction<bool>(ActionParams.BoolP, ActionParams.SendParam, mustDestroy);
                         }
                         else 
                         {
-                            DoAction<GameObject>(ActionParams.ObjectP, ActionParams.SendParam);
+                            DoAction<GameObject>(ActionParams.ObjectP, ActionParams.SendParam, mustDestroy);
                         }
                     }
                 }
@@ -82,7 +85,7 @@ public class ActionInteraction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (enabled && collision.tag == "Player")
         {
             canInteract = true;
             anim.gameObject.SetActive(false);
@@ -96,7 +99,7 @@ public class ActionInteraction : MonoBehaviour
      */
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (enabled && collision.tag == "Player")
         {
             canInteract = false;
             VanishAnimation();
@@ -113,7 +116,7 @@ public class ActionInteraction : MonoBehaviour
         anim.SetBool("canContinue", true);
     }
 
-    private void DoAction<T>(T aToSend, bool aSendParam)
+    private void DoAction<T>(T aToSend, bool aSendParam, bool destroy)
     {
         if (aSendParam)
         {
@@ -124,7 +127,8 @@ public class ActionInteraction : MonoBehaviour
         {
             OnlyChoice.SendMessage(ActionToDo);
         }
-        Destroy(gameObject);
+        if(destroy)
+            Destroy(gameObject);
     }
 
    

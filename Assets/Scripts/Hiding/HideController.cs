@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HideController : MonoBehaviour
 {
     [SerializeField]
     private GameObject Target = null;
-
+    [SerializeField]
+    private GameObject YouShallNotPass = null;
 
     private void OnTriggerStay2D(Collider2D aCollision)
     {

@@ -5,19 +5,22 @@ public class PlayerController : BaseController
 {
     public float MovingSpeedFactor = 1.0f;
     public float MoveSpeed = 5.0f;                  //!< Velocity of the player.
+    public bool FirekeepersSeen;
     public Animator Animator;                       //!< Animator which handles the animations.
     private Sprite OriginalSprite;
     private Transform ToHideTransform;
 
     [SerializeField]
     private GameObject HidingSprite = null;
+    [SerializeField]
+    private GameObject YouShallNotPass = null;
 
     [SerializeField]
     private bool Hide;
     private bool Wait;
-    private float OriginalScale;
     private bool BoxTransformation;
     private bool Dead = false;
+    private bool BoxToPlayer;
 
     /**
      * Start is called before the first frame update
@@ -29,13 +32,14 @@ public class PlayerController : BaseController
         DeathState MyDeathState = new DeathState();
         HidingState HideState = new HidingState();
         WaitingState MyWaitState = new WaitingState();
+        BoxToPlayerState MyBoxToPlayerState = new BoxToPlayerState();
 
         MyIdleState.Init(this);
         WalkState.Init(this);
         MyDeathState.Init(this);
         HideState.Init(this);
         MyWaitState.Init(this);
-
+        MyBoxToPlayerState.Init(this);
 
         States = new Dictionary<string, CState>();
 
@@ -44,6 +48,7 @@ public class PlayerController : BaseController
         States.Add("Death", MyDeathState);
         States.Add("Hide", HideState);
         States.Add("Wait", MyWaitState);
+        States.Add("BoxToPlayer", MyBoxToPlayerState);
 
         MyFSM = GetComponent<FSM>();
         MyFSM.StartFSM();
@@ -52,6 +57,7 @@ public class PlayerController : BaseController
         Hide = false;
         Wait = false;
         BoxTransformation = false;
+        BoxToPlayer = false;
 
         OriginalSprite = GetComponent<SpriteRenderer>().sprite;
     }
@@ -109,7 +115,7 @@ public class PlayerController : BaseController
     {
         if (IsTypeObject<MovableObjectsController>(aCollision))
         {
-            aCollision.gameObject.SendMessage("ApplyMovement", GetMovement());
+            aCollision.gameObject.SendMessage("ApplyMovement", Vector3.zero);
             MovingSpeedFactor = 1.0f;
         }
     }
@@ -122,6 +128,11 @@ public class PlayerController : BaseController
     public bool IsChangedSprite()
     {
         return BoxTransformation;
+    }
+
+    public bool IsBoxToPlayer()
+    {
+        return BoxToPlayer;
     }
 
     private void ChangeToDeath()
@@ -148,11 +159,17 @@ public class PlayerController : BaseController
     {
         Hide = true;
         ToHideTransform = aGameObject.transform;
+        YouShallNotPass.SendMessage("ActiveYouShallNotPass", true);
     }
 
     public void SetHide(bool aHide)
     {
         Hide = aHide;
+    }
+
+    public void SetBoxToPlayer(bool aBoxToPlayer)
+    {
+        BoxToPlayer = aBoxToPlayer;
     }
 
     public Transform GetToHideTransform()
