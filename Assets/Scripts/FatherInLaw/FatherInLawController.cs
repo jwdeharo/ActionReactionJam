@@ -1,20 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FatherInLawController : MonoBehaviour
 {
     [SerializeField]
     private GameObject ThePlayer;
+    public AudioSource audioS;
+    public AudioClip piu;
+
 
     public bool Killing = false;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Killing)
         {
             if (Utils.AnimationIsFinished(gameObject.GetComponent<Animator>()))
             {
+                audioS.PlayOneShot(piu);
                 Killing = false;
                 ThePlayer.SendMessage("ChangeToDeath");
             }

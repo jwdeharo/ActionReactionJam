@@ -880,7 +880,7 @@ MonoBehaviour:
   axisName: Action2
   MustDestroy: 1
   Target: {fileID: 185420678}
-  ThePlayerController: {fileID: 0}
+  ThePlayerController: {fileID: 1436520020}
   TheBoxMovableController: {fileID: 1091711816251361955}
 --- !u!114 &207149341
 MonoBehaviour:
@@ -4223,6 +4223,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6116956693251887304}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1436520020 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6116956693962687128, guid: 6d23edf57753e7f43829391ef65c3a7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6116956693251887304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436520015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b6296b2f7d53b49a5a6427fa3bfa32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1436684877 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 6116956693962687109, guid: 6d23edf57753e7f43829391ef65c3a7f,
@@ -6621,6 +6633,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: movablebox
       objectReference: {fileID: 0}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: ThrowPosition
+      value: 
+      objectReference: {fileID: 185420678}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: ThrowSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: audioS
+      value: 
+      objectReference: {fileID: 75587044}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f548377b4422f44ca3c4f0eb7c00417, type: 3}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: FatherInLaw
+      value: 
+      objectReference: {fileID: 658730193}
     - target: {fileID: 4720939475985345288, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6676,31 +6713,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: ThrowPosition
-      value: 
-      objectReference: {fileID: 185420678}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: ThrowSpeed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: audioS
-      value: 
-      objectReference: {fileID: 75587044}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3f548377b4422f44ca3c4f0eb7c00417, type: 3}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: FatherInLaw
-      value: 
-      objectReference: {fileID: 658730193}
     - target: {fileID: 5666284160231573451, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
         type: 3}
       propertyPath: playerBody
@@ -6904,5 +6916,15 @@ PrefabInstance:
       propertyPath: ThePlayer
       value: 
       objectReference: {fileID: 1436520015}
+    - target: {fileID: 6261101560789518204, guid: 0c41872a5cf89e14a87d49216692a25c,
+        type: 3}
+      propertyPath: audioS
+      value: 
+      objectReference: {fileID: 75587044}
+    - target: {fileID: 6261101560789518204, guid: 0c41872a5cf89e14a87d49216692a25c,
+        type: 3}
+      propertyPath: piu
+      value: 
+      objectReference: {fileID: 8300000, guid: 0750bf2f82899c149bb623643b372e0a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c41872a5cf89e14a87d49216692a25c, type: 3}
