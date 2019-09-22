@@ -39,7 +39,6 @@ public class ViewFinderController : BaseController
         FirstTimeTrigger = true;
         MySpriteRenderer = GetComponent<SpriteRenderer>();
         MyCollider = GetComponent<BoxCollider2D>();
-        MySpriteRenderer.enabled = false;
     }
 
     private void StartChasing()
@@ -69,10 +68,7 @@ public class ViewFinderController : BaseController
     {
         if (aCollision.gameObject == Target)
         {
-            if (!Target.GetComponent<PlayerController>().IsHiding())
-            {
-                Target.SendMessage("ChangeToDeath");
-            }
+            Target.SendMessage("ChangeToDeath");
         }
     }
 

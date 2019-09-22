@@ -38,7 +38,6 @@ public class WalkingState : CState
         }
         else
         {
-            
             float HorizontalAxis = Input.GetAxisRaw("Horizontal");
 
             if (HorizontalAxis == 0.0f)
@@ -50,7 +49,6 @@ public class WalkingState : CState
                 ((PlayerController)Controller).transform.position += ((PlayerController)Controller).GetMovement();
                 Flip(HorizontalAxis);
             }
-            
         }
     }
 

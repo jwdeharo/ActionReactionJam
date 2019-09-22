@@ -152,11 +152,6 @@ public class PlayerController : BaseController
         BoxTransformation = aBox;
     }
 
-    public void SetWaiting(bool aWait)
-    {
-        Wait = aWait;
-    }
-
     public void TimeToHide(GameObject aGameObject)
     {
         Hide = true;

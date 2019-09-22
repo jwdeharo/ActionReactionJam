@@ -17,7 +17,7 @@ public class IdleState : CState
         }
         else
         {
-            if (((PlayerController)Controller).IsWaiting() || Input.GetAxisRaw("Jump") != 0)
+            if (((PlayerController)Controller).IsWaiting())
             {
                 Controller.GetFSM().ChangeState(Controller.GetState("Wait"));
             }
