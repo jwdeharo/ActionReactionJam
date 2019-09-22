@@ -3,8 +3,14 @@ using UnityEngine;
 
 public class MovableObjectsController : BaseController
 {
+    [SerializeField]
+    private Transform ThrowPosition;
+    [SerializeField]
+    private float ThrowSpeed;
+
     private Vector3 Movement; //!< Movement of the movable object.
     private bool PlayerUp;
+    private bool Throwing;
 
     /**
      * Start is called before the first frame update
@@ -13,13 +19,16 @@ public class MovableObjectsController : BaseController
     {
         MovableObjectIdleState IdleState = new MovableObjectIdleState();
         MovableObjectsMoveState MoveState = new MovableObjectsMoveState();
+        MovableObjectThrowState ThrowState = new MovableObjectThrowState();
 
         IdleState.Init(this);
         MoveState.Init(this);
+        ThrowState.Init(this);
 
         States = new Dictionary<string, CState>();
         States.Add("Idle", IdleState);
         States.Add("Move", MoveState);
+        States.Add("Throw", ThrowState);
 
         Movement = new Vector3();
 
@@ -28,8 +37,18 @@ public class MovableObjectsController : BaseController
         MyFSM.ChangeState(IdleState);
 
         PlayerUp = false;
+        Throwing = false;
     }
 
+    public bool IsThrowing()
+    {
+        return Throwing;
+    }
+
+    public void SetThrowing(bool aThrowing)
+    {
+        Throwing = aThrowing;
+    }
 
     public void SetPlayerUp(bool aPlayerUp)
     {
@@ -41,6 +60,15 @@ public class MovableObjectsController : BaseController
         return PlayerUp;
     }
 
+    public Vector3 GetThrowingPosition()
+    {
+        return ThrowPosition.position;
+    }
+
+    public float GetThrowSpeed()
+    {
+        return ThrowSpeed;
+    }
     /**
      * Applies a movement.
      * @param aMovement: new movement to apply.

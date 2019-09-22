@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ChoiceControllerClimbBox : MonoBehaviour
 {
@@ -24,7 +22,6 @@ public class ChoiceControllerClimbBox : MonoBehaviour
 
         if (transform.position.y > -0.4)
         {
-            print("El player esta encima de la caja");
             box.SendMessage("SetPlayerUp", true);
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -32,7 +29,6 @@ public class ChoiceControllerClimbBox : MonoBehaviour
         }
         else
         {
-            print("El player esta debajo de la caja");
             box.SendMessage("SetPlayerUp", false);
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             boxInteract.SetActive(true);
