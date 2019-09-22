@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Portada.unity
+    guid: d9a1bfaf834a29241ab72570b9592fe2
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Muerte.unity
     guid: ea53d6e0efef998468f2459877a3f149
-  - enabled: 0
-    path: Assets/Portada.unity
-    guid: aba06255d96f9594e9e4685ccb25d1ee
   m_configObjects: {}

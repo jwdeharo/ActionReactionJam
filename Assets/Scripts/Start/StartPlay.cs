@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class StartPlay : MonoBehaviour
 {
+    public AudioSource audioS;
     private bool isFire;
+
     void Update()
     {
 
@@ -14,7 +16,7 @@ public class StartPlay : MonoBehaviour
             if (!isFire)
             {
                 isFire = true;
-                SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+                StartCoroutine(LowVolume());
             }
         }
         else
@@ -22,5 +24,20 @@ public class StartPlay : MonoBehaviour
             isFire = false;
         }
 
+    }
+
+    public IEnumerator LowVolume()
+    {
+        while (audioS.volume > 0)
+        {
+            audioS.volume -= 0.01f;
+            yield return null;
+        }
+        if (audioS.volume == 0)
+        {
+            audioS.clip = null;
+            audioS.volume = 1;
+            SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        }
     }
 }
