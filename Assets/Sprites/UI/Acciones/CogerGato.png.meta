@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 7530581afd9119c4d9ac7418eeed1abb
+guid: 52a743709cfd08f44b87d5e94377d7e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5909857353006139046
-    second: Evento_Globo_Subiendo_0
+      213: -5801590563424475911
+    second: CogerGato_0
   - first:
-      213: 367122056336831777
-    second: Evento_Globo_Subiendo_1
+      213: -2614278581237330996
+    second: CogerGato_1
   - first:
-      213: 2237274118413630958
-    second: Evento_Globo_Subiendo_2
+      213: -5245532138062122170
+    second: CogerGato_2
   - first:
-      213: -7264917644260648912
-    second: Evento_Globo_Subiendo_3
+      213: -6350635055613832064
+    second: CogerGato_3
+  - first:
+      213: 7983789454070677856
+    second: CogerGato_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -86,7 +89,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -110,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Evento_Globo_Subiendo_0
+      name: CogerGato_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 406
-        height: 616
+        width: 582
+        height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a4036bc688ba534cb40545018fd7e43
-      internalID: 5909857353006139046
+      spriteID: 16d27659f6b87304bbff9d9e94a8c534
+      internalID: -5801590563424475911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Globo_Subiendo_1
+      name: CogerGato_1
       rect:
         serializedVersion: 2
-        x: 406
+        x: 582
         y: 0
-        width: 406
-        height: 616
+        width: 582
+        height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6835746cff2197e4c8a4495d5cc7ec8f
-      internalID: 367122056336831777
+      spriteID: 65aa395eb6398324e844a1f2041a251e
+      internalID: -2614278581237330996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Globo_Subiendo_2
+      name: CogerGato_2
       rect:
         serializedVersion: 2
-        x: 812
+        x: 1164
         y: 0
-        width: 406
-        height: 616
+        width: 582
+        height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02d15f05bc540e844ab05ba24ac26314
-      internalID: 2237274118413630958
+      spriteID: e731d175457c110459dc07e6ce65cf7f
+      internalID: -5245532138062122170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Globo_Subiendo_3
+      name: CogerGato_3
       rect:
         serializedVersion: 2
-        x: 1218
+        x: 1746
         y: 0
-        width: 406
-        height: 616
+        width: 582
+        height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +190,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3393cf491f7d8c45bba786ce502c288
-      internalID: -7264917644260648912
+      spriteID: 49286fec75ade7246b198c6c670488e3
+      internalID: -6350635055613832064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CogerGato_4
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 0
+        width: 582
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd081b110db5a24c92e52c8816f16da
+      internalID: 7983789454070677856
       vertices: []
       indices: 
       edges: []

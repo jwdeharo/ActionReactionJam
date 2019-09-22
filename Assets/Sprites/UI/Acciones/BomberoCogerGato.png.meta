@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 7530581afd9119c4d9ac7418eeed1abb
+guid: 0d4f86b4fbc8c2545b86c84455c035b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5909857353006139046
-    second: Evento_Globo_Subiendo_0
+      213: 2000123959764130884
+    second: BomberoCogerGato_0
   - first:
-      213: 367122056336831777
-    second: Evento_Globo_Subiendo_1
+      213: -206538026520739401
+    second: BomberoCogerGato_1
   - first:
-      213: 2237274118413630958
-    second: Evento_Globo_Subiendo_2
+      213: -2484521159564211871
+    second: BomberoCogerGato_2
   - first:
-      213: -7264917644260648912
-    second: Evento_Globo_Subiendo_3
+      213: -5919493816933118748
+    second: BomberoCogerGato_3
+  - first:
+      213: 3655347936363632788
+    second: BomberoCogerGato_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -86,7 +89,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -110,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Evento_Globo_Subiendo_0
+      name: BomberoCogerGato_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 406
-        height: 616
+        width: 582
+        height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a4036bc688ba534cb40545018fd7e43
-      internalID: 5909857353006139046
+      spriteID: 6991e81b58618244bbefef3ee94bc6d2
+      internalID: 2000123959764130884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Globo_Subiendo_1
+      name: BomberoCogerGato_1
       rect:
         serializedVersion: 2
-        x: 406
+        x: 582
         y: 0
-        width: 406
-        height: 616
+        width: 582
+        height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6835746cff2197e4c8a4495d5cc7ec8f
-      internalID: 367122056336831777
+      spriteID: fd83a51caa9c30c4b976591ce9b3598e
+      internalID: -206538026520739401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Globo_Subiendo_2
+      name: BomberoCogerGato_2
       rect:
         serializedVersion: 2
-        x: 812
+        x: 1164
         y: 0
-        width: 406
-        height: 616
+        width: 582
+        height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02d15f05bc540e844ab05ba24ac26314
-      internalID: 2237274118413630958
+      spriteID: d448ac1fe056d1941909aab0c2826a77
+      internalID: -2484521159564211871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Evento_Globo_Subiendo_3
+      name: BomberoCogerGato_3
       rect:
         serializedVersion: 2
-        x: 1218
+        x: 1746
         y: 0
-        width: 406
-        height: 616
+        width: 582
+        height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +190,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3393cf491f7d8c45bba786ce502c288
-      internalID: -7264917644260648912
+      spriteID: 7d86d9704166d514ea39e5014f43b927
+      internalID: -5919493816933118748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BomberoCogerGato_4
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 0
+        width: 582
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720da7606e2080340895eed73f751ef4
+      internalID: 3655347936363632788
       vertices: []
       indices: 
       edges: []
