@@ -5215,7 +5215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  twoChoices: 1
+  twoChoices: 0
 --- !u!1 &1718869032
 GameObject:
   m_ObjectHideFlags: 0
@@ -6735,6 +6735,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: movablebox
       objectReference: {fileID: 0}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: ThrowPosition
+      value: 
+      objectReference: {fileID: 185420678}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: ThrowSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: audioS
+      value: 
+      objectReference: {fileID: 75587044}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f548377b4422f44ca3c4f0eb7c00417, type: 3}
+    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: FatherInLaw
+      value: 
+      objectReference: {fileID: 658730193}
     - target: {fileID: 4720939475985345288, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6790,36 +6815,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: ThrowPosition
-      value: 
-      objectReference: {fileID: 185420678}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: ThrowSpeed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: audioS
-      value: 
-      objectReference: {fileID: 75587044}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3f548377b4422f44ca3c4f0eb7c00417, type: 3}
-    - target: {fileID: 4720939475985345290, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
-        type: 3}
-      propertyPath: FatherInLaw
-      value: 
-      objectReference: {fileID: 658730193}
     - target: {fileID: 5666284160231573451, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
         type: 3}
       propertyPath: playerBody
       value: 
       objectReference: {fileID: 1436684877}
+    - target: {fileID: 5666284160231573451, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
+        type: 3}
+      propertyPath: Interact
+      value: 
+      objectReference: {fileID: 1158729481}
     - target: {fileID: 5666284161436310683, guid: 77b7d2ced73d6f04eb39f64a7f34ddee,
         type: 3}
       propertyPath: audioS
@@ -6853,6 +6858,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116956693266658046, guid: 6d23edf57753e7f43829391ef65c3a7f,
+        type: 3}
+      propertyPath: times
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6116956693962687130, guid: 6d23edf57753e7f43829391ef65c3a7f,
         type: 3}
@@ -6944,11 +6954,6 @@ PrefabInstance:
       propertyPath: boxInteract
       value: 
       objectReference: {fileID: 1781447942}
-    - target: {fileID: 6116956693266658046, guid: 6d23edf57753e7f43829391ef65c3a7f,
-        type: 3}
-      propertyPath: times
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d23edf57753e7f43829391ef65c3a7f, type: 3}
 --- !u!1001 &6261101560340917161

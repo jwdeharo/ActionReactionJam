@@ -19,7 +19,6 @@ public class Firefighters : MonoBehaviour
         if(aCollision.gameObject == Target)
         {
             deployChoicesScript.TwoChoices = true;
-            print("two="+deployChoicesScript.TwoChoices);
         }
     }
 
