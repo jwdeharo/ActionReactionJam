@@ -25,6 +25,8 @@
             {
                 CanMove = false;
             }
+            GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeBalloon = true;
+            print(GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeBalloon);
         }
     }
 
