@@ -7,7 +7,7 @@ public class MovableObjectIdleState : CState
      */
     public override void UpdateState()
     {
-        if (((MovableObjectsController)Controller).CanMove())
+        if (!((MovableObjectsController)Controller).IsPlayerUp() && ((MovableObjectsController)Controller).CanMove())
         {
             Controller.GetFSM().ChangeState(Controller.GetState("Move"));
         }

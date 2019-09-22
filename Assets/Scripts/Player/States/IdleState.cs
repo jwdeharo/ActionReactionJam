@@ -2,8 +2,12 @@
 
 public class IdleState : CState
 {
-    public override void OnEnterState()
+    PlayerController MyPlayerController;
+
+    public override void Init(BaseController aParent)
     {
+        base.Init(aParent);
+        MyPlayerController = (PlayerController)Controller;
     }
 
     /**
@@ -28,6 +32,10 @@ public class IdleState : CState
             else if (((PlayerController)Controller).IsBoxToPlayer())
             {
                 Controller.GetFSM().ChangeState(Controller.GetState("BoxToPlayer"));
+            }
+            else if (MyPlayerController.IsClimbing())
+            {
+                Controller.GetFSM().ChangeState(Controller.GetState("Climb"));
             }
             else if (Input.GetAxisRaw("Horizontal") != 0.0f)
             {

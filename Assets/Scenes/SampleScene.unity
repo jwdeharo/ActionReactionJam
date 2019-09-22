@@ -945,7 +945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce90d186cef843343aa472b684853f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Fire1
+  axisName: Action2
 --- !u!1 &354882357
 GameObject:
   m_ObjectHideFlags: 0
@@ -5651,12 +5651,27 @@ PrefabInstance:
         type: 3}
       propertyPath: HidingSprite
       value: 
-      objectReference: {fileID: 2012626872}
+      objectReference: {fileID: 0}
     - target: {fileID: 6116956693962687128, guid: 6d23edf57753e7f43829391ef65c3a7f,
         type: 3}
       propertyPath: YouShallNotPass
       value: 
-      objectReference: {fileID: 396604838}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116956693962687128, guid: 6d23edf57753e7f43829391ef65c3a7f,
+        type: 3}
+      propertyPath: MoveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116956693962687128, guid: 6d23edf57753e7f43829391ef65c3a7f,
+        type: 3}
+      propertyPath: Animator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116956693962687128, guid: 6d23edf57753e7f43829391ef65c3a7f,
+        type: 3}
+      propertyPath: BoxToClimb
+      value: 
+      objectReference: {fileID: 1091711816251361949}
     - target: {fileID: 6116956693962687131, guid: 6d23edf57753e7f43829391ef65c3a7f,
         type: 3}
       propertyPath: box
