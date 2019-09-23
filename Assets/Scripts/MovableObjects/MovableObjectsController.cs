@@ -71,8 +71,8 @@ public class MovableObjectsController : BaseController
 
     public void TimeToKillAnim(bool aToKill)
     {
-        FatherInLaw.GetComponent<Animator>().SetBool("TimeToKill", aToKill);
         FatherInLaw.SendMessage("SetKilling", aToKill);
+        FatherInLaw.GetComponent<Animator>().SetBool("TimeToKill", aToKill);
     }
 
     public void SetPlayerUp(bool aPlayerUp)
