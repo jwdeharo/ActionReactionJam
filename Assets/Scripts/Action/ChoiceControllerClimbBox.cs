@@ -8,7 +8,7 @@ public class ChoiceControllerClimbBox : MonoBehaviour
     
     private bool canClimb;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (box != null && boxInteract != null)
         {
@@ -55,6 +55,7 @@ public class ChoiceControllerClimbBox : MonoBehaviour
 
     public void PerformAction()
     {
+        Debug.Log("Hola");
         SendMessage("ChangeToClimb", true);
     }
 }

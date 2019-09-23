@@ -10,7 +10,7 @@ public class FatherInLawController : MonoBehaviour
 
     public bool Killing = false;
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         if (Killing)
         {
